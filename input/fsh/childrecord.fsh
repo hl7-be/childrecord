@@ -3,6 +3,8 @@ Logical: ChildReport
 Title: "Child Report Logical Model"
 Description: "A logical model representing child report data elements."
 
+* subject 1..1 Reference(Patient) "Child that the report is about"
+
 * author 1..1 Reference(Practitioner or Organization) "Child report author" "A child report element has one author. This author can be identified as an individual, as an organization, or as an individual within an organization."
 
 * pdfAttachment 1..1 base64Binary "PDF attachment" "A base64 encoded PDF file with the remaining child report information (biometric data, charts, etc.)."
@@ -13,34 +15,42 @@ Description: "A logical model representing child report data elements."
 
   * bacterialMeningitis 0..1 boolean "Bacterial meningitis" "Indicates whether bacterial meningitis occurred during pregnancy."
 
-* neonatalHearingScreening 0..1 BackboneElement "Neonatal hearing screening" "Details about the neonatal hearing screening."
-  * resultsLeft 0..1 code "Result of neonatal hearing screening (left ear)" "Neonatal hearing screening result for the left ear."
-  * resultsLeft from VSNeonatalHearingScreeningResults
 
-  * resultsRight 0..1 code "Result of neonatal hearing screening (right ear)" "Neonatal hearing screening result for the right ear."
+* neonatalHearingScreening 0..* BackboneElement "Neonatal hearing screening" "Details about the neonatal hearing screening."
+  * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
+  * resultsLeft 1..1 code "Result of neonatal hearing screening (left ear)" "Neonatal hearing screening result for the left ear."
+  * resultsLeft from VSNeonatalHearingScreeningResults
+  * resultsRight 1..1 code "Result of neonatal hearing screening (right ear)" "Neonatal hearing screening result for the right ear."
   * resultsRight from VSNeonatalHearingScreeningResults
 
-  * refusalOfHearingTest 0..1 boolean "Refusal of hearing test" "Indicates whether the hearing test was refused."
-
+* refusalOfHearingTest 0..1 boolean "Refusal of hearing test" "Indicates whether the hearing test was refused."
 
 * severeHeadTrauma 0..1 boolean "Severe head trauma" "Indicates whether severe head trauma was identified."
 
-* dateOfEyeScreeningBefore2Years 0..1 date "Date of eye screening (before 2 years)" "The date of eye screening taken before the age of 2 years."
+* eyeScreening 0..* BackboneElement "Eye screening" "Details about the eye screening."
+  * date 1..1 date "Date of eye screening" "The date of eye screening."
+  * result 1..1 code "Result of eye screening" "Result of eye screening."
+  * result from VSEyeScreeningResults
+  * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
+  * ageRange from VSEyeScreeningAgeRange
 
-* resultOfEyeScreeningBefore2Years 0..1 code "Result of eye screening (before 2 years)" "Result of eye screening taken before the age of 2 years."
-* resultOfEyeScreeningBefore2Years from VSEyeScreeningResults
 
-* dateOfEyeScreeningAfter2Years 0..1 date "Date of eye screening (after 2 years)" "The date of eye screening taken after the age of 2 years."
+* eyeResults 0..* BackboneElement "Eye" "Details about the eyes."
+  * observationDate 1..1 date "Date of Inspection pupil abnormal" "Details about the inspection of the pupil."
+  * inspectionPupilAbnormal 0..1 boolean "Inspection pupil abnormal"
+  * eyeMovementAndPosition 0..* code "Result of testing eye movement and position" 
+  * eyeMovementAndPosition from VSEyeMovementAndPosition
+  * eyeRemarks 0..1 string "Eye remarks" "Free text remarks about the eyes."
 
-* resultOfEyeScreeningAfter2Years 0..1 code "Result of eye screening (after 2 years)" "Result of eye screening taken after the age of 2 years."
-* resultOfEyeScreeningAfter2Years from VSEyeScreeningResults
 
-* inspectionPupilAbnormal 0..1 boolean "Inspection pupil abnormal" "Indicates whether inspection of the pupil was abnormal."
 
-* eyeMovementAndPosition 0..* code "Eye movement and position" "Observations on eye movement and position."
-* eyeMovementAndPosition from VSEyeMovementAndPosition
+//* inspectionPupilAbnormalDate 0..* date "Date(s) in which inspection of the pupil was abnormal" "Date(s) in which the inspection of the pupil had abnormal findings."
+//  * result 1..1 boolean "Inspection pupil abnormal" "Indicates whether inspection of the pupil was abnormal."
+//  * date 1..1 date "Inspection pupil abnormal" "Indicates whether inspection of the pupil was abnormal."
+//  * note 1..1 string "Inspection pupil abnormal" "Indicates whether inspection of the pupil was abnormal."
 
-* eyeRemarks 0..1 string  "Eye remarks" "Free text remarks about the eyes."
+
+//* eyeRemarks 0..1 string  "Eye remarks" "Free text remarks about the eyes."
 
 * inTreatmentWithOphthalmologist 0..* code "In treatment with ophthalmologist" "Details about treatment with an ophthalmologist."
 * inTreatmentWithOphthalmologist from VSOphthalmologistTreatments
@@ -90,3 +100,15 @@ CodeSystem: CSOphthalmologistTreatments
 * #occlusion
 * #operation
 * #other-treatment
+
+
+
+CodeSystem: CSEyeScreeningAgeRange
+* ^url = "http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range"
+* #0-2 "From birth to 2 years"
+* #2-3 "Between 2 and 3 years"
+
+
+ValueSet: VSEyeScreeningAgeRange
+* ^url = "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range"
+* include codes from system CSEyeMovementAndPosition

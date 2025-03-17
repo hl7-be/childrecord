@@ -1,1 +1,3 @@
-![](childrecordmodel.png)
+<figure>
+  {% include childrecordmodel.svg %}
+</figure>

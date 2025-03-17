@@ -1,0 +1,31 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+class "**ChildReport**" as ChildReport {
+  |_ subject 1..1   
+  |_ author 1..1   
+  |_ pdfAttachment 1..1   
+  |_ pregnancyDetails 0..1   
+    |_ durationOfPregnancy 0..1   
+    |_ pregnancyCMVInfection 0..1   
+    |_ bacterialMeningitis 0..1   
+  |_ neonatalHearingScreening 0..*   
+    |_ date 1..1   
+    |_ resultsLeft 1..1   
+    |_ resultsRight 1..1   
+  |_ refusalOfHearingTest 0..1   
+  |_ severeHeadTrauma 0..1   
+  |_ eyeScreening 0..*   
+    |_ date 1..1   
+    |_ result 1..1   
+    |_ ageRange 1..1   
+  |_ eyeResults 0..*   
+    |_ observationDate 1..1   
+    |_ inspectionPupilAbnormal 0..1   
+    |_ eyeMovementAndPosition 0..*   
+    |_ eyeRemarks 0..1   
+  |_ inTreatmentWithOphthalmologist 0..*   
+}
+@enduml

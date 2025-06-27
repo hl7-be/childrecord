@@ -5,27 +5,68 @@ hide stereotype
 
 class "**ChildReport**" as ChildReport {
   |_ subject 1..1   
-  |_ author 1..1   
-  |_ pdfAttachment 1..1   
+  |_ lastUpdate 1..1   
+  |_ presentedForm 1..1   
+  |_ relatedPerson 1..1   
+    |_ relationship 1..1   
   |_ pregnancyDetails 0..1   
     |_ durationOfPregnancy 0..1   
+      |_ subject 1..1   
+      |_ code 1..1   
+      |_ valueInteger 1..1   
     |_ pregnancyCMVInfection 0..1   
+      |_ subject 1..1   
+      |_ code 1..1   
+      |_ valueBoolean 1..1   
     |_ bacterialMeningitis 0..1   
+      |_ code 1..1   
+      |_ subject 1..1   
+      |_ valueBoolean 1..1   
   |_ neonatalHearingScreening 0..*   
+    |_ code 1..1   
     |_ date 1..1   
-    |_ resultsLeft 1..1   
-    |_ resultsRight 1..1   
+    |_ subject 1..1   
+    |_ componentLeft 0..1   
+      |_ code 1..1   
+      |_ valueCode 1..1   
+    |_ componentRight 0..1   
+      |_ code 1..1   
+      |_ valueCode 1..1   
   |_ refusalOfHearingTest 0..1   
+    |_ recordedDate 1..1   
+    |_ patient 1..1   
+      |_ role 1..1   
   |_ severeHeadTrauma 0..1   
-  |_ eyeScreening 0..*   
+    |_ subject 1..1   
     |_ date 1..1   
-    |_ result 1..1   
+    |_ code 1..1   
+    |_ valueBoolean 1..1   
+  |_ eyeScreening 0..*   
+    |_ subject 1..1   
+    |_ date 1..1   
+    |_ code 1..1   
+    |_ valueCodeableConcept 1..1   
     |_ ageRange 1..1   
   |_ eyeResults 0..*   
     |_ observationDate 1..1   
     |_ inspectionPupilAbnormal 0..1   
+      |_ subject 1..1   
+      |_ date 1..1   
+      |_ code 1..1   
+      |_ valueBoolean 1..1   
     |_ eyeMovementAndPosition 0..*   
+      |_ subject 1..1   
+      |_ date 1..1   
+      |_ code 1..1   
+      |_ valueCode 1..1   
     |_ eyeRemarks 0..1   
+      |_ subject 1..1   
+      |_ date 1..1   
+      |_ code 1..1   
+      |_ valueString 1..1   
   |_ inTreatmentWithOphthalmologist 0..*   
+    |_ date 1..1   
+    |_ code 1..1   
+    |_ valueCode 1..1   
 }
 @enduml

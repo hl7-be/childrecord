@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.org/fhir/ValueSet/eye-movement-and-position,0.1.0,draft,,VSEyeMovementAndPosition,,"",,"Internal"
+http://example.org/fhir/ValueSet/eye-screening-results,0.1.0,draft,,VSEyeScreeningResults,,"",,"Internal"
+http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range,0.1.0,draft,,VSEyeScreeningAgeRange,,"",,"Internal"
+http://example.org/fhir/ValueSet/neonatal-hearing-screening-results,0.1.0,draft,,VSNeonatalHearingScreeningResults,,"",,"Internal"
+http://example.org/fhir/ValueSet/ophthalmologist-treatments,0.1.0,draft,,VSOphthalmologistTreatments,,"",,"Internal"

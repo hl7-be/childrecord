@@ -1,0 +1,402 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"ChildReport","ChildReport","","","",0,*,"","","","null {[]} {[]}
+","Child Report Logical Model","A logical model representing child report data elements.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ChildReport.subject","ChildReport.subject","","","",1,1,"","","","https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/BeModelPatient {[]} {[]}
+","Child that the report is about","Patient/subject information","","","","","","","","","",,,,,"",,,,"BeDocument.subject",1,1,"",""
+"ChildReport.identifier","ChildReport.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","Business identifier for the document","Business identifier for the document","","","","","","","","","",,,,,"",,,,"BeDocument.identifier",1,*,"",""
+"ChildReport.author[x]","ChildReport.author[x]","","","",1,1,"","","","Practitioner {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner]]} {[]}
+Organization {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization]]} {[]}","Author","Author(s) by whom the resource was/were authored. Multiple authors could be provided.","","","","","","","","","",,,,,"",,,,"BeDocument.author[x]",1,1,"",""
+"ChildReport.lastUpdate","ChildReport.lastUpdate","","","",0,1,"","","","dateTime {[]} {[]}
+","Date and time of the last update to the resource","Date and time of the last update to the document/information","The date of the child report is the date when the report was created, not the date of the examination or observation. In case of reports migrated from KMEHR, the date is the date of the conversion, not the KMEHR message creation, which is unknown.","","","","","","","","",,,,,"",,,,"BeDocument.lastUpdate",0,1,"",""
+"ChildReport.status","ChildReport.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Status of the resource","Status of the resource","","","","","","","","","",,,,,"",,,,"BeDocument.status",1,1,"",""
+"ChildReport.presentedForm","ChildReport.presentedForm","","","",1,1,"","","","Attachment {[]} {[]}
+","Child report PDF file","A base64 encoded PDF file with the remaining child report information (biometric data, charts, etc.).","","","","","","","","","",,,,,"",,,,"BeDocument.presentedForm",0,*,"",""
+"ChildReport.documentTitle","ChildReport.documentTitle","","","",1,1,"","","","string {[]} {[]}
+","Document title","Document title","","","","","","","","","",,,,,"",,,,"BeDocument.documentTitle",1,1,"",""
+"ChildReport.relatedPerson","ChildReport.relatedPerson","","","",1,1,"","","","https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelRelatedPerson {[]} {[]}
+","Mother of the child that the report is about","The mother of the child is the related subject in this report.","","","","","","","","","",,,,,"",,,,"ChildReport.relatedPerson",1,1,"",""
+"ChildReport.relatedPerson.subject","ChildReport.relatedPerson.subject","","","",1,1,"","","","https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/BeModelPatient {[]} {[]}
+","Subject","Patient/subject information","","","","","","","","","",,,,,"",,,,"BeModelRelatedPerson.subject",1,1,"",""
+"ChildReport.relatedPerson.relatedperson","ChildReport.relatedPerson.relatedperson","","","",1,1,"","","","https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/BeModelPatient {[]} {[]}
+","Related person","A person related to the patient/subject, such as a family member or guardian.","","","","","","","","","",,,,,"",,,,"BeModelRelatedPerson.relatedperson",1,1,"",""
+"ChildReport.relatedPerson.relationship","ChildReport.relatedPerson.relationship","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Relationship to subject","The relationship of the related person to the patient/subject. This can include roles such as mother, father, guardian, etc.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""mother""/>
+    <display value=""Role of the related subject""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelRelatedPerson.relationship",1,1,"",""
+"ChildReport.pregnancyDetails","ChildReport.pregnancyDetails","","","",0,1,"","","","Base {[]} {[]}
+","Pregnancy details","Details about the pregnancy.","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails",0,1,"",""
+"ChildReport.pregnancyDetails.durationOfPregnancy","ChildReport.pregnancyDetails.durationOfPregnancy","","","",0,1,"","","","Base {[]} {[]}
+","[BeObservation] The duration of pregnancy in weeks, as an observation.","[BeObservation] The duration of pregnancy in weeks, as an observation.","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.durationOfPregnancy",0,1,"",""
+"ChildReport.pregnancyDetails.durationOfPregnancy.subject","ChildReport.pregnancyDetails.durationOfPregnancy.subject","","","",1,1,"","","","Reference {[]} {[]}
+","Mother","subject","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.durationOfPregnancy.subject",1,1,"",""
+"ChildReport.pregnancyDetails.durationOfPregnancy.code","ChildReport.pregnancyDetails.durationOfPregnancy.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Length of gestation at birth","Length of gestation at birth","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""412726003""/>
+    <display value=""Length of gestation at birth""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.pregnancyDetails.durationOfPregnancy.code",1,1,"",""
+"ChildReport.pregnancyDetails.durationOfPregnancy.valueInteger","ChildReport.pregnancyDetails.durationOfPregnancy.valueInteger","","","",1,1,"","","","integer {[]} {[]}
+","The duration of pregnancy in weeks","The duration of pregnancy in weeks","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.durationOfPregnancy.valueInteger",1,1,"",""
+"ChildReport.pregnancyDetails.pregnancyCMVInfection","ChildReport.pregnancyDetails.pregnancyCMVInfection","","","",0,1,"","","","Base {[]} {[]}
+","[BeObservation] Pregnancy CMV infection","Indicates whether CMV infection occurred during pregnancy.","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.pregnancyCMVInfection",0,1,"",""
+"ChildReport.pregnancyDetails.pregnancyCMVInfection.subject","ChildReport.pregnancyDetails.pregnancyCMVInfection.subject","","","",1,1,"","","","Reference {[]} {[]}
+","Mother","subject","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.pregnancyCMVInfection.subject",1,1,"",""
+"ChildReport.pregnancyDetails.pregnancyCMVInfection.code","ChildReport.pregnancyDetails.pregnancyCMVInfection.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","CMV infection during pregnancy","CMV infection during pregnancy","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""cmv-infection-during-pregnancy""/>
+    <display value=""CMV infection during pregnancy""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.pregnancyDetails.pregnancyCMVInfection.code",1,1,"",""
+"ChildReport.pregnancyDetails.pregnancyCMVInfection.valueBoolean","ChildReport.pregnancyDetails.pregnancyCMVInfection.valueBoolean","","","",1,1,"","","","boolean {[]} {[]}
+","Indicates whether CMV infection occurred during pregnancy.","The value indicates whether the mother had a CMV infection during pregnancy.","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.pregnancyCMVInfection.valueBoolean",1,1,"",""
+"ChildReport.pregnancyDetails.bacterialMeningitis","ChildReport.pregnancyDetails.bacterialMeningitis","","","",0,1,"","","","Base {[]} {[]}
+","[BeObservation] Bacterial meningitis","Indicates whether bacterial meningitis occurred during pregnancy.","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.bacterialMeningitis",0,1,"",""
+"ChildReport.pregnancyDetails.bacterialMeningitis.code","ChildReport.pregnancyDetails.bacterialMeningitis.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""bacterial-meningitis-during-pregnancy""/>
+    <display value=""bacterial meningitis during pregnancy""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.pregnancyDetails.bacterialMeningitis.code",1,1,"",""
+"ChildReport.pregnancyDetails.bacterialMeningitis.subject","ChildReport.pregnancyDetails.bacterialMeningitis.subject","","","",1,1,"","","","Reference {[]} {[]}
+","Mother","The mother of the child is the related subject in this report.","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.bacterialMeningitis.subject",1,1,"",""
+"ChildReport.pregnancyDetails.bacterialMeningitis.valueBoolean","ChildReport.pregnancyDetails.bacterialMeningitis.valueBoolean","","","",1,1,"","","","boolean {[]} {[]}
+","Indicates whether bacterial meningitis occurred during pregnancy.","The value indicates whether the mother had a bacterial meningitis during pregnancy.","","","","","","","","","",,,,,"",,,,"ChildReport.pregnancyDetails.bacterialMeningitis.valueBoolean",1,1,"",""
+"ChildReport.neonatalHearingScreening","ChildReport.neonatalHearingScreening","","","",0,*,"","","","Base {[]} {[]}
+","[BeObservation] Neonatal hearing screening","Details about the neonatal hearing screening.","","","","","","","","","",,,,,"",,,,"ChildReport.neonatalHearingScreening",0,*,"",""
+"ChildReport.neonatalHearingScreening.code","ChildReport.neonatalHearingScreening.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""neonatal-hearing-screening""/>
+    <display value=""Neonatal hearing screening""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.neonatalHearingScreening.code",1,1,"",""
+"ChildReport.neonatalHearingScreening.date","ChildReport.neonatalHearingScreening.date","","","",1,1,"","","","date {[]} {[]}
+","Date of neonatal hearing screening","The date of neonatal hearing screening.","","","","","","","","","",,,,,"",,,,"ChildReport.neonatalHearingScreening.date",1,1,"",""
+"ChildReport.neonatalHearingScreening.subject","ChildReport.neonatalHearingScreening.subject","","","",1,1,"","","","https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/BeModelPatient {[]} {[]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"ChildReport.neonatalHearingScreening.subject",1,1,"",""
+"ChildReport.neonatalHearingScreening.componentLeft","ChildReport.neonatalHearingScreening.componentLeft","","","",0,1,"","","","Base {[]} {[]}
+","Left ear result","Result of neonatal hearing screening for the left ear.","","","","","","","","","",,,,,"",,,,"ChildReport.neonatalHearingScreening.componentLeft",0,1,"",""
+"ChildReport.neonatalHearingScreening.componentLeft.code","ChildReport.neonatalHearingScreening.componentLeft.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Result of neonatal hearing screening - left","Result of neonatal hearing screening - left","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""neonatal-hearing-screening-left""/>
+    <display value=""Result of neonatal hearing screening (left ear)""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.neonatalHearingScreening.componentLeft.code",1,1,"",""
+"ChildReport.neonatalHearingScreening.componentLeft.valueCode","ChildReport.neonatalHearingScreening.componentLeft.valueCode","","","",1,1,"","","","code {[]} {[]}
+","Result of neonatal hearing screening (left ear)","Neonatal hearing screening result for the left ear.","","","","","","","","","",,"required","","http://example.org/fhir/ValueSet/neonatal-hearing-screening-results","",,,,"ChildReport.neonatalHearingScreening.componentLeft.valueCode",1,1,"",""
+"ChildReport.neonatalHearingScreening.componentRight","ChildReport.neonatalHearingScreening.componentRight","","","",0,1,"","","","Base {[]} {[]}
+","Right ear result","Result of neonatal hearing screening for the right ear.","","","","","","","","","",,,,,"",,,,"ChildReport.neonatalHearingScreening.componentRight",0,1,"",""
+"ChildReport.neonatalHearingScreening.componentRight.code","ChildReport.neonatalHearingScreening.componentRight.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Result of neonatal hearing screening - right","Result of neonatal hearing screening - right","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""neonatal-hearing-screening-right""/>
+    <display value=""Result of neonatal hearing screening (right ear)""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.neonatalHearingScreening.componentRight.code",1,1,"",""
+"ChildReport.neonatalHearingScreening.componentRight.valueCode","ChildReport.neonatalHearingScreening.componentRight.valueCode","","","",1,1,"","","","code {[]} {[]}
+","Result of neonatal hearing screening (right ear)","Neonatal hearing screening result for the right ear.","","","","","","","","","",,"required","","http://example.org/fhir/ValueSet/neonatal-hearing-screening-results","",,,,"ChildReport.neonatalHearingScreening.componentRight.valueCode",1,1,"",""
+"ChildReport.refusalOfHearingTest","ChildReport.refusalOfHearingTest","","","",0,1,"","","","https://www.ehealth.fgov.be/standards/fhir/patientwill/StructureDefinition/BeModelPatientWill {[]} {[]}
+","[BeObservation] Refusal by the parents of a hearing test for the child","Indicates whether the hearing test was refused.","","","","","","","","","",,,,,"",,,,"ChildReport.refusalOfHearingTest",0,1,"",""
+"ChildReport.refusalOfHearingTest.recordedDate","ChildReport.refusalOfHearingTest.recordedDate","","","",1,1,"","","","dateTime {[]} {[]}
+","Date of encoding of the information","Date of encoding of the information","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.recordedDate",1,1,"",""
+"ChildReport.refusalOfHearingTest.identifier","ChildReport.refusalOfHearingTest.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","Unique identifier","Unique identifier","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.identifier",0,1,"",""
+"ChildReport.refusalOfHearingTest.patient","ChildReport.refusalOfHearingTest.patient","","","",1,1,"","","","Identifier {[]} {[]}
+","Is the patient's unique identifier. The unique identifier must be the patient's national patient registry number (NISS) or BIS number.","Is the patient's unique identifier. The unique identifier must be the patient's national patient registry number (NISS) or BIS number.","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.patient",1,1,"",""
+"ChildReport.refusalOfHearingTest.recorder","ChildReport.refusalOfHearingTest.recorder","","","",1,1,"","","","Identifier {[]} {[]}
+","Is the unique identifier of either the healthcare professional responsible for the encrypted content, or the patient encoding his or her own wishes, or a representative of the patient encoding the patient's wishes. The unique identifier must be the National Register Number (NISS) or BIS number.","Is the unique identifier of either the healthcare professional responsible for the encrypted content, or the patient encoding his or her own wishes, or a representative of the patient encoding the patient's wishes. The unique identifier must be the National Register Number (NISS) or BIS number.","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.recorder",1,1,"",""
+"ChildReport.refusalOfHearingTest.representative","ChildReport.refusalOfHearingTest.representative","","","",0,*,"","","","BackboneElement {[]} {[]}
+","The representative is the person who acts on behalf of the applicant (patient) when he is no longer able to express his wishes. For example: the confidant is the person who guides the patient through his steps and assists him during medical appointments. He guarantees the follow-up of the wishes of the patient when he can no longer express his wishes clearly.","The representative is the person who acts on behalf of the applicant (patient) when he is no longer able to express his wishes. For example: the confidant is the person who guides the patient through his steps and assists him during medical appointments. He guarantees the follow-up of the wishes of the patient when he can no longer express his wishes clearly.","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.representative",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"ChildReport.refusalOfHearingTest.representative.id","ChildReport.refusalOfHearingTest.representative.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ChildReport.refusalOfHearingTest.representative.extension","ChildReport.refusalOfHearingTest.representative.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ChildReport.refusalOfHearingTest.representative.modifierExtension","ChildReport.refusalOfHearingTest.representative.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ChildReport.refusalOfHearingTest.representative.role","ChildReport.refusalOfHearingTest.representative.role","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Role of the representative (e.g. confidant, administrator, guardian...)","Role of the representative (e.g. confidant, administrator, guardian...)","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.representative.role",0,1,"",""
+"ChildReport.refusalOfHearingTest.representative.relationship","ChildReport.refusalOfHearingTest.representative.relationship","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type of relationship of the representative with the patient (e.g. father, mother, son, neighbour...)","Type of relationship of the representative with the patient (e.g. father, mother, son, neighbour...)","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.representative.relationship",0,1,"",""
+"ChildReport.refusalOfHearingTest.source[x]","ChildReport.refusalOfHearingTest.source[x]","","","",0,1,"","","","Binary {[]} {[]}
+url {[]} {[]}","Enables you to attach a document","Enables you to attach a document","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.source[x]",0,1,"",""
+"ChildReport.refusalOfHearingTest.category","ChildReport.refusalOfHearingTest.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type of patient wishes.","Type of patient wishes.","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.category",1,1,"",""
+"ChildReport.refusalOfHearingTest.willCode","ChildReport.refusalOfHearingTest.willCode","","","",1,1,"","","","BackboneElement {[]} {[]}
+","patient's wishes","The patient's wishes (euthanasia, no vaccination, no intubation...)","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.willCode",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"ChildReport.refusalOfHearingTest.willCode.id","ChildReport.refusalOfHearingTest.willCode.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ChildReport.refusalOfHearingTest.willCode.extension","ChildReport.refusalOfHearingTest.willCode.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ChildReport.refusalOfHearingTest.willCode.modifierExtension","ChildReport.refusalOfHearingTest.willCode.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ChildReport.refusalOfHearingTest.willCode.status","ChildReport.refusalOfHearingTest.willCode.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Indicates the status of the patient's will (draft, proposes, active, ...)","Indicates the status of the patient's will (draft, proposes, active, ...)","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.willCode.status",0,1,"",""
+"ChildReport.refusalOfHearingTest.willCode.period","ChildReport.refusalOfHearingTest.willCode.period","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Validity of the will","Validity of the will","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.willCode.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"ChildReport.refusalOfHearingTest.willCode.period.id","ChildReport.refusalOfHearingTest.willCode.period.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ChildReport.refusalOfHearingTest.willCode.period.extension","ChildReport.refusalOfHearingTest.willCode.period.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ChildReport.refusalOfHearingTest.willCode.period.modifierExtension","ChildReport.refusalOfHearingTest.willCode.period.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ChildReport.refusalOfHearingTest.willCode.period.startperiod","ChildReport.refusalOfHearingTest.willCode.period.startperiod","","","",0,1,"","","","dateTime {[]} {[]}
+","Date the will comes into effect","Date the will comes into effect","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.willCode.period.startperiod",0,1,"",""
+"ChildReport.refusalOfHearingTest.willCode.period.endperiod","ChildReport.refusalOfHearingTest.willCode.period.endperiod","","","",0,1,"","","","dateTime {[]} {[]}
+","Date the will expires","Date the will expires","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.willCode.period.endperiod",0,1,"",""
+"ChildReport.refusalOfHearingTest.note","ChildReport.refusalOfHearingTest.note","","","",0,1,"","","","string {[]} {[]}
+","Comments","Comments","","","","","","","","","",,,,,"",,,,"BeModelPatientWill.note",0,1,"",""
+"ChildReport.refusalOfHearingTest.recordedDate","ChildReport.refusalOfHearingTest.recordedDate","","","",0,null,"","","","","Date of neonatal hearing screening","","","","","","","","","","",,,,,"",,,,"ChildReport.refusalOfHearingTest.recordedDate",0,null,"",""
+"ChildReport.refusalOfHearingTest.patient","ChildReport.refusalOfHearingTest.patient","","","",0,null,"","","","","Child that the report is about","","","","","","","","","","",,,,,"",,,,"ChildReport.refusalOfHearingTest.patient",0,null,"",""
+"ChildReport.refusalOfHearingTest.representative.role","ChildReport.refusalOfHearingTest.representative.role","","","",0,null,"","","","","","","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""guardian""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.refusalOfHearingTest.representative.role",0,null,"",""
+"ChildReport.severeHeadTrauma","ChildReport.severeHeadTrauma","","","",0,1,"","","","Base {[]} {[]}
+","[BeProblem] Severe head trauma","Indicates whether severe head trauma was identified.","","","","","","","","","",,,,,"",,,,"ChildReport.severeHeadTrauma",0,1,"",""
+"ChildReport.severeHeadTrauma.subject","ChildReport.severeHeadTrauma.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"ChildReport.severeHeadTrauma.subject",1,1,"",""
+"ChildReport.severeHeadTrauma.date","ChildReport.severeHeadTrauma.date","","","",1,1,"","","","date {[]} {[]}
+","Date of reporting the trauma.","Date of reporting the trauma.","","","","","","","","","",,,,,"",,,,"ChildReport.severeHeadTrauma.date",1,1,"",""
+"ChildReport.severeHeadTrauma.code","ChildReport.severeHeadTrauma.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""severe-head-trauma-during-delivery""/>
+    <display value=""Severe head trauma""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.severeHeadTrauma.code",1,1,"",""
+"ChildReport.severeHeadTrauma.valueBoolean","ChildReport.severeHeadTrauma.valueBoolean","","","",1,1,"","","","boolean {[]} {[]}
+","Indicates whether severe head trauma was identified.","The value indicates whether severe head trauma was identified in the child.","","","","","","","","","",,,,,"",,,,"ChildReport.severeHeadTrauma.valueBoolean",1,1,"",""
+"ChildReport.eyeScreening","ChildReport.eyeScreening","","","",0,*,"","","","https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelObservation {[]} {[]}
+","[BeObservation] Eye screening","Details about the eye screening.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeScreening",0,*,"",""
+"ChildReport.eyeScreening.subject","ChildReport.eyeScreening.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Subject of the observation","The patient or subject to whom the observation applies.","","","","","","","","","",,,,,"",,,,"BeModelObservation.subject",1,1,"",""
+"ChildReport.eyeScreening.code","ChildReport.eyeScreening.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation code","A code that identifies the type of observation being made, such as a clinical measurement or assessment.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.code",1,1,"",""
+"ChildReport.eyeScreening.value[x]","ChildReport.eyeScreening.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Value of the observation","The value of the observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.value[x]",0,1,"",""
+"ChildReport.eyeScreening.effective[x]","ChildReport.eyeScreening.effective[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Effective time or period","The time or period during which the observation was made.","","","","","","","","","",,,,,"",,,,"BeModelObservation.effective[x]",0,1,"",""
+"ChildReport.eyeScreening.status","ChildReport.eyeScreening.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation status","The status of the observation, indicating whether it is preliminary, final, etc.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.status",1,1,"",""
+"ChildReport.eyeScreening.statusReason[x]","ChildReport.eyeScreening.statusReason[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+string {[]} {[]}","Reason for the observation status","The reason for the current status of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.statusReason[x]",0,1,"",""
+"ChildReport.eyeScreening.performer","ChildReport.eyeScreening.performer","","","",0,*,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization]]}
+","Performer of the observation","The individual or organization that performed the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.performer",0,*,"",""
+"ChildReport.eyeScreening.component","ChildReport.eyeScreening.component","","","",0,*,"","","","Base {[]} {[]}
+","Component observations","Components of the observation, which can include additional measurements or assessments related to the main observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component",0,*,"",""
+"ChildReport.eyeScreening.component.code","ChildReport.eyeScreening.component.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Component code","A code that identifies the component of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.code",1,1,"",""
+"ChildReport.eyeScreening.component.value[x]","ChildReport.eyeScreening.component.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Component value","The value of the component observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.value[x]",0,1,"",""
+"ChildReport.eyeScreening.interpretation","ChildReport.eyeScreening.interpretation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Interpretation of the observation","An interpretation of the observation, such as normal, abnormal, etc.","","","","","","","","","",,,,,"",,,,"BeModelObservation.interpretation",0,1,"",""
+"ChildReport.eyeScreening.note","ChildReport.eyeScreening.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Notes or comments about the observation","Additional notes or comments related to the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.note",0,*,"",""
+"ChildReport.eyeScreening.subject","ChildReport.eyeScreening.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeScreening.subject",1,1,"",""
+"ChildReport.eyeScreening.date","ChildReport.eyeScreening.date","","","",1,1,"","","","date {[]} {[]}
+","Date of eye screening","The date of eye screening.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeScreening.date",1,1,"",""
+"ChildReport.eyeScreening.code","ChildReport.eyeScreening.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""eye-screening""/>
+    <display value=""Eye screening findings""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.eyeScreening.code",1,1,"",""
+"ChildReport.eyeScreening.valueCodeableConcept","ChildReport.eyeScreening.valueCodeableConcept","","","",1,1,"","","","code {[]} {[]}
+","Result of eye screening","Result of eye screening.","","","","","","","","","",,"required","","http://example.org/fhir/ValueSet/eye-screening-results","",,,,"ChildReport.eyeScreening.valueCodeableConcept",1,1,"",""
+"ChildReport.eyeScreening.ageRange","ChildReport.eyeScreening.ageRange","","","",1,1,"","","","code {[]} {[]}
+","Age of eye screening","Age of eye screening.","","","","","","","","","",,"required","","http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range","",,,,"ChildReport.eyeScreening.ageRange",1,1,"",""
+"ChildReport.eyeResults","ChildReport.eyeResults","","","",0,*,"","","","Base {[]} {[]}
+","Eye","Details about the eyes.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults",0,*,"",""
+"ChildReport.eyeResults.observationDate","ChildReport.eyeResults.observationDate","","","",1,1,"","","","date {[]} {[]}
+","[BeObservation] Date of Inspection pupil abnormal","Details about the inspection of the pupil.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.observationDate",1,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal","ChildReport.eyeResults.inspectionPupilAbnormal","","","",0,1,"","","","https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelObservation {[]} {[]}
+","Inspection pupil abnormal","Details about the inspection of the pupil.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.inspectionPupilAbnormal",0,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.subject","ChildReport.eyeResults.inspectionPupilAbnormal.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Subject of the observation","The patient or subject to whom the observation applies.","","","","","","","","","",,,,,"",,,,"BeModelObservation.subject",1,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.code","ChildReport.eyeResults.inspectionPupilAbnormal.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation code","A code that identifies the type of observation being made, such as a clinical measurement or assessment.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.code",1,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.value[x]","ChildReport.eyeResults.inspectionPupilAbnormal.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Value of the observation","The value of the observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.value[x]",0,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.effective[x]","ChildReport.eyeResults.inspectionPupilAbnormal.effective[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Effective time or period","The time or period during which the observation was made.","","","","","","","","","",,,,,"",,,,"BeModelObservation.effective[x]",0,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.status","ChildReport.eyeResults.inspectionPupilAbnormal.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation status","The status of the observation, indicating whether it is preliminary, final, etc.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.status",1,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.statusReason[x]","ChildReport.eyeResults.inspectionPupilAbnormal.statusReason[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+string {[]} {[]}","Reason for the observation status","The reason for the current status of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.statusReason[x]",0,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.performer","ChildReport.eyeResults.inspectionPupilAbnormal.performer","","","",0,*,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization]]}
+","Performer of the observation","The individual or organization that performed the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.performer",0,*,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.component","ChildReport.eyeResults.inspectionPupilAbnormal.component","","","",0,*,"","","","Base {[]} {[]}
+","Component observations","Components of the observation, which can include additional measurements or assessments related to the main observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component",0,*,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.component.code","ChildReport.eyeResults.inspectionPupilAbnormal.component.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Component code","A code that identifies the component of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.code",1,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.component.value[x]","ChildReport.eyeResults.inspectionPupilAbnormal.component.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Component value","The value of the component observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.value[x]",0,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.interpretation","ChildReport.eyeResults.inspectionPupilAbnormal.interpretation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Interpretation of the observation","An interpretation of the observation, such as normal, abnormal, etc.","","","","","","","","","",,,,,"",,,,"BeModelObservation.interpretation",0,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.note","ChildReport.eyeResults.inspectionPupilAbnormal.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Notes or comments about the observation","Additional notes or comments related to the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.note",0,*,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.subject","ChildReport.eyeResults.inspectionPupilAbnormal.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.inspectionPupilAbnormal.subject",1,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.date","ChildReport.eyeResults.inspectionPupilAbnormal.date","","","",1,1,"","","","date {[]} {[]}
+","Date of eye screening","The date of eye screening.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.inspectionPupilAbnormal.date",1,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.code","ChildReport.eyeResults.inspectionPupilAbnormal.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Inspection pupil abnormal","Inspection pupil abnormal","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""inspection-pupil-normal""/>
+    <display value=""Inspection pupil abnormal""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.eyeResults.inspectionPupilAbnormal.code",1,1,"",""
+"ChildReport.eyeResults.inspectionPupilAbnormal.valueBoolean","ChildReport.eyeResults.inspectionPupilAbnormal.valueBoolean","","","",1,1,"","","","boolean {[]} {[]}
+","Inspection pupil abnormal","Inspection pupil abnormal","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.inspectionPupilAbnormal.valueBoolean",1,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition","ChildReport.eyeResults.eyeMovementAndPosition","","","",0,*,"","","","https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelObservation {[]} {[]}
+","[BeObservation] Findings about the eye movement and position","[BeObservation] Findings about the eye movement and position","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.eyeMovementAndPosition",0,*,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.subject","ChildReport.eyeResults.eyeMovementAndPosition.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Subject of the observation","The patient or subject to whom the observation applies.","","","","","","","","","",,,,,"",,,,"BeModelObservation.subject",1,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.code","ChildReport.eyeResults.eyeMovementAndPosition.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation code","A code that identifies the type of observation being made, such as a clinical measurement or assessment.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.code",1,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.value[x]","ChildReport.eyeResults.eyeMovementAndPosition.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Value of the observation","The value of the observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.value[x]",0,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.effective[x]","ChildReport.eyeResults.eyeMovementAndPosition.effective[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Effective time or period","The time or period during which the observation was made.","","","","","","","","","",,,,,"",,,,"BeModelObservation.effective[x]",0,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.status","ChildReport.eyeResults.eyeMovementAndPosition.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation status","The status of the observation, indicating whether it is preliminary, final, etc.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.status",1,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.statusReason[x]","ChildReport.eyeResults.eyeMovementAndPosition.statusReason[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+string {[]} {[]}","Reason for the observation status","The reason for the current status of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.statusReason[x]",0,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.performer","ChildReport.eyeResults.eyeMovementAndPosition.performer","","","",0,*,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization]]}
+","Performer of the observation","The individual or organization that performed the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.performer",0,*,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.component","ChildReport.eyeResults.eyeMovementAndPosition.component","","","",0,*,"","","","Base {[]} {[]}
+","Component observations","Components of the observation, which can include additional measurements or assessments related to the main observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component",0,*,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.component.code","ChildReport.eyeResults.eyeMovementAndPosition.component.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Component code","A code that identifies the component of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.code",1,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.component.value[x]","ChildReport.eyeResults.eyeMovementAndPosition.component.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Component value","The value of the component observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.value[x]",0,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.interpretation","ChildReport.eyeResults.eyeMovementAndPosition.interpretation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Interpretation of the observation","An interpretation of the observation, such as normal, abnormal, etc.","","","","","","","","","",,,,,"",,,,"BeModelObservation.interpretation",0,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.note","ChildReport.eyeResults.eyeMovementAndPosition.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Notes or comments about the observation","Additional notes or comments related to the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.note",0,*,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.subject","ChildReport.eyeResults.eyeMovementAndPosition.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.eyeMovementAndPosition.subject",1,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.date","ChildReport.eyeResults.eyeMovementAndPosition.date","","","",1,1,"","","","date {[]} {[]}
+","Date of eye screening","The date of eye screening.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.eyeMovementAndPosition.date",1,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.code","ChildReport.eyeResults.eyeMovementAndPosition.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""eye-movement-and-position""/>
+    <display value=""Eye movement and position""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.eyeResults.eyeMovementAndPosition.code",1,1,"",""
+"ChildReport.eyeResults.eyeMovementAndPosition.valueCode","ChildReport.eyeResults.eyeMovementAndPosition.valueCode","","","",1,1,"","","","code {[]} {[]}
+","Result of testing eye movement and position","Result of testing eye movement and position.","","","","","","","","","",,"required","","http://example.org/fhir/ValueSet/eye-movement-and-position","",,,,"ChildReport.eyeResults.eyeMovementAndPosition.valueCode",1,1,"",""
+"ChildReport.eyeResults.eyeRemarks","ChildReport.eyeResults.eyeRemarks","","","",0,1,"","","","https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelObservation {[]} {[]}
+","[BeObservation] Eye remarks","Free text remarks about the eyes.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.eyeRemarks",0,1,"",""
+"ChildReport.eyeResults.eyeRemarks.subject","ChildReport.eyeResults.eyeRemarks.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Subject of the observation","The patient or subject to whom the observation applies.","","","","","","","","","",,,,,"",,,,"BeModelObservation.subject",1,1,"",""
+"ChildReport.eyeResults.eyeRemarks.code","ChildReport.eyeResults.eyeRemarks.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation code","A code that identifies the type of observation being made, such as a clinical measurement or assessment.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.code",1,1,"",""
+"ChildReport.eyeResults.eyeRemarks.value[x]","ChildReport.eyeResults.eyeRemarks.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Value of the observation","The value of the observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.value[x]",0,1,"",""
+"ChildReport.eyeResults.eyeRemarks.effective[x]","ChildReport.eyeResults.eyeRemarks.effective[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Effective time or period","The time or period during which the observation was made.","","","","","","","","","",,,,,"",,,,"BeModelObservation.effective[x]",0,1,"",""
+"ChildReport.eyeResults.eyeRemarks.status","ChildReport.eyeResults.eyeRemarks.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation status","The status of the observation, indicating whether it is preliminary, final, etc.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.status",1,1,"",""
+"ChildReport.eyeResults.eyeRemarks.statusReason[x]","ChildReport.eyeResults.eyeRemarks.statusReason[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+string {[]} {[]}","Reason for the observation status","The reason for the current status of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.statusReason[x]",0,1,"",""
+"ChildReport.eyeResults.eyeRemarks.performer","ChildReport.eyeResults.eyeRemarks.performer","","","",0,*,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization]]}
+","Performer of the observation","The individual or organization that performed the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.performer",0,*,"",""
+"ChildReport.eyeResults.eyeRemarks.component","ChildReport.eyeResults.eyeRemarks.component","","","",0,*,"","","","Base {[]} {[]}
+","Component observations","Components of the observation, which can include additional measurements or assessments related to the main observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component",0,*,"",""
+"ChildReport.eyeResults.eyeRemarks.component.code","ChildReport.eyeResults.eyeRemarks.component.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Component code","A code that identifies the component of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.code",1,1,"",""
+"ChildReport.eyeResults.eyeRemarks.component.value[x]","ChildReport.eyeResults.eyeRemarks.component.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Component value","The value of the component observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.value[x]",0,1,"",""
+"ChildReport.eyeResults.eyeRemarks.interpretation","ChildReport.eyeResults.eyeRemarks.interpretation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Interpretation of the observation","An interpretation of the observation, such as normal, abnormal, etc.","","","","","","","","","",,,,,"",,,,"BeModelObservation.interpretation",0,1,"",""
+"ChildReport.eyeResults.eyeRemarks.note","ChildReport.eyeResults.eyeRemarks.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Notes or comments about the observation","Additional notes or comments related to the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.note",0,*,"",""
+"ChildReport.eyeResults.eyeRemarks.subject","ChildReport.eyeResults.eyeRemarks.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.eyeRemarks.subject",1,1,"",""
+"ChildReport.eyeResults.eyeRemarks.date","ChildReport.eyeResults.eyeRemarks.date","","","",1,1,"","","","date {[]} {[]}
+","Date of eye screening","The date of eye screening.","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.eyeRemarks.date",1,1,"",""
+"ChildReport.eyeResults.eyeRemarks.code","ChildReport.eyeResults.eyeRemarks.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Eye movement and position","Eye movement and position","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""eye-movement-and-position""/>
+    <display value=""Eye movement and position""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.eyeResults.eyeRemarks.code",1,1,"",""
+"ChildReport.eyeResults.eyeRemarks.valueString","ChildReport.eyeResults.eyeRemarks.valueString","","","",1,1,"","","","string {[]} {[]}
+","Result of testing eye movement and position","Result of testing eye movement and position","","","","","","","","","",,,,,"",,,,"ChildReport.eyeResults.eyeRemarks.valueString",1,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist","ChildReport.inTreatmentWithOphthalmologist","","","",0,*,"","","","https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelObservation {[]} {[]}
+","[BeObservation] In treatment with ophthalmologist","Details about treatment with an ophthalmologist.","","","","","","","","","",,,,,"",,,,"ChildReport.inTreatmentWithOphthalmologist",0,*,"",""
+"ChildReport.inTreatmentWithOphthalmologist.subject","ChildReport.inTreatmentWithOphthalmologist.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient]]}
+","Subject of the observation","The patient or subject to whom the observation applies.","","","","","","","","","",,,,,"",,,,"BeModelObservation.subject",1,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.code","ChildReport.inTreatmentWithOphthalmologist.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation code","A code that identifies the type of observation being made, such as a clinical measurement or assessment.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.code",1,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.value[x]","ChildReport.inTreatmentWithOphthalmologist.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Value of the observation","The value of the observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.value[x]",0,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.effective[x]","ChildReport.inTreatmentWithOphthalmologist.effective[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Effective time or period","The time or period during which the observation was made.","","","","","","","","","",,,,,"",,,,"BeModelObservation.effective[x]",0,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.status","ChildReport.inTreatmentWithOphthalmologist.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation status","The status of the observation, indicating whether it is preliminary, final, etc.","","","","","","","","","",,"required","","","",,,,"BeModelObservation.status",1,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.statusReason[x]","ChildReport.inTreatmentWithOphthalmologist.statusReason[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+string {[]} {[]}","Reason for the observation status","The reason for the current status of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.statusReason[x]",0,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.performer","ChildReport.inTreatmentWithOphthalmologist.performer","","","",0,*,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization]]}
+","Performer of the observation","The individual or organization that performed the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.performer",0,*,"",""
+"ChildReport.inTreatmentWithOphthalmologist.component","ChildReport.inTreatmentWithOphthalmologist.component","","","",0,*,"","","","Base {[]} {[]}
+","Component observations","Components of the observation, which can include additional measurements or assessments related to the main observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component",0,*,"",""
+"ChildReport.inTreatmentWithOphthalmologist.component.code","ChildReport.inTreatmentWithOphthalmologist.component.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Component code","A code that identifies the component of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.code",1,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.component.value[x]","ChildReport.inTreatmentWithOphthalmologist.component.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Component value","The value of the component observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.value[x]",0,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.interpretation","ChildReport.inTreatmentWithOphthalmologist.interpretation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Interpretation of the observation","An interpretation of the observation, such as normal, abnormal, etc.","","","","","","","","","",,,,,"",,,,"BeModelObservation.interpretation",0,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.note","ChildReport.inTreatmentWithOphthalmologist.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Notes or comments about the observation","Additional notes or comments related to the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.note",0,*,"",""
+"ChildReport.inTreatmentWithOphthalmologist.date","ChildReport.inTreatmentWithOphthalmologist.date","","","",1,1,"","","","date {[]} {[]}
+","Date of remarks about treatment with ophthalmologist.","Date of remarks about treatment with ophthalmologist.","","","","","","","","","",,,,,"",,,,"ChildReport.inTreatmentWithOphthalmologist.date",1,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.code","ChildReport.inTreatmentWithOphthalmologist.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""in-treatment-with-ophtalmologist""/>
+    <display value=""In treatment with ophthalmologist""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"ChildReport.inTreatmentWithOphthalmologist.code",1,1,"",""
+"ChildReport.inTreatmentWithOphthalmologist.valueCode","ChildReport.inTreatmentWithOphthalmologist.valueCode","","","",1,1,"","","","code {[]} {[]}
+","Treatment with ophthalmologist","Treatment with ophthalmologist.","","","","","","","","","",,"required","","http://example.org/fhir/ValueSet/ophthalmologist-treatments","",,,,"ChildReport.inTreatmentWithOphthalmologist.valueCode",1,1,"",""

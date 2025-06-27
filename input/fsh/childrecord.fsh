@@ -79,7 +79,7 @@ Description: "A logical model representing child report data elements."
 
 * pregnancyDetails 0..1 Base "Pregnancy details" "Details about the pregnancy."
 //  * durationOfPregnancy 0..1 integer "Duration of pregnancy" "Total length of pregnancy in weeks."
-  * durationOfPregnancy 0..1 Base "The duration of pregnancy in weeks, as an observation."
+  * durationOfPregnancy 0..1 Base "[BeObservation] The duration of pregnancy in weeks, as an observation."
     * subject 1..1 Reference "subject" // Child? or mother? // TO_DO: To validate with medical experts
     * subject ^short = "Mother"
 // TO_DO: To fill this information, we will require the link between child and mother, or even link between child - pregnancy - mother     
@@ -90,7 +90,7 @@ Description: "A logical model representing child report data elements."
     * valueInteger 1..1 integer "The duration of pregnancy in weeks"
 
 
-  * pregnancyCMVInfection 0..1 Base "Pregnancy CMV infection" "Indicates whether CMV infection occurred during pregnancy."
+  * pregnancyCMVInfection 0..1 Base "[BeObservation] Pregnancy CMV infection" "Indicates whether CMV infection occurred during pregnancy."
     * subject 1..1 Reference "subject" // Child? or mother? // TO_DO: To validate with medical experts
     * subject ^short = "Mother"
     * code 1..1 CodeableConcept "CMV infection during pregnancy"
@@ -98,7 +98,7 @@ Description: "A logical model representing child report data elements."
 // TO_DO: To fill this information, we will require the link between child and mother, or even link between child - pregnancy - mother     
     * valueBoolean 1..1 boolean "Indicates whether CMV infection occurred during pregnancy." "The value indicates whether the mother had a CMV infection during pregnancy."
 
-  * bacterialMeningitis 0..1 Base "Bacterial meningitis" "Indicates whether bacterial meningitis occurred during pregnancy."
+  * bacterialMeningitis 0..1 Base "[BeObservation] Bacterial meningitis" "Indicates whether bacterial meningitis occurred during pregnancy."
     * code 1..1 CodeableConcept "Code"
     * code = #bacterial-meningitis-during-pregnancy "bacterial meningitis during pregnancy"
     * subject 1..1 Reference "Mother" "The mother of the child is the related subject in this report."
@@ -107,7 +107,7 @@ Description: "A logical model representing child report data elements."
     * valueBoolean 1..1 boolean "Indicates whether bacterial meningitis occurred during pregnancy." "The value indicates whether the mother had a bacterial meningitis during pregnancy."
 
 
-* neonatalHearingScreening 0..* Base "Neonatal hearing screening" "Details about the neonatal hearing screening."
+* neonatalHearingScreening 0..* Base "[BeObservation] Neonatal hearing screening" "Details about the neonatal hearing screening."
   * code 1..1 CodeableConcept "Code"
   * code = #neonatal-hearing-screening "Neonatal hearing screening"
   * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
@@ -126,7 +126,7 @@ Description: "A logical model representing child report data elements."
     * valueCode from VSNeonatalHearingScreeningResults 
 
 
-* refusalOfHearingTest 0..1 BeModelPatientWill "Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."
+* refusalOfHearingTest 0..1 BeModelPatientWill "[BeObservation] Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."
   * representative.role = #guardian //??
   * recordedDate 
     * ^short = "Date of neonatal hearing screening"
@@ -137,7 +137,7 @@ Description: "A logical model representing child report data elements."
 // TO_DO: add relationship reference (Mother) in BePatientWill - missing.
 
 
-* severeHeadTrauma 0..1 Base "Severe head trauma" "Indicates whether severe head trauma was identified."
+* severeHeadTrauma 0..1 Base "[BeProblem] Severe head trauma" "Indicates whether severe head trauma was identified."
   * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
   * date 1..1 date "Date of reporting the trauma."
   * code 1..1 CodeableConcept "Code"
@@ -145,7 +145,7 @@ Description: "A logical model representing child report data elements."
   * valueBoolean 1..1 boolean "Indicates whether severe head trauma was identified." "The value indicates whether severe head trauma was identified in the child."
 
 
-* eyeScreening 0..* BeModelObservation "Eye screening" "Details about the eye screening."
+* eyeScreening 0..* BeModelObservation "[BeObservation] Eye screening" "Details about the eye screening."
   * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
   * date 1..1 date "Date of eye screening" "The date of eye screening."
   * code 1..1 CodeableConcept "Code"
@@ -157,7 +157,7 @@ Description: "A logical model representing child report data elements."
 
 
 * eyeResults 0..* Base "Eye" "Details about the eyes."
-  * observationDate 1..1 date "Date of Inspection pupil abnormal" "Details about the inspection of the pupil."
+  * observationDate 1..1 date "[BeObservation] Date of Inspection pupil abnormal" "Details about the inspection of the pupil."
   * inspectionPupilAbnormal 0..1 BeModelObservation "Inspection pupil abnormal" "Details about the inspection of the pupil."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye screening" "The date of eye screening."
@@ -165,7 +165,7 @@ Description: "A logical model representing child report data elements."
     * code = #inspection-pupil-normal "Inspection pupil abnormal"
     * valueBoolean 1..1 boolean "Inspection pupil abnormal"
     
-  * eyeMovementAndPosition 0..* BeModelObservation "Findings about the eye movement and position"
+  * eyeMovementAndPosition 0..* BeModelObservation "[BeObservation] Findings about the eye movement and position"
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye screening" "The date of eye screening."
     * code 1..1 CodeableConcept "Code"
@@ -173,7 +173,7 @@ Description: "A logical model representing child report data elements."
     * valueCode 1..1 code "Result of testing eye movement and position" "Result of testing eye movement and position."
     * valueCode from VSEyeMovementAndPosition
 
-  * eyeRemarks 0..1 BeModelObservation "Eye remarks" "Free text remarks about the eyes."
+  * eyeRemarks 0..1 BeModelObservation "[BeObservation] Eye remarks" "Free text remarks about the eyes."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye screening" "The date of eye screening."
     * code 1..1 CodeableConcept "Eye movement and position"
@@ -189,7 +189,7 @@ Description: "A logical model representing child report data elements."
 
 //* eyeRemarks 0..1 string  "Eye remarks" "Free text remarks about the eyes."
 
-* inTreatmentWithOphthalmologist 0..* BeModelObservation "In treatment with ophthalmologist" "Details about treatment with an ophthalmologist."
+* inTreatmentWithOphthalmologist 0..* BeModelObservation "[BeObservation] In treatment with ophthalmologist" "Details about treatment with an ophthalmologist."
   * date 1..1 date "Date of remarks about treatment with ophthalmologist." 
   * code 1..1 CodeableConcept "Code"
   * code = #in-treatment-with-ophtalmologist "In treatment with ophthalmologist" 

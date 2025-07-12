@@ -2,8 +2,8 @@ Alias: $sct = http://snomed.info/sct
 
 Logical: BeModelRelatedPerson
 Parent: Base
-Title: "Document model"
-Description: "EHDS refined base model for common document data elements, including the common header. Data relevant to document type and its content for administrative and searching purposes."
+Title: "Related Person"
+Description: "Related Person model."
 Characteristics: #can-be-target
 
 * subject 1..1 BeModelPatient "Subject" """Patient/subject information"""
@@ -12,10 +12,10 @@ Characteristics: #can-be-target
 
 
 
-Logical: BeDocument
+Logical: BeModelDocument
 Parent: Base
 Title: "Document model"
-Description: "EHDS refined base model for common document data elements, including the common header. Data relevant to document type and its content for administrative and searching purposes."
+Description: "Base model for documents."
 Characteristics: #can-be-target
 
 * subject 1..1 BeModelPatient "Subject" """Patient/subject information"""
@@ -37,10 +37,12 @@ Description: "A model for observations, which are measurements or assessments ma
 * subject 1..1 Reference(BePatient) "Subject of the observation" """The patient or subject to whom the observation applies."""
 * code 1..1 CodeableConcept "Observation code" """A code that identifies the type of observation being made, such as a clinical measurement or assessment."""
   * ^binding.strength = #required
+  * ^binding.description = "The code that identifies the type of observation, such as a clinical measurement or assessment."
 * value[x] 0..1 Quantity or CodeableConcept or string or boolean "Value of the observation" """The value of the observation, which can be a quantity, a coded value, or a string."""
 * effective[x] 0..1 dateTime or Period "Effective time or period" """The time or period during which the observation was made."""
 * status 1..1 CodeableConcept "Observation status" """The status of the observation, indicating whether it is preliminary, final, etc."""
   * ^binding.strength = #required
+  * ^binding.description = "The status of the observation, such as preliminary, final, amended, etc."
 * statusReason[x] 0..1 CodeableConcept or string "Reason for the observation status" """The reason for the current status of the observation."""
 * performer 0..* Reference(BePractitioner or BeOrganization) "Performer of the observation" """The individual or organization that performed the observation."""
 * component 0..* Base "Component observations" """Components of the observation, which can include additional measurements or assessments related to the main observation."""
@@ -54,8 +56,8 @@ Description: "A model for observations, which are measurements or assessments ma
 
 
 
-Logical: ChildReport
-Parent: BeDocument
+Logical: BeModelChildReport
+Parent: BeModelDocument
 Title: "Child Report Logical Model"
 Description: "A logical model representing child report data elements."
 
@@ -126,11 +128,12 @@ Description: "A logical model representing child report data elements."
     * valueCode from VSNeonatalHearingScreeningResults 
 
 
-* refusalOfHearingTest 0..1 BeModelPatientWill "[BeObservation] Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."
-  * representative.role = #guardian //??
-  * recordedDate 
+* refusalOfHearingTest 0..1 BeModelPatientWill "Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."
+  * representative.role ^patternCodeableConcept = #parent //?? = #guardian //??
+  * recordedDate 1..1
     * ^short = "Date of neonatal hearing screening"
   * patient 
+    * ^min = 1
     * ^short = "Child that the report is about" 
   * code  
 // TO_DO: check compatibility and valuesets of PatientWill with this use case
@@ -177,7 +180,7 @@ Description: "A logical model representing child report data elements."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye screening" "The date of eye screening."
     * code 1..1 CodeableConcept "Eye movement and position"
-    * code = #eye-movement-and-position "Eye movement and position" 
+    * code = #eye-remarks "Eye movement and position" 
     * valueString 1..1 string "Result of testing eye movement and position" 
 
 
@@ -185,7 +188,6 @@ Description: "A logical model representing child report data elements."
 //  * result 1..1 boolean "Inspection pupil abnormal" "Indicates whether inspection of the pupil was abnormal."
 //  * date 1..1 date "Inspection pupil abnormal" "Indicates whether inspection of the pupil was abnormal."
 //  * note 1..1 string "Inspection pupil abnormal" "Indicates whether inspection of the pupil was abnormal."
-
 
 //* eyeRemarks 0..1 string  "Eye remarks" "Free text remarks about the eyes."
 
@@ -208,22 +210,22 @@ Description: "A logical model representing child report data elements."
 
 ValueSet: VSEyeScreeningResults
 Id: eye-screening-results
-* ^url = "http://example.org/fhir/ValueSet/eye-screening-results"
+//* ^url = "http://example.org/fhir/ValueSet/eye-screening-results"
 * include codes from system CSEyeScreeningResults
 
 CodeSystem: CSEyeScreeningResults
-* ^url = "http://example.org/fhir/CodeSystem/eye-screening-results"
+//* ^url = "http://example.org/fhir/CodeSystem/eye-screening-results"
 * #refer
 * #pass
 * #measurement-not-possible
 * #child-not-testable
 
 ValueSet: VSNeonatalHearingScreeningResults
-* ^url = "http://example.org/fhir/ValueSet/neonatal-hearing-screening-results"
+//* ^url = "http://example.org/fhir/ValueSet/neonatal-hearing-screening-results"
 * include codes from system CSNeonatalHearingScreeningResults
 
 CodeSystem: CSNeonatalHearingScreeningResults
-* ^url = "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results"
+//* ^url = "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results"
 * #pass
 * #refer
 * #aborted-test
@@ -231,21 +233,21 @@ CodeSystem: CSNeonatalHearingScreeningResults
 
 
 ValueSet: VSEyeMovementAndPosition
-* ^url = "http://example.org/fhir/ValueSet/eye-movement-and-position"
+//* ^url = "http://example.org/fhir/ValueSet/eye-movement-and-position"
 * include codes from system CSEyeMovementAndPosition
 
 CodeSystem: CSEyeMovementAndPosition
-* ^url = "http://example.org/fhir/CodeSystem/eye-movement-and-position"
+//* ^url = "http://example.org/fhir/CodeSystem/eye-movement-and-position"
 * #intermittent-strabismus
 * #continuous-strabismus
 * #nystagmus
 
 ValueSet: VSOphthalmologistTreatments
-* ^url = "http://example.org/fhir/ValueSet/ophthalmologist-treatments"
+//* ^url = "http://example.org/fhir/ValueSet/ophthalmologist-treatments"
 * include codes from system CSOphthalmologistTreatments
 
 CodeSystem: CSOphthalmologistTreatments
-* ^url = "http://example.org/fhir/CodeSystem/ophthalmologist-treatments"
+//* ^url = "http://example.org/fhir/CodeSystem/ophthalmologist-treatments"
 * #glasses
 * #occlusion
 * #operation
@@ -254,11 +256,11 @@ CodeSystem: CSOphthalmologistTreatments
 
 
 CodeSystem: CSEyeScreeningAgeRange
-* ^url = "http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range"
+//* ^url = "http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range"
 * #0-2 "From birth to 2 years"
 * #2-3 "Between 2 and 3 years"
 
 
 ValueSet: VSEyeScreeningAgeRange
-* ^url = "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range"
+//* ^url = "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range"
 * include codes from system CSEyeMovementAndPosition

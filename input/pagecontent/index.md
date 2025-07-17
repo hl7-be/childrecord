@@ -69,7 +69,7 @@ Implementers must ensure compliance with the licensing terms of all referenced t
 
 This IG builds upon:
 
-{% include dependency-table-nontech.xhtml %}
+{% include dependency-table-short.xhtml %}
 
 Primary dependencies include:
 

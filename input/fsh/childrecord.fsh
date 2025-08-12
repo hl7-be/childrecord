@@ -111,14 +111,16 @@ Description: "A logical model representing child report data elements."
     * valueCode from VSNeonatalHearingScreeningResults 
 
 
-* refusalOfHearingTest 0..1 BeModelPatientWill "Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."
-  * representative.role ^patternCodeableConcept = #parent //?? = #guardian //??
-  * recordedDate 1..1
-    * ^short = "Date of neonatal hearing screening"
-  * patient 
-    * ^min = 1
-    * ^short = "Child that the report is about" 
-  * code  
+* refusalOfHearingTest 0..1 BackboneElement "Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."
+  * representative 1..1 BeModelRelatedPerson "Representative" "The representative of the child, such as a parent or guardian, who refused the hearing test."
+    * role 1..1 CodeableConcept "Role of the representative" "The role of the representative in the refusal of the hearing test."
+//      * ^patternCodeableConcept = #parent //?? = #guardian //??
+  * recordedDate 1..1 date "Date of refusal" "The date when the refusal was recorded."
+  * patient 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
+    // * ^min = 1
+    // * ^short = "Child that the report is about" 
+  * code 1..1 CodeableConcept "Code"
+  * code = #refusal-of-hearing-test "Refusal of hearing test"   
 // TO_DO: check compatibility and valuesets of PatientWill with this use case
 // TO_DO: add relationship reference (Mother) in BePatientWill - missing.
 
@@ -131,7 +133,7 @@ Description: "A logical model representing child report data elements."
   * valueBoolean 1..1 boolean "Indicates whether severe head trauma was identified." "The value indicates whether severe head trauma was identified in the child."
 
 
-* eyeScreening 0..* BeModelObservation "[BeObservation] Eye screening" "Details about the eye screening."
+* eyeScreening 0..* BackboneElement "[BeObservation] Eye screening" "Details about the eye screening."
   * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
   * date 1..1 date "Date of eye screening" "The date of eye screening."
   * code 1..1 CodeableConcept "Code"
@@ -144,14 +146,14 @@ Description: "A logical model representing child report data elements."
 
 * eyeResults 0..* Base "Eye" "Details about the eyes."
   * observationDate 1..1 date "[BeObservation] Date of Inspection pupil abnormal" "Details about the inspection of the pupil."
-  * inspectionPupilAbnormal 0..1 BeModelObservation "Inspection pupil abnormal" "Details about the inspection of the pupil."
+  * inspectionPupilAbnormal 0..1 BackboneElement "Inspection pupil abnormal" "Details about the inspection of the pupil."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye screening" "The date of eye screening."
     * code 1..1 CodeableConcept "Inspection pupil abnormal"
     * code = #inspection-pupil-normal "Inspection pupil abnormal"
     * valueBoolean 1..1 boolean "Inspection pupil abnormal"
     
-  * eyeMovementAndPosition 0..* BeModelObservation "[BeObservation] Findings about the eye movement and position"
+  * eyeMovementAndPosition 0..* BackboneElement "[BeObservation] Findings about the eye movement and position"
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye screening" "The date of eye screening."
     * code 1..1 CodeableConcept "Code"
@@ -159,7 +161,7 @@ Description: "A logical model representing child report data elements."
     * valueCode 1..1 code "Result of testing eye movement and position" "Result of testing eye movement and position."
     * valueCode from VSEyeMovementAndPosition
 
-  * eyeRemarks 0..1 BeModelObservation "[BeObservation] Eye remarks" "Free text remarks about the eyes."
+  * eyeRemarks 0..1 BackboneElement "[BeObservation] Eye remarks" "Free text remarks about the eyes."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye screening" "The date of eye screening."
     * code 1..1 CodeableConcept "Eye movement and position"
@@ -174,7 +176,7 @@ Description: "A logical model representing child report data elements."
 
 //* eyeRemarks 0..1 string  "Eye remarks" "Free text remarks about the eyes."
 
-* inTreatmentWithOphthalmologist 0..* BeModelObservation "[BeObservation] In treatment with ophthalmologist" "Details about treatment with an ophthalmologist."
+* inTreatmentWithOphthalmologist 0..* BackboneElement "[BeObservation] In treatment with ophthalmologist" "Details about treatment with an ophthalmologist."
   * date 1..1 date "Date of remarks about treatment with ophthalmologist." 
   * code 1..1 CodeableConcept "Code"
   * code = #in-treatment-with-ophtalmologist "In treatment with ophthalmologist" 

@@ -186,12 +186,12 @@ Description: "A logical model representing child report data elements."
 
 
 
-ValueSet: VSEyeScreeningResults
+ValueSet: VSEyeScreeningOutcomes
 Id: eye-screening-results
 * ^url = "http://example.org/fhir/ValueSet/eye-screening-results"
 * include codes from system CSEyeScreeningResults
 
-CodeSystem: CSEyeScreeningResults
+CodeSystem: CSEyeScreeningOutcomes
 * ^url = "http://example.org/fhir/CodeSystem/eye-screening-results"
 * #refer
 * #pass

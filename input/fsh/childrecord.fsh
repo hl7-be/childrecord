@@ -133,40 +133,46 @@ Description: "A logical model representing child report data elements."
   * valueBoolean 1..1 boolean "Indicates whether severe head trauma was identified." "The value indicates whether severe head trauma was identified in the child."
 
 
-* eyeScreening 0..* BackboneElement "[BeObservation] Eye screening" "Details about the eye screening."
-  * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-  * date 1..1 date "Date of eye screening" "The date of eye screening."
-  * code 1..1 CodeableConcept "Code"
-  * code = #eye-screening "Eye screening findings"
-  * valueCodeableConcept 1..1 code "Result of eye screening" "Result of eye screening."
-  * valueCodeableConcept from VSEyeScreeningResults
-  * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
-  * ageRange from VSEyeScreeningAgeRange
-
-
-* eyeResults 0..* Base "Eye" "Details about the eyes."
-  * observationDate 1..1 date "[BeObservation] Date of Inspection pupil abnormal" "Details about the inspection of the pupil."
-  * inspectionPupilAbnormal 0..1 BackboneElement "Inspection pupil abnormal" "Details about the inspection of the pupil."
-    * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-    * date 1..1 date "Date of eye screening" "The date of eye screening."
-    * code 1..1 CodeableConcept "Inspection pupil abnormal"
-    * code = #inspection-pupil-normal "Inspection pupil abnormal"
-    * valueBoolean 1..1 boolean "Inspection pupil abnormal"
-    
-  * eyeMovementAndPosition 0..* BackboneElement "[BeObservation] Findings about the eye movement and position"
+* eyeScreening 0..* BackboneElement "Eye screening" "Details about the eye screening."
+  * eyeScreeningOutcome 0..* BackboneElement "[BeObservation] Eye screening" "Details about the eye screening."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye screening" "The date of eye screening."
     * code 1..1 CodeableConcept "Code"
-    * code = #eye-movement-and-position "Eye movement and position" 
-    * valueCode 1..1 code "Result of testing eye movement and position" "Result of testing eye movement and position."
-    * valueCode from VSEyeMovementAndPosition
+    * code = #eye-screening "Eye screening findings"
+    * valueCodeableConcept 1..1 code "Result of eye screening" "Result of eye screening."
+    * valueCodeableConcept from VSEyeScreeningOutcome
+    * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
+    * ageRange from VSEyeScreeningAgeRange
 
-  * eyeRemarks 0..1 BackboneElement "[BeObservation] Eye remarks" "Free text remarks about the eyes."
-    * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-    * date 1..1 date "Date of eye screening" "The date of eye screening."
-    * code 1..1 CodeableConcept "Eye movement and position"
-    * code = #eye-remarks "Eye movement and position" 
-    * valueString 1..1 string "Result of testing eye movement and position" 
+
+  * eyeResults 0..* Base "Eye" "Details about the eyes."
+    * inspectionPupilAbnormal 0..1 BackboneElement "[BeObservation] Inspection pupil abnormal" "Details about the inspection of the pupil."
+      * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
+      * date 1..1 date "Date of eye screening" "Date of Inspection pupil abnormal."
+      * code 1..1 CodeableConcept "Inspection pupil abnormal"
+      * code = #inspection-pupil-normal "Inspection pupil abnormal"
+      * valueBoolean 1..1 boolean "Inspection pupil abnormal"
+//      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
+//      * ageRange from VSEyeScreeningAgeRange
+      
+    * eyeMovementAndPosition 0..* BackboneElement "[BeObservation] Findings about the eye movement and position"
+//      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
+//      * ageRange from VSEyeScreeningAgeRange
+      * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
+      * date 1..1 date "Date of eye screening" "The date of eye screening."
+      * code 1..1 CodeableConcept "Code"
+      * code = #eye-movement-and-position "Eye movement and position" 
+      * valueCode 1..1 code "Result of testing eye movement and position" "Result of testing eye movement and position."
+      * valueCode from VSEyeMovementAndPosition
+
+    * eyeRemarks 0..1 BackboneElement "[BeObservation] Eye remarks" "Free text remarks about the eyes."
+      * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
+      * date 1..1 date "Date of eye screening" "The date of eye screening."
+      * code 1..1 CodeableConcept "Eye movement and position"
+      * code = #eye-remarks "Eye movement and position" 
+      * valueString 1..1 string "Result of testing eye movement and position" 
+//      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
+//      * ageRange from VSEyeScreeningAgeRange
 
 
 //* inspectionPupilAbnormalDate 0..* date "Date(s) in which inspection of the pupil was abnormal" "Date(s) in which the inspection of the pupil had abnormal findings."
@@ -193,7 +199,7 @@ Description: "A logical model representing child report data elements."
 
 
 
-ValueSet: VSEyeScreeningResults
+ValueSet: VSEyeScreeningOutcome
 Id: eye-screening-results
 //* ^url = "http://example.org/fhir/ValueSet/eye-screening-results"
 * include codes from system CSEyeScreeningResults

@@ -65,30 +65,34 @@ Description: "A logical model representing child report data elements."
 * pregnancyDetails 0..1 Base "Pregnancy details" "Details about the pregnancy."
 //  * durationOfPregnancy 0..1 integer "Duration of pregnancy" "Total length of pregnancy in weeks."
   * durationOfPregnancy 0..1 Base "[BeObservation] The duration of pregnancy in weeks, as an observation."
-    * subject 1..1 Reference "subject" // Child? or mother? // TO_DO: To validate with medical experts
-    * subject ^short = "Mother"
-// TO_DO: To fill this information, we will require the link between child and mother, or even link between child - pregnancy - mother     
-// TO_DO: Add these in the profile as needed:
+    * subject 1..1 Reference "subject" /
+    * subject ^short = "Child"
+    * focus 1..1 Reference "subject"
+    * focus ^short = "Mother"
+
     * code 1..1 CodeableConcept "Length of gestation at birth"
     * code = $sct#412726003 "Length of gestation at birth"
- //   * subject 1..1 Reference "subject" // Child? or mother? // TO_DO: To validate with medical experts
     * valueInteger 1..1 integer "The duration of pregnancy in weeks"
 
 
   * pregnancyCMVInfection 0..1 Base "[BeObservation] Pregnancy CMV infection" "Indicates whether CMV infection occurred during pregnancy."
-    * subject 1..1 Reference "subject" // Child? or mother? // TO_DO: To validate with medical experts
-    * subject ^short = "Mother"
+    * subject 1..1 Reference "subject" /
+    * subject ^short = "Child"
+    * focus 1..1 Reference "subject"
+    * focus ^short = "Mother"
+
     * code 1..1 CodeableConcept "CMV infection during pregnancy"
     * code = #cmv-infection-during-pregnancy "CMV infection during pregnancy"
-// TO_DO: To fill this information, we will require the link between child and mother, or even link between child - pregnancy - mother     
     * valueBoolean 1..1 boolean "Indicates whether CMV infection occurred during pregnancy." "The value indicates whether the mother had a CMV infection during pregnancy."
 
   * bacterialMeningitis 0..1 Base "[BeObservation] Bacterial meningitis" "Indicates whether bacterial meningitis occurred during pregnancy."
     * code 1..1 CodeableConcept "Code"
     * code = #bacterial-meningitis-during-pregnancy "bacterial meningitis during pregnancy"
-    * subject 1..1 Reference "Mother" "The mother of the child is the related subject in this report."
+    * subject 1..1 Reference "subject" /
+    * subject ^short = "Child"
+    * focus 1..1 Reference "subject"
+    * focus ^short = "Mother"
 
-// TO_DO: To fill this information, we will require the link between child and mother, or even link between child - pregnancy - mother
     * valueBoolean 1..1 boolean "Indicates whether bacterial meningitis occurred during pregnancy." "The value indicates whether the mother had a bacterial meningitis during pregnancy."
 
 
@@ -111,18 +115,18 @@ Description: "A logical model representing child report data elements."
     * valueCode from VSNeonatalHearingScreeningResults 
 
 
-* refusalOfHearingTest 0..1 BackboneElement "Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."
-  * representative 1..1 BeModelRelatedPerson "Representative" "The representative of the child, such as a parent or guardian, who refused the hearing test."
-    * role 1..1 CodeableConcept "Role of the representative" "The role of the representative in the refusal of the hearing test."
-//      * ^patternCodeableConcept = #parent //?? = #guardian //??
-  * recordedDate 1..1 date "Date of refusal" "The date when the refusal was recorded."
-  * patient 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-    // * ^min = 1
-    // * ^short = "Child that the report is about" 
-  * code 1..1 CodeableConcept "Code"
-  * code = #refusal-of-hearing-test "Refusal of hearing test"   
-// TO_DO: check compatibility and valuesets of PatientWill with this use case
-// TO_DO: add relationship reference (Mother) in BePatientWill - missing.
+// * refusalOfHearingTest 0..1 BackboneElement "Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."
+//   * representative 1..1 BeModelRelatedPerson "Representative" "The representative of the child, such as a parent or guardian, who refused the hearing test."
+//     * role 1..1 CodeableConcept "Role of the representative" "The role of the representative in the refusal of the hearing test."
+// //      * ^patternCodeableConcept = #parent //?? = #guardian //??
+//   * recordedDate 1..1 date "Date of refusal" "The date when the refusal was recorded."
+//   * patient 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
+//     // * ^min = 1
+//     // * ^short = "Child that the report is about" 
+//   * code 1..1 CodeableConcept "Code"
+//   * code = #refusal-of-hearing-test "Refusal of hearing test"   
+// // TO_DO: check compatibility and valuesets of PatientWill with this use case
+// // TO_DO: add relationship reference (Mother) in BePatientWill - missing.
 
 
 * severeHeadTrauma 0..1 Base "[BeProblem] Severe head trauma" "Indicates whether severe head trauma was identified."

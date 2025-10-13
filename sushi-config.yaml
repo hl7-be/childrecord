@@ -19,7 +19,7 @@ version: 0.1.0
 
 dependencies:
   hl7.fhir.be.core: 2.1.2
-  hl7.fhir.be.patientwill: dev
+#  hl7.fhir.be.patientwill: dev
   hl7.fhir.be.core-clinical: dev
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource

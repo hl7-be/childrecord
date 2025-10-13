@@ -163,7 +163,7 @@ Title: "Child Record Composition"
   * emptyReason MS
   * code 1..
   * code = #1111111
-  * entry only Reference(EyeResults)
+  * entry only Reference(EyeResultsInspectionPupilAbnormal or EyeResultsEyeMovementAndPosition or EyeResultsEyeRemarks)
   * entry ^slicing.discriminator[0].type = #profile
   * entry ^slicing.discriminator[=].path = "resolve()"
   * entry ^slicing.rules = #open
@@ -318,7 +318,7 @@ Parent: BeObservation
 
 * code = $sct#274412005x
 * value[x] only CodeableConcept
-* valueCodeableConcept from VSEyeScreeningResults
+* valueCodeableConcept from VSEyeScreeningOutcome
 * extension contains EffectiveAgeRange named ageRange 1..1
 
 
@@ -342,43 +342,51 @@ Context: Observation
 
 
 
-Profile: EyeResults
+Profile: EyeResultsInspectionPupilAbnormal
 Parent: BeObservation
+Title: "Inspection of pupil abnormal"
+Description: "Observation of pupil abnormality."
 
-* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.ordered = false   // can be omitted, since false is the default
-* component ^slicing.description = "Slice based on the component.code pattern"
-
-
-* component contains
-    inspectionPupilAbnormal 0..* and
-    eyeMovementAndPosition 0..* and
-    eyeRemarks 0..1
+* code 1.. MS
+* code = #inspection-pupil-normal
+* value[x] only boolean
 
 * component[inspectionPupilAbnormal]
-  * ^short = "Inspection of pupil abnormal"
-  * ^definition = "Observation of pupil abnormality."
-  * code 1.. MS
-  * code = #inspection-pupil-normal
-  * value[x] only boolean
 
-* component[eyeMovementAndPosition]
-  * ^short = "Eye movement and position"
-  * ^definition = "Observation of eye movement and position."
-  * code 1.. MS
-  * code = #eye-movement-and-position
-  * value[x] only CodeableConcept
-  * valueCodeableConcept from VSEyeMovementAndPosition
+Profile: EyeResultsEyeMovementAndPosition
+Parent: BeObservation
+Title: "Eye movement and position"
+Description: "Observation of eye movement and position."
+* code 1.. MS
+* code = #eye-movement-and-position
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSEyeMovementAndPosition
 
-* component[eyeRemarks]
-  * ^short = "Eye remarks"
-  * ^definition = "Remarks related to eye observations."
-  * code 1.. MS
-  * code = #eye-remarks
-  * value[x] only string
-  * valueString MS
+
+Profile: EyeResultsEyeRemarks
+Parent: BeObservation
+Title: "Eye remarks"
+Description: "Remarks related to eye observations."
+
+* code 1.. MS
+* code = #eye-remarks
+* value[x] only string
+* valueString MS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Profile: InTreatmentWithOphthalmologist

@@ -1,42 +1,6 @@
 Alias: $sct = http://snomed.info/sct
 
-Logical: BeModelRelatedPerson
-Parent: Base
-Title: "Related Person"
-Description: "Related Person model."
-Characteristics: #can-be-target
 
-* subject 1..1 BeModelPatient "Subject" """Patient/subject information"""
-* relatedperson 1..1 BeModelPatient "Related person" """A person related to the patient/subject, such as a family member or guardian."""
-* relationship 1..1 CodeableConcept "Relationship to subject" """The relationship of the related person to the patient/subject. This can include roles such as mother, father, guardian, etc."""
-
-
-
-Logical: BeModelDocument
-Parent: Base
-Title: "Document model"
-Description: "Base model for documents."
-Characteristics: #can-be-target
-
-* subject 1..1 BeModelPatient "Subject" """Patient/subject information"""
-* documentType 1..1 CodeableConcept "Document type" """Type of the document, e.g. report, discharge letter, etc."""
-* status 1..1 CodeableConcept "Status of the resource" """Status of the resource"""
-
-* identifier 1..* Identifier "Business identifier for the document"
-* author[x] 1..1 BePractitioner or BeOrganization "Author" """Author(s) by whom the resource was/were authored. Multiple authors could be provided."""
-//* datetime 1..1 dateTime "Date and time of authoring/issuing" """Date and time of the issuing the document/resource by its author."""
-* lastUpdate 0..1 dateTime "Date and time of the last update to the resource" """Date and time of the last update to the document/information"""
-//* statusReason[x] 0..1 CodeableConcept or string "Reason for the current status of the resource."
-//* version 0..1 string "Version" """Business version of the resource."""
-* presentedForm 0..* Attachment "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document"
-* documentTitle 1..1 string "Document title"
-
-* section 0..1 * "Sections"
-  * subsection 0..* contentReference #BeModelDocument.section "subsection"
-
-//* entry 0..* * "Any Content"
-
-/* OK FROM HERE ON*/
 
 Logical: BeModelChildReport
 Parent: BeModelDocument
@@ -46,7 +10,7 @@ Description: "A logical model representing child report data elements."
 * subject 1..1
 
 * subject ^short = "Child that the report is about"
-* relatedPerson 1..1 BeModelRelatedPerson "Mother of the child that the report is about" "The mother of the child is the related subject in this report."
+* relatedPerson 0..1 BeModelRelatedPerson "Biological mother of the child that the report is about" "The biological mother of the child is the related subject in this report."
   * relationship = #mother "Role of the related subject" 
 
 // * author 1..1 Reference(Practitioner or Organization) "Child report author" "A child report element has one author. This author can be identified as an individual, as an organization, or as an individual within an organization."
@@ -65,9 +29,9 @@ Description: "A logical model representing child report data elements."
 * pregnancyDetails 0..1 Base "Pregnancy details" "Details about the pregnancy."
 //  * durationOfPregnancy 0..1 integer "Duration of pregnancy" "Total length of pregnancy in weeks."
   * durationOfPregnancy 0..1 Base "[BeObservation] The duration of pregnancy in weeks, as an observation."
-    * subject 1..1 Reference "subject" /
+    * subject 1..1 Reference "subject" 
     * subject ^short = "Child"
-    * focus 1..1 Reference "subject"
+    * focus 0..1 Reference "subject"
     * focus ^short = "Mother"
 
     * code 1..1 CodeableConcept "Length of gestation at birth"
@@ -76,24 +40,24 @@ Description: "A logical model representing child report data elements."
 
 
   * pregnancyCMVInfection 0..1 Base "[BeObservation] Pregnancy CMV infection" "Indicates whether CMV infection occurred during pregnancy."
-    * subject 1..1 Reference "subject" /
+    * subject 1..1 Reference "subject" 
     * subject ^short = "Child"
-    * focus 1..1 Reference "subject"
+    * focus 0..1 Reference "subject"
     * focus ^short = "Mother"
 
     * code 1..1 CodeableConcept "CMV infection during pregnancy"
     * code = #cmv-infection-during-pregnancy "CMV infection during pregnancy"
     * valueBoolean 1..1 boolean "Indicates whether CMV infection occurred during pregnancy." "The value indicates whether the mother had a CMV infection during pregnancy."
 
-  * bacterialMeningitis 0..1 Base "[BeObservation] Bacterial meningitis" "Indicates whether bacterial meningitis occurred during pregnancy."
-    * code 1..1 CodeableConcept "Code"
-    * code = #bacterial-meningitis-during-pregnancy "bacterial meningitis during pregnancy"
-    * subject 1..1 Reference "subject" /
-    * subject ^short = "Child"
-    * focus 1..1 Reference "subject"
-    * focus ^short = "Mother"
+* bacterialMeningitis 0..1 Base "[BeObservation] Bacterial meningitis" "Indicates whether bacterial meningitis occurred during pregnancy."
+  * code 1..1 CodeableConcept "Code"
+  * code = #bacterial-meningitis-during-pregnancy "bacterial meningitis during pregnancy"
+  * subject 1..1 Reference "subject" 
+  * subject ^short = "Child"
+  * focus 1..1 Reference "subject"
+  * focus ^short = "Mother"
 
-    * valueBoolean 1..1 boolean "Indicates whether bacterial meningitis occurred during pregnancy." "The value indicates whether the mother had a bacterial meningitis during pregnancy."
+  * valueBoolean 1..1 boolean "Indicates whether bacterial meningitis occurred during pregnancy." "The value indicates whether the mother had a bacterial meningitis during pregnancy."
 
 
 * neonatalHearingScreening 0..* Base "[BeObservation] Neonatal hearing screening" "Details about the neonatal hearing screening."
@@ -138,45 +102,43 @@ Description: "A logical model representing child report data elements."
 
 
 * eyeScreening 0..* BackboneElement "Eye screening" "Details about the eye screening."
-  * eyeScreeningOutcome 0..* BackboneElement "[BeObservation] Eye screening" "Details about the eye screening."
+//  * eyeScreeningOutcome 0..* BackboneElement "[BeObservation] Eye screening" "Details about the eye screening."
+  * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
+  * date 1..1 date "Date of eye screening" "The date of eye screening."
+  * code 1..1 CodeableConcept "Code"
+  * code = #eye-screening "Eye screening findings"
+  * valueCodeableConcept 1..1 code "Result of eye screening" "Result of eye screening."
+  * valueCodeableConcept from VSEyeScreeningOutcome
+    // * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
+    // * ageRange from VSEyeScreeningAgeRange
+
+
+* eyeResults 0..* Base "Eye" "Details about the eyes."
+  * inspectionPupilAbnormal 0..1 BackboneElement "[BeObservation] Inspection pupil abnormal" "Details about the inspection of the pupil."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-    * date 1..1 date "Date of eye screening" "The date of eye screening."
+    * date 1..1 date "Date of abnormal pupil inspection finding" "Date of abnormal pupil inspection finding."
+    * code 1..1 CodeableConcept "Inspection pupil abnormal"
+    * code = #inspection-pupil-normal "Inspection pupil abnormal"
+    * valueBoolean 1..1 boolean "Inspection pupil abnormal"
+//      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
+//      * ageRange from VSEyeScreeningAgeRange
+    
+  * eyeMovementAndPosition 0..* BackboneElement "[BeObservation] Findings about the eye movement and position"
+//      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
+//      * ageRange from VSEyeScreeningAgeRange
+    * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
+    * date 1..1 date "Date of eye movement and position results" "The date of eye movement and position results."
     * code 1..1 CodeableConcept "Code"
-    * code = #eye-screening "Eye screening findings"
-    * valueCodeableConcept 1..1 code "Result of eye screening" "Result of eye screening."
-    * valueCodeableConcept from VSEyeScreeningOutcome
-    * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
-    * ageRange from VSEyeScreeningAgeRange
+    * code = #eye-movement-and-position "Eye movement and position" 
+    * valueCode 1..1 code "Result of testing eye movement and position" "Result of testing eye movement and position."
+    * valueCode from VSEyeMovementAndPosition
 
-
-  * eyeResults 0..* Base "Eye" "Details about the eyes."
-    * inspectionPupilAbnormal 0..1 BackboneElement "[BeObservation] Inspection pupil abnormal" "Details about the inspection of the pupil."
-      * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-      * date 1..1 date "Date of eye screening" "Date of Inspection pupil abnormal."
-      * code 1..1 CodeableConcept "Inspection pupil abnormal"
-      * code = #inspection-pupil-normal "Inspection pupil abnormal"
-      * valueBoolean 1..1 boolean "Inspection pupil abnormal"
-//      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
-//      * ageRange from VSEyeScreeningAgeRange
-      
-    * eyeMovementAndPosition 0..* BackboneElement "[BeObservation] Findings about the eye movement and position"
-//      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
-//      * ageRange from VSEyeScreeningAgeRange
-      * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-      * date 1..1 date "Date of eye screening" "The date of eye screening."
-      * code 1..1 CodeableConcept "Code"
-      * code = #eye-movement-and-position "Eye movement and position" 
-      * valueCode 1..1 code "Result of testing eye movement and position" "Result of testing eye movement and position."
-      * valueCode from VSEyeMovementAndPosition
-
-    * eyeRemarks 0..1 BackboneElement "[BeObservation] Eye remarks" "Free text remarks about the eyes."
-      * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-      * date 1..1 date "Date of eye screening" "The date of eye screening."
-      * code 1..1 CodeableConcept "Eye movement and position"
-      * code = #eye-remarks "Eye movement and position" 
-      * valueString 1..1 string "Result of testing eye movement and position" 
-//      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
-//      * ageRange from VSEyeScreeningAgeRange
+  * eyeRemarks 0..1 BackboneElement "[BeObservation] Eye remarks" "Free text remarks about the eyes."
+    * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
+    * date 1..1 date "Date of eye remarks" "The date of eye remarks."
+    * code 1..1 CodeableConcept "Eye remark"
+    * code = #eye-remarks "Eye remarks" 
+    * valueString 1..1 string "Eye remarks" 
 
 
 //* inspectionPupilAbnormalDate 0..* date "Date(s) in which inspection of the pupil was abnormal" "Date(s) in which the inspection of the pupil had abnormal findings."
@@ -203,17 +165,6 @@ Description: "A logical model representing child report data elements."
 
 
 
-ValueSet: VSEyeScreeningOutcome
-Id: eye-screening-results
-//* ^url = "http://example.org/fhir/ValueSet/eye-screening-results"
-* include codes from system CSEyeScreeningResults
-
-CodeSystem: CSEyeScreeningResults
-//* ^url = "http://example.org/fhir/CodeSystem/eye-screening-results"
-* #refer
-* #pass
-* #measurement-not-possible
-* #child-not-testable
 
 ValueSet: VSNeonatalHearingScreeningResults
 //* ^url = "http://example.org/fhir/ValueSet/neonatal-hearing-screening-results"
@@ -231,11 +182,7 @@ ValueSet: VSEyeMovementAndPosition
 //* ^url = "http://example.org/fhir/ValueSet/eye-movement-and-position"
 * include codes from system CSEyeMovementAndPosition
 
-CodeSystem: CSEyeMovementAndPosition
-//* ^url = "http://example.org/fhir/CodeSystem/eye-movement-and-position"
-* #intermittent-strabismus
-* #continuous-strabismus
-* #nystagmus
+
 
 ValueSet: VSOphthalmologistTreatments
 //* ^url = "http://example.org/fhir/ValueSet/ophthalmologist-treatments"

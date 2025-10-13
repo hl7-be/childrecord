@@ -166,43 +166,25 @@ Description: "A logical model representing child report data elements."
 
 
 
-ValueSet: VSNeonatalHearingScreeningResults
-//* ^url = "http://example.org/fhir/ValueSet/neonatal-hearing-screening-results"
-* include codes from system CSNeonatalHearingScreeningResults
-
-CodeSystem: CSNeonatalHearingScreeningResults
-//* ^url = "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results"
-* #pass
-* #refer
-* #aborted-test
-* #not-performed
-
-
-ValueSet: VSEyeMovementAndPosition
-//* ^url = "http://example.org/fhir/ValueSet/eye-movement-and-position"
-* include codes from system CSEyeMovementAndPosition
 
 
 
-ValueSet: VSOphthalmologistTreatments
-//* ^url = "http://example.org/fhir/ValueSet/ophthalmologist-treatments"
-* include codes from system CSOphthalmologistTreatments
-
-CodeSystem: CSOphthalmologistTreatments
-//* ^url = "http://example.org/fhir/CodeSystem/ophthalmologist-treatments"
-* #glasses
-* #occlusion
-* #operation
-* #other-treatment
 
 
 
-CodeSystem: CSEyeScreeningAgeRange
-//* ^url = "http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range"
-* #0-2 "From birth to 2 years"
-* #2-3 "Between 2 and 3 years"
 
 
-ValueSet: VSEyeScreeningAgeRange
-//* ^url = "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range"
-* include codes from system CSEyeMovementAndPosition
+
+
+
+
+
+// CodeSystem: CSEyeScreeningAgeRange
+// //* ^url = "http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range"
+// * #0-2 "From birth to 2 years"
+// * #2-3 "Between 2 and 3 years"
+
+
+// ValueSet: VSEyeScreeningAgeRange
+// //* ^url = "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range"
+// * include codes from system CSEyeMovementAndPosition

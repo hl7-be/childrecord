@@ -6,6 +6,7 @@ Logical: BeModelChildReport
 Parent: BeModelDocument
 Title: "Child Report Logical Model"
 Description: "A logical model representing child report data elements."
+Characteristics: #can-be-target
 
 * subject 1..1
 

@@ -1,5 +1,10 @@
 CodeSystem: CSOphthalmologistTreatments
-//* ^url = "http://example.org/fhir/CodeSystem/ophthalmologist-treatments"
+Title: "Ophthalmologist Treatment statuses"
+Description: "Ophthalmologist Treatment statuses"
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = false
+* ^experimental = true
 * #glasses
 * #occlusion
 * #operation

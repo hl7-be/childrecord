@@ -1,3 +1,5 @@
 ValueSet: VSOphthalmologistTreatments
-//* ^url = "http://example.org/fhir/ValueSet/ophthalmologist-treatments"
+Title: "Ophthalmologist Treatments"
+Description: "This value set includes codes for ophthalmologist treatment status."
+* ^experimental = true
 * include codes from system CSOphthalmologistTreatments

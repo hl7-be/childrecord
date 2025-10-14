@@ -1,3 +1,5 @@
 ValueSet: VSNeonatalHearingScreeningResults
-//* ^url = "http://example.org/fhir/ValueSet/neonatal-hearing-screening-results"
+Title: "Neonatal Hearing Screening Results"
+Description: "This value set includes codes for neonatal hearing screening results."
+* ^experimental = true
 * include codes from system CSNeonatalHearingScreeningResults

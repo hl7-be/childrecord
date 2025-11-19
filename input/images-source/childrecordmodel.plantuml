@@ -24,10 +24,6 @@ class "**ChildReport**" as ChildReport {
     |_ code 1..1   
     |_ subject 1..1   
     |_ valueBoolean 1..1   
-  |_ neonatalHearingScreening 0..*   
-    |_ code 1..1   
-    |_ date 1..1   
-    |_ subject 1..1   
   |_ neonatalHearingScreeningLeft 0..1   
     |_ date 1..1   
     |_ subject 1..1   

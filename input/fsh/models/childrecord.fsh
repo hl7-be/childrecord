@@ -61,11 +61,11 @@ Characteristics: #can-be-target
   * valueBoolean 1..1 boolean "Indicates whether bacterial meningitis occurred during pregnancy." "The value indicates whether the mother had a bacterial meningitis during pregnancy."
 
 
-* neonatalHearingScreening 0..* Base "[BeObservation] Neonatal hearing screening" "Details about the neonatal hearing screening."
-  * code 1..1 CodeableConcept "Code"
-  * code = #neonatal-hearing-screening "Neonatal hearing screening"
-  * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
-  * subject 1..1 BeModelPatient "Child that the report is about" "The child that the report is about."
+// * neonatalHearingScreening 0..* Base "[BeObservation] Neonatal hearing screening" "Details about the neonatal hearing screening."
+//   * code 1..1 CodeableConcept "Code"
+//   * code = #neonatal-hearing-screening "Neonatal hearing screening"
+//   * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
+//   * subject 1..1 BeModelPatient "Child that the report is about" "The child that the report is about."
 
 //  * component contains left 1..1 and right 1..1
 * neonatalHearingScreeningLeft 0..1 Base "Left ear result" "Result of neonatal hearing screening for the left ear."

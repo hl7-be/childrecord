@@ -20,7 +20,7 @@ version: 0.1.0
 dependencies:
   hl7.fhir.be.core: 2.1.2
 #  hl7.fhir.be.patientwill: dev
-  hl7.fhir.be.core-clinical: dev
+  hl7.fhir.be.core-clinical: current$business
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only

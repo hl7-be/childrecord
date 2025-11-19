@@ -17,7 +17,7 @@ Characteristics: #can-be-target
 // * author 1..1 Reference(Practitioner or Organization) "Child report author" "A child report element has one author. This author can be identified as an individual, as an organization, or as an individual within an organization."
 
 // * date 1..1 dateTime "Date of child report" "The date when the child report was created."
-* lastUpdate
+* recordedDate
   * ^comment = "The date of the child report is the date when the report was created, not the date of the examination or observation. In case of reports migrated from KMEHR, the date is the date of the conversion, not the KMEHR message creation, which is unknown."
 
 //* version - to be used from the BeDocument */

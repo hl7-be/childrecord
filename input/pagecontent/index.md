@@ -54,7 +54,7 @@ Use the top menu to navigate, or consult the [Table of Contents](toc.html). *(So
 
 This IG is published under a public domain license; however, it references code systems with additional restrictions:
 
-{% include ip-statements.xhtml %}
+{% lang-fragment ip-statements.xhtml %}
 
 Key considerations:
 
@@ -69,7 +69,7 @@ Implementers must ensure compliance with the licensing terms of all referenced t
 
 This IG builds upon:
 
-{% include dependency-table-short.xhtml %}
+{% lang-fragment dependency-table-short.xhtml %}
 
 Primary dependencies include:
 

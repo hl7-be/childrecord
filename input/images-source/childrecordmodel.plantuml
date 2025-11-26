@@ -7,17 +7,17 @@ class "**ChildReport**" as ChildReport {
   |_ subject 1..1   
   |_ lastUpdate 1..1   
   |_ presentedForm 1..1   
-  |_ relatedPerson 1..1   
-    |_ relationship 1..1   
+'  |_ relatedPerson 1..1   
+'    |_ relationship 1..1   
   |_ pregnancyDetails 0..1   
     |_ durationOfPregnancy 0..1   
       |_ subject 1..1   
-      |_ focus 0..1   
+'      |_ focus 0..1   
       |_ code 1..1   
       |_ valueInteger 1..1   
     |_ pregnancyCMVInfection 0..1   
       |_ subject 1..1   
-      |_ focus 0..1   
+'      |_ focus 0..1   
       |_ code 1..1   
       |_ valueBoolean 1..1   
   |_ bacterialMeningitis 0..1   

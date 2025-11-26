@@ -11,8 +11,8 @@ Characteristics: #can-be-target
 * subject 1..1
 
 * subject ^short = "Child that the report is about"
-* relatedPerson 0..1 BeModelRelatedPerson "Biological mother of the child that the report is about" "The biological mother of the child is the related subject in this report."
-  * relationship = #mother "Role of the related subject" 
+//* relatedPerson 0..1 BeModelRelatedPerson "Biological mother of the child that the report is about" "The biological mother of the child is the related subject in this report."
+//  * relationship = #mother "Role of the related subject" 
 
 // * author 1..1 Reference(Practitioner or Organization) "Child report author" "A child report element has one author. This author can be identified as an individual, as an organization, or as an individual within an organization."
 
@@ -29,28 +29,28 @@ Characteristics: #can-be-target
 
 * pregnancyDetails 0..1 Base "Pregnancy details" "Details about the pregnancy."
 //  * durationOfPregnancy 0..1 integer "Duration of pregnancy" "Total length of pregnancy in weeks."
-  * durationOfPregnancy 0..1 Base "[BeObservation] The duration of pregnancy in weeks, as an observation."
+  * durationOfPregnancy 0..1 Base "[BeClinicalObservation] The duration of pregnancy in weeks, as an observation."
     * subject 1..1 Reference "subject" 
     * subject ^short = "Child"
-    * focus 0..1 Reference "subject"
-    * focus ^short = "Mother"
+    // * focus 0..1 Reference "subject"
+    // * focus ^short = "Mother"
 
     * code 1..1 CodeableConcept "Length of gestation at birth"
     * code = $sct#412726003 "Length of gestation at birth"
     * valueInteger 1..1 integer "The duration of pregnancy in weeks"
 
 
-  * pregnancyCMVInfection 0..1 Base "[BeObservation] Pregnancy CMV infection" "Indicates whether CMV infection occurred during pregnancy."
+  * pregnancyCMVInfection 0..1 Base "[BeClinicalObservation] Pregnancy CMV infection" "Indicates whether CMV infection occurred during pregnancy."
     * subject 1..1 Reference "subject" 
     * subject ^short = "Child"
-    * focus 0..1 Reference "subject"
-    * focus ^short = "Mother"
+    // * focus 0..1 Reference "subject"
+    // * focus ^short = "Mother"
 
     * code 1..1 CodeableConcept "CMV infection during pregnancy"
     * code = #cmv-infection-during-pregnancy "CMV infection during pregnancy"
     * valueBoolean 1..1 boolean "Indicates whether CMV infection occurred during pregnancy." "The value indicates whether the mother had a CMV infection during pregnancy."
 
-* bacterialMeningitis 0..1 Base "[BeObservation] Bacterial meningitis" "Indicates whether bacterial meningitis occurred during pregnancy."
+* bacterialMeningitis 0..1 Base "[BeClinicalObservation] Bacterial meningitis" "Indicates whether bacterial meningitis occurred during pregnancy."
   * code 1..1 CodeableConcept "Code"
   * code = #bacterial-meningitis-during-pregnancy "bacterial meningitis during pregnancy"
   * subject 1..1 Reference "subject" 
@@ -70,7 +70,7 @@ Characteristics: #can-be-target
 //  * component contains left 1..1 and right 1..1
 * neonatalHearingScreeningLeft 0..1 Base "Left ear result" "Result of neonatal hearing screening for the left ear."
   * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
-  * subject 1..1 BeModelPatient "Child that the report is about" "The child that the report is about."
+  * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * code 1..1 CodeableConcept "Result of neonatal hearing screening - left"
     * code = #neonatal-hearing-screening-left "Result of neonatal hearing screening (left ear)"
     * valueCode 1..1 code "Result of neonatal hearing screening (left ear)" "Neonatal hearing screening result for the left ear."
@@ -78,7 +78,7 @@ Characteristics: #can-be-target
 
 * neonatalHearingScreeningRight 0..1 Base "Right ear result" "Result of neonatal hearing screening for the right ear."
   * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
-  * subject 1..1 BeModelPatient "Child that the report is about" "The child that the report is about."
+  * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * code 1..1 CodeableConcept "Result of neonatal hearing screening - right"
     * code = #neonatal-hearing-screening-right "Result of neonatal hearing screening (right ear)"
     * valueCode 1..1 code "Result of neonatal hearing screening (right ear)" "Neonatal hearing screening result for the right ear."
@@ -120,7 +120,7 @@ Characteristics: #can-be-target
 
 
 * eyeResults 0..* Base "Eye" "Details about the eyes."
-  * inspectionPupilAbnormal 0..1 BackboneElement "[BeObservation] Inspection pupil abnormal" "Details about the inspection of the pupil."
+  * inspectionPupilAbnormal 0..1 BackboneElement "[BeClinicalObservation] Inspection pupil abnormal" "Details about the inspection of the pupil."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of abnormal pupil inspection finding" "Date of abnormal pupil inspection finding."
     * code 1..1 CodeableConcept "Inspection pupil abnormal"
@@ -129,7 +129,7 @@ Characteristics: #can-be-target
 //      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
 //      * ageRange from VSEyeScreeningAgeRange
     
-  * eyeMovementAndPosition 0..* BackboneElement "[BeObservation] Findings about the eye movement and position"
+  * eyeMovementAndPosition 0..* BackboneElement "[BeClinicalObservation] Findings about the eye movement and position"
 //      * ageRange 1..1 code "Age of eye screening" "Age of eye screening."
 //      * ageRange from VSEyeScreeningAgeRange
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
@@ -139,7 +139,7 @@ Characteristics: #can-be-target
     * valueCode 1..1 code "Result of testing eye movement and position" "Result of testing eye movement and position."
     * valueCode from VSEyeMovementAndPosition
 
-  * eyeRemarks 0..1 BackboneElement "[BeObservation] Eye remarks" "Free text remarks about the eyes."
+  * eyeRemarks 0..1 BackboneElement "[BeClinicalObservation] Eye remarks" "Free text remarks about the eyes."
     * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * date 1..1 date "Date of eye remarks" "The date of eye remarks."
     * code 1..1 CodeableConcept "Eye remark"
@@ -154,7 +154,7 @@ Characteristics: #can-be-target
 
 //* eyeRemarks 0..1 string  "Eye remarks" "Free text remarks about the eyes."
 
-* inTreatmentWithOphthalmologist 0..* BackboneElement "[BeObservation] In treatment with ophthalmologist" "Details about treatment with an ophthalmologist."
+* inTreatmentWithOphthalmologist 0..* BackboneElement "[BeClinicalObservation] In treatment with ophthalmologist" "Details about treatment with an ophthalmologist."
   * date 1..1 date "Date of remarks about treatment with ophthalmologist." 
   * code 1..1 CodeableConcept "Code"
   * code = #in-treatment-with-ophtalmologist "In treatment with ophthalmologist" 

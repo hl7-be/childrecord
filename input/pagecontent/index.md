@@ -1,7 +1,7 @@
-# Child Record (KindRapport) Implementation Guide
+# Child Report (KindRapport) Implementation Guide
 
 **Scope:**  
-This guide defines a FHIR-based Child Record ("KindRapport"), a structured medical report summarizing key aspects of a child's health and care journey. It serves as a shared reference for healthcare professionals—such as general practitioners, pediatricians, school doctors, and child health services—working together to support the health and development of children.
+This guide defines a FHIR-based Child Report ("KindRapport"), a structured medical report summarizing key aspects of a child's health and care journey. It serves as a shared reference for healthcare professionals—such as general practitioners, pediatricians, school doctors, and child health services—working together to support the health and development of children.
 
 The KindRapport is based on the **FHIR Document** paradigm: a bundled, versioned, and signed snapshot of health information at a point in time. This document includes a **Composition** resource as the index and entry point, and is composed of several clinical resources representing :
 
@@ -17,7 +17,7 @@ The scope will evolve and more content will be added.
 
 The Implementation Guide defines:
 
-- A **Logical Model** of the Child Record: the conceptual structure outlining the data elements and sections of the report.
+- A **Logical Model** of the Child Report: the conceptual structure outlining the data elements and sections of the report.
 - A set of **FHIR Profiles** that constrain core resources (e.g., `Composition`, `Observation`, etc.) to meet regional requirements.
 - **Terminology bindings** and **value sets** used to ensure consistency across implementations.
 - **Example instances** demonstrating real-world scenarios.
@@ -34,7 +34,7 @@ Document Bundle
 └── Additional entries...
 ```
 
-Each section in the Composition corresponds to a chapter in the Child Record.
+Each section in the Composition corresponds to a chapter in the Child Report.
 
 ---
 

@@ -1,0 +1,48 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSEyeMovementAndPosition",
+      "title" : "Eye Movement and Position",
+      "description" : "This value set includes codes to represent eye movement and position observations.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSNeonatalHearingScreeningResults",
+      "title" : "Neonatal Hearing Screening Results",
+      "description" : "This value set includes codes for neonatal hearing screening results.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSOphthalmologistTreatments",
+      "title" : "Ophthalmologist Treatments",
+      "description" : "This value set includes codes for ophthalmologist treatment status.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSEyeScreeningOutcome",
+      "title" : "Eye Screening Results",
+      "description" : "A value set that includes codes for eye screening results.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"
+      ]
+    }
+  ]
+}

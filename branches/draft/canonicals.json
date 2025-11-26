@@ -1,0 +1,86 @@
+[
+  {
+    "id" : "CSEyeMovementAndPosition",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition",
+    "version" : "0.1.0",
+    "name" : "CSEyeMovementAndPosition"
+  },
+  {
+    "id" : "CSEyeScreeningResults",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults",
+    "version" : "0.1.0",
+    "name" : "CSEyeScreeningResults"
+  },
+  {
+    "id" : "CSNeonatalHearingScreeningResults",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults",
+    "version" : "0.1.0",
+    "name" : "CSNeonatalHearingScreeningResults"
+  },
+  {
+    "id" : "CSOphthalmologistTreatments",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments",
+    "version" : "0.1.0",
+    "name" : "CSOphthalmologistTreatments"
+  },
+  {
+    "id" : "hl7.fhir.be.childrecord",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ImplementationGuide/hl7.fhir.be.childrecord",
+    "version" : "0.1.0",
+    "name" : "ChildRecord"
+  },
+  {
+    "id" : "BeModelChildReport",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelChildReport",
+    "version" : "0.1.0",
+    "name" : "BeModelChildReport"
+  },
+  {
+    "id" : "BeModelDocument",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelDocument",
+    "version" : "0.1.0",
+    "name" : "BeModelDocument"
+  },
+  {
+    "id" : "BeModelRelatedPerson",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelRelatedPerson",
+    "version" : "0.1.0",
+    "name" : "BeModelRelatedPerson"
+  },
+  {
+    "id" : "VSEyeMovementAndPosition",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition",
+    "version" : "0.1.0",
+    "name" : "VSEyeMovementAndPosition"
+  },
+  {
+    "id" : "VSNeonatalHearingScreeningResults",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults",
+    "version" : "0.1.0",
+    "name" : "VSNeonatalHearingScreeningResults"
+  },
+  {
+    "id" : "VSOphthalmologistTreatments",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments",
+    "version" : "0.1.0",
+    "name" : "VSOphthalmologistTreatments"
+  },
+  {
+    "id" : "eye-screening-results",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results",
+    "version" : "0.1.0",
+    "name" : "VSEyeScreeningOutcome"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSNeonatalHearingScreeningResults",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSNeonatalHearingScreeningResults</b></p><a name=\"CSNeonatalHearingScreeningResults\"> </a><a name=\"hcCSNeonatalHearingScreeningResults\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">pass<a name=\"CSNeonatalHearingScreeningResults-pass\"> </a></td></tr><tr><td style=\"white-space:nowrap\">refer<a name=\"CSNeonatalHearingScreeningResults-refer\"> </a></td></tr><tr><td style=\"white-space:nowrap\">aborted-test<a name=\"CSNeonatalHearingScreeningResults-aborted-test\"> </a></td></tr><tr><td style=\"white-space:nowrap\">not-performed<a name=\"CSNeonatalHearingScreeningResults-not-performed\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults",
+  "version" : "0.1.0",
+  "name" : "CSNeonatalHearingScreeningResults",
+  "title" : "Neonatal Hearing Screening Results",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-11-26T09:32:29+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes for the results of neonatal hearing screening tests.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "pass"
+  },
+  {
+    "code" : "refer"
+  },
+  {
+    "code" : "aborted-test"
+  },
+  {
+    "code" : "not-performed"
+  }]
+}

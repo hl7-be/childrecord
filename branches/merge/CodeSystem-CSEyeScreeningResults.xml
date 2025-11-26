@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSEyeScreeningResults"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem CSEyeScreeningResults</b></p><a name="CSEyeScreeningResults"> </a><a name="hcCSEyeScreeningResults"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">refer<a name="CSEyeScreeningResults-refer"> </a></td></tr><tr><td style="white-space:nowrap">pass<a name="CSEyeScreeningResults-pass"> </a></td></tr><tr><td style="white-space:nowrap">measurement-not-possible<a name="CSEyeScreeningResults-measurement-not-possible"> </a></td></tr><tr><td style="white-space:nowrap">child-not-testable<a name="CSEyeScreeningResults-child-not-testable"> </a></td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+  <version value="0.1.0"/>
+  <name value="CSEyeScreeningResults"/>
+  <title value="Eye Screening Results"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-11-26T09:38:23+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes for recording the results of eye screening tests. These codes are used to indicate whether a screening test was passed, failed, not possible to perform, or not testable in children."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="refer"/>
+  </concept>
+  <concept>
+    <code value="pass"/>
+  </concept>
+  <concept>
+    <code value="measurement-not-possible"/>
+  </concept>
+  <concept>
+    <code value="child-not-testable"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "eye-screening-results",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet eye-screening-results</b></p><a name=\"eye-screening-results\"> </a><a name=\"hceye-screening-results\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSEyeScreeningResults.html\"><code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results",
+  "version" : "0.1.0",
+  "name" : "VSEyeScreeningOutcome",
+  "title" : "Eye Screening Results",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-11-26T09:32:29+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A value set that includes codes for eye screening results.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"
+    }]
+  }
+}

@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="933f080f-9ac5-4e7a-930c-0bec49f8fda2"/>
+  <meta>
+    <lastUpdated value="2025-11-26T09:50:03.742+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-CSEyeMovementAndPosition.html">codesystem Eye Movement and Position v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition-intermittent-strabismus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-intermittent-strabismus">intermittent-strabismus</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;intermittent-strabismus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;intermittent-strabismus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition-continuous-strabismus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-continuous-strabismus">continuous-strabismus</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;continuous-strabismus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;continuous-strabismus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition-nystagmus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-nystagmus">nystagmus</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;nystagmus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;nystagmus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition"/>
+        <version value="0.1.0"/>
+        <name value="VSEyeMovementAndPosition"/>
+        <title value="Eye Movement and Position"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-11-26T09:50:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:275581fb-af97-413f-809a-ae34014da862"/>
+          <timestamp value="2025-11-26T09:50:59+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition"/>
+            <code value="intermittent-strabismus"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition"/>
+            <code value="continuous-strabismus"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition"/>
+            <code value="nystagmus"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-CSEyeMovementAndPosition.html">codesystem Eye Movement and Position v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition-intermittent-strabismus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-intermittent-strabismus">intermittent-strabismus</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;intermittent-strabismus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;intermittent-strabismus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition-continuous-strabismus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-continuous-strabismus">continuous-strabismus</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;continuous-strabismus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;continuous-strabismus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition-nystagmus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-nystagmus">nystagmus</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;nystagmus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;nystagmus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition"/>
+        <version value="0.1.0"/>
+        <name value="VSEyeMovementAndPosition"/>
+        <title value="Eye Movement and Position"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-11-26T09:50:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:275581fb-af97-413f-809a-ae34014da862"/>
+          <timestamp value="2025-11-26T09:50:59+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition"/>
+            <code value="intermittent-strabismus"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition"/>
+            <code value="continuous-strabismus"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition"/>
+            <code value="nystagmus"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-CSNeonatalHearingScreeningResults.html">codesystem Neonatal Hearing Screening Results v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults-pass"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-pass">pass</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pass&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pass&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults-refer"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-refer">refer</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;refer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;refer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults-aborted-test"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-aborted-test">aborted-test</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;aborted-test&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;aborted-test&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults-not-performed"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-not-performed">not-performed</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;not-performed&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;not-performed&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults"/>
+        <version value="0.1.0"/>
+        <name value="VSNeonatalHearingScreeningResults"/>
+        <title value="Neonatal Hearing Screening Results"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-11-26T09:50:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3fddaa70-a8c4-422a-abbd-9d36ab552c3b"/>
+          <timestamp value="2025-11-26T09:50:59+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+            <code value="pass"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+            <code value="refer"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+            <code value="aborted-test"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+            <code value="not-performed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-CSNeonatalHearingScreeningResults.html">codesystem Neonatal Hearing Screening Results v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults-pass"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-pass">pass</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pass&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pass&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults-refer"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-refer">refer</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;refer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;refer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults-aborted-test"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-aborted-test">aborted-test</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;aborted-test&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;aborted-test&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults-not-performed"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-not-performed">not-performed</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;not-performed&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;not-performed&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults"/>
+        <version value="0.1.0"/>
+        <name value="VSNeonatalHearingScreeningResults"/>
+        <title value="Neonatal Hearing Screening Results"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-11-26T09:50:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3fddaa70-a8c4-422a-abbd-9d36ab552c3b"/>
+          <timestamp value="2025-11-26T09:50:59+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+            <code value="pass"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+            <code value="refer"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+            <code value="aborted-test"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+            <code value="not-performed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-CSOphthalmologistTreatments.html">codesystem Ophthalmologist Treatment statuses v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments-glasses"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-glasses">glasses</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;glasses&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;glasses&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments-occlusion"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-occlusion">occlusion</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;occlusion&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;occlusion&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments-operation"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-operation">operation</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;operation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;operation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments-other-treatment"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-other-treatment">other-treatment</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;other-treatment&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;other-treatment&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments"/>
+        <version value="0.1.0"/>
+        <name value="VSOphthalmologistTreatments"/>
+        <title value="Ophthalmologist Treatments"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-11-26T09:50:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:171776ba-d38e-4db4-a893-9edc347e8b84"/>
+          <timestamp value="2025-11-26T09:50:59+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+            <code value="glasses"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+            <code value="occlusion"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+            <code value="operation"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+            <code value="other-treatment"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-CSOphthalmologistTreatments.html">codesystem Ophthalmologist Treatment statuses v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments-glasses"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-glasses">glasses</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;glasses&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;glasses&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments-occlusion"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-occlusion">occlusion</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;occlusion&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;occlusion&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments-operation"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-operation">operation</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;operation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;operation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments-other-treatment"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-other-treatment">other-treatment</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;other-treatment&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;other-treatment&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments"/>
+        <version value="0.1.0"/>
+        <name value="VSOphthalmologistTreatments"/>
+        <title value="Ophthalmologist Treatments"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-11-26T09:50:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:171776ba-d38e-4db4-a893-9edc347e8b84"/>
+          <timestamp value="2025-11-26T09:50:59+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+            <code value="glasses"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+            <code value="occlusion"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+            <code value="operation"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+            <code value="other-treatment"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-CSEyeScreeningResults.html">codesystem Eye Screening Results v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults-refer"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-refer">refer</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;refer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;refer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults-pass"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-pass">pass</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pass&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pass&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults-measurement-not-possible"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-measurement-not-possible">measurement-not-possible</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;measurement-not-possible&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;measurement-not-possible&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults-child-not-testable"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-child-not-testable">child-not-testable</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;child-not-testable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;child-not-testable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results"/>
+        <version value="0.1.0"/>
+        <name value="VSEyeScreeningOutcome"/>
+        <title value="Eye Screening Results"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-11-26T09:50:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7faebf3e-7f6f-4916-b97e-e804a11ccc14"/>
+          <timestamp value="2025-11-26T09:50:59+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+            <code value="refer"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+            <code value="pass"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+            <code value="measurement-not-possible"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+            <code value="child-not-testable"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-CSEyeScreeningResults.html">codesystem Eye Screening Results v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults-refer"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-refer">refer</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;refer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;refer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults-pass"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-pass">pass</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pass&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pass&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults-measurement-not-possible"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-measurement-not-possible">measurement-not-possible</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;measurement-not-possible&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;measurement-not-possible&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults-child-not-testable"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-child-not-testable">child-not-testable</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;child-not-testable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;child-not-testable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results"/>
+        <version value="0.1.0"/>
+        <name value="VSEyeScreeningOutcome"/>
+        <title value="Eye Screening Results"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-11-26T09:50:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7faebf3e-7f6f-4916-b97e-e804a11ccc14"/>
+          <timestamp value="2025-11-26T09:50:59+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+            <code value="refer"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+            <code value="pass"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+            <code value="measurement-not-possible"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+            <code value="child-not-testable"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

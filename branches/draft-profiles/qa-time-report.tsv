@@ -1,0 +1,16 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.childrecord.json	5658	-	0	0	0	0	0	0	13	114	0	0	0	0	0	0	0	1	0	0	77	101	0	0	0	6	0	1
+fsh-generated/resources/CodeSystem-CSEyeMovementAndPosition.json	404	5	0	0	0	0	0	0	0	42	0	0	1	0	0	0	0	0	0	0	26	514	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-CSEyeScreeningAgeRange.json	414	4	0	0	0	0	0	0	0	36	0	0	0	0	0	0	0	0	0	0	19	106	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-CSEyeScreeningResults.json	422	3	0	0	0	0	0	0	0	34	0	0	0	0	0	0	0	0	0	0	16	142	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-CSNeonatalHearingScreeningResults.json	442	3	0	0	1	0	0	0	1	35	0	0	0	0	0	0	0	0	0	0	16	79	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-CSOphthalmologistTreatments.json	428	3	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	15	68	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-BeDocument.json	4069	5	0	13	0	0	0	0	0	42	0	0	0	0	0	0	0	0	0	0	54	272	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-BeModelObservation.json	6654	6	0	26	0	0	0	0	0	38	0	0	0	0	0	0	0	0	0	0	101	295	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-BeModelRelatedPerson.json	2576	6	0	39	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	35	105	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-ChildReport.json	29529	15	0	98	1	0	0	0	0	100	0	0	0	0	0	0	0	2	0	0	451	770	0	1	0	30	0	1
+fsh-generated/resources/ValueSet-VSEyeMovementAndPosition.json	339	7	0	0	0	0	0	0	0	102	0	0	0	0	0	0	0	0	0	0	27	83	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-VSEyeScreeningAgeRange.json	342	5	0	0	0	0	0	0	1	11	0	0	0	0	0	0	0	0	0	0	18	59	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-VSNeonatalHearingScreeningResults.json	375	6	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	14	64	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-VSOphthalmologistTreatments.json	347	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	14	65	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-eye-screening-results.json	325	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	14	49	0	0	0	1	0	0

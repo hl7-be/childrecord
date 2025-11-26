@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSOphthalmologistTreatments"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem CSOphthalmologistTreatments</b></p><a name="CSOphthalmologistTreatments"> </a><a name="hcCSOphthalmologistTreatments"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">glasses<a name="CSOphthalmologistTreatments-glasses"> </a></td></tr><tr><td style="white-space:nowrap">occlusion<a name="CSOphthalmologistTreatments-occlusion"> </a></td></tr><tr><td style="white-space:nowrap">operation<a name="CSOphthalmologistTreatments-operation"> </a></td></tr><tr><td style="white-space:nowrap">other-treatment<a name="CSOphthalmologistTreatments-other-treatment"> </a></td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"/>
+  <version value="0.1.0"/>
+  <name value="CSOphthalmologistTreatments"/>
+  <title value="Ophthalmologist Treatment statuses"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-11-26T09:32:29+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Ophthalmologist Treatment statuses"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="glasses"/>
+  </concept>
+  <concept>
+    <code value="occlusion"/>
+  </concept>
+  <concept>
+    <code value="operation"/>
+  </concept>
+  <concept>
+    <code value="other-treatment"/>
+  </concept>
+</CodeSystem>

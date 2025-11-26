@@ -1,0 +1,78 @@
+ChildRecord : Validation Results
+=========================================
+
+err = 4, warn = 34, info = 0
+IG Publisher Version: 2.0.26
+Generated Wed Nov 26 09:51:16 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.childrecord#0.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/childrecord)
+ Build Errors : 11 / 3 / 0
+ /work/fsh-generated/resources/CodeSystem-CSEyeMovementAndPosition : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-CSEyeScreeningResults : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-CSNeonatalHearingScreeningResults : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-CSOphthalmologistTreatments : 0 / 0 / 1
+ /work/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.childrecord : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-BeModelChildReport : 0 / 30 / 1
+ /work/fsh-generated/resources/StructureDefinition-BeModelDocument : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-BeModelRelatedPerson : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-VSEyeMovementAndPosition : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-VSNeonatalHearingScreeningResults : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-VSOphthalmologistTreatments : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-eye-screening-results : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: There are multiple resources with the same title [Eye Movement and Position].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Eye Screening Results].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Neonatal Hearing Screening Results].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: StructureDefinition-BeModelChildReport.html: The reference * could not be resolved
+ERROR: en/StructureDefinition-BeModelChildReport-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 296, column 319: The link '*.html' for "*" cannot be resolved
+ERROR: en/StructureDefinition-BeModelChildReport-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 797, column 319: The link '*.html' for "*" cannot be resolved
+ERROR: en/StructureDefinition-BeModelChildReport.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 960, column 168: The link 'http://hl7.org/fhir/R4/StructureDefinition-BeModelDocument.html#BeModelDocument.section' for "section (BeModelDocument)" cannot be resolved
+ERROR: en/StructureDefinition-BeModelChildReport.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2980, column 168: The link 'http://hl7.org/fhir/R4/StructureDefinition-BeModelDocument.html#BeModelDocument.section' for "section (BeModelDocument)" cannot be resolved
+ERROR: en/StructureDefinition-BeModelDocument-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 295, column 319: The link '*.html' for "*" cannot be resolved
+ERROR: en/StructureDefinition-BeModelDocument-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 333, column 319: The link '*.html' for "*" cannot be resolved
+ERROR: en/StructureDefinition-BeModelDocument-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 371, column 319: The link '*.html' for "*" cannot be resolved
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/CodeSystem-CSEyeMovementAndPosition.json ==
+== fsh-generated/resources/CodeSystem-CSEyeScreeningResults.json ==
+== fsh-generated/resources/CodeSystem-CSNeonatalHearingScreeningResults.json ==
+== fsh-generated/resources/CodeSystem-CSOphthalmologistTreatments.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.childrecord.json ==
+== fsh-generated/resources/StructureDefinition-BeModelChildReport.json ==
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[18].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[33].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[44].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[49].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[57].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[66].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[74].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[82].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[89].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[25].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[30].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[35].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[41].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[46].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[51].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[55].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[21].binding: The definition for the element 'BeModelChildReport.neonatalHearingScreeningLeft.subject.valueCode' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[26].binding: The definition for the element 'BeModelChildReport.neonatalHearingScreeningRight.subject.valueCode' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[36].binding: The definition for the element 'BeModelChildReport.eyeScreening.valueCodeableConcept' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[47].binding: The definition for the element 'BeModelChildReport.eyeResults.eyeMovementAndPosition.valueCode' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.differential.element[56].binding: The definition for the element 'BeModelChildReport.inTreatmentWithOphthalmologist.valueCode' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[34].binding: The definition for the element 'BeModelChildReport.neonatalHearingScreeningLeft.subject.valueCode' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[45].binding: The definition for the element 'BeModelChildReport.neonatalHearingScreeningRight.subject.valueCode' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[58].binding: The definition for the element 'BeModelChildReport.eyeScreening.valueCodeableConcept' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[75].binding: The definition for the element 'BeModelChildReport.eyeResults.eyeMovementAndPosition.valueCode' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/BeModelChildReport: StructureDefinition.snapshot.element[90].binding: The definition for the element 'BeModelChildReport.inTreatmentWithOphthalmologist.valueCode' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-BeModelDocument.json ==
+WARNING: StructureDefinition/BeModelDocument: StructureDefinition.text.div: Hyperlink '#BeModelDocument.section' at 'div/table/tr/td/a' for 'section' resolves to multiple targets ($/text/div/table/tr[12]/td[0]/a[1]/@name, $/snapshot/element/id, $/differential/element/id)
+== fsh-generated/resources/StructureDefinition-BeModelRelatedPerson.json ==
+== fsh-generated/resources/ValueSet-VSEyeMovementAndPosition.json ==
+== fsh-generated/resources/ValueSet-VSNeonatalHearingScreeningResults.json ==
+== fsh-generated/resources/ValueSet-VSOphthalmologistTreatments.json ==
+== fsh-generated/resources/ValueSet-eye-screening-results.json ==

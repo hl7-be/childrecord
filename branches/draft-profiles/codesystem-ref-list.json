@@ -1,0 +1,49 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSEyeMovementAndPosition",
+      "title" : null,
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-VSEyeMovementAndPosition.html" : "VSEyeMovementAndPosition",
+      "ValueSet-VSEyeScreeningAgeRange.html" : "VSEyeScreeningAgeRange"
+    },
+    {
+      "url" : "http://example.org/fhir/CodeSystem/eye-screening-results",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSEyeScreeningResults",
+      "title" : null,
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-eye-screening-results.html" : "VSEyeScreeningResults"
+    },
+    {
+      "url" : "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSNeonatalHearingScreeningResults",
+      "title" : null,
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-VSNeonatalHearingScreeningResults.html" : "VSNeonatalHearingScreeningResults"
+    },
+    {
+      "url" : "http://example.org/fhir/CodeSystem/ophthalmologist-treatments",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSOphthalmologistTreatments",
+      "title" : null,
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-VSOphthalmologistTreatments.html" : "VSOphthalmologistTreatments"
+    }
+  ]
+}

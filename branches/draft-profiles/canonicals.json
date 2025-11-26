@@ -1,0 +1,107 @@
+[
+  {
+    "id" : "CSEyeMovementAndPosition",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+    "version" : "0.1.0",
+    "name" : "CSEyeMovementAndPosition"
+  },
+  {
+    "id" : "CSEyeScreeningResults",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/CodeSystem/eye-screening-results",
+    "version" : "0.1.0",
+    "name" : "CSEyeScreeningResults"
+  },
+  {
+    "id" : "CSEyeScreeningAgeRange",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range",
+    "version" : "0.1.0",
+    "name" : "CSEyeScreeningAgeRange"
+  },
+  {
+    "id" : "CSNeonatalHearingScreeningResults",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results",
+    "version" : "0.1.0",
+    "name" : "CSNeonatalHearingScreeningResults"
+  },
+  {
+    "id" : "CSOphthalmologistTreatments",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/CodeSystem/ophthalmologist-treatments",
+    "version" : "0.1.0",
+    "name" : "CSOphthalmologistTreatments"
+  },
+  {
+    "id" : "VSEyeMovementAndPosition",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ValueSet/eye-movement-and-position",
+    "version" : "0.1.0",
+    "name" : "VSEyeMovementAndPosition"
+  },
+  {
+    "id" : "eye-screening-results",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ValueSet/eye-screening-results",
+    "version" : "0.1.0",
+    "name" : "VSEyeScreeningResults"
+  },
+  {
+    "id" : "VSEyeScreeningAgeRange",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range",
+    "version" : "0.1.0",
+    "name" : "VSEyeScreeningAgeRange"
+  },
+  {
+    "id" : "VSNeonatalHearingScreeningResults",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ValueSet/neonatal-hearing-screening-results",
+    "version" : "0.1.0",
+    "name" : "VSNeonatalHearingScreeningResults"
+  },
+  {
+    "id" : "VSOphthalmologistTreatments",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ValueSet/ophthalmologist-treatments",
+    "version" : "0.1.0",
+    "name" : "VSOphthalmologistTreatments"
+  },
+  {
+    "id" : "hl7.fhir.be.childrecord",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ImplementationGuide/hl7.fhir.be.childrecord",
+    "version" : "0.1.0",
+    "name" : "ChildRecord"
+  },
+  {
+    "id" : "BeDocument",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeDocument",
+    "version" : "0.1.0",
+    "name" : "BeDocument"
+  },
+  {
+    "id" : "BeModelObservation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelObservation",
+    "version" : "0.1.0",
+    "name" : "BeModelObservation"
+  },
+  {
+    "id" : "BeModelRelatedPerson",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/BeModelRelatedPerson",
+    "version" : "0.1.0",
+    "name" : "BeModelRelatedPerson"
+  },
+  {
+    "id" : "ChildReport",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/StructureDefinition/ChildReport",
+    "version" : "0.1.0",
+    "name" : "ChildReport"
+  }
+]

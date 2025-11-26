@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSOphthalmologistTreatments",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSOphthalmologistTreatments</b></p><a name=\"CSOphthalmologistTreatments\"> </a><a name=\"hcCSOphthalmologistTreatments\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">glasses<a name=\"CSOphthalmologistTreatments-glasses\"> </a></td></tr><tr><td style=\"white-space:nowrap\">occlusion<a name=\"CSOphthalmologistTreatments-occlusion\"> </a></td></tr><tr><td style=\"white-space:nowrap\">operation<a name=\"CSOphthalmologistTreatments-operation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">other-treatment<a name=\"CSOphthalmologistTreatments-other-treatment\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments",
+  "version" : "0.1.0",
+  "name" : "CSOphthalmologistTreatments",
+  "title" : "Ophthalmologist Treatment statuses",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-11-26T09:38:23+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Ophthalmologist Treatment statuses",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "glasses"
+  },
+  {
+    "code" : "occlusion"
+  },
+  {
+    "code" : "operation"
+  },
+  {
+    "code" : "other-treatment"
+  }]
+}

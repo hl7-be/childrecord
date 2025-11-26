@@ -1,0 +1,74 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelChildReport.html" : "Child Report Logical Model"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSEyeMovementAndPosition",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSEyeMovementAndPosition",
+      "title" : "Eye Movement and Position",
+      "description" : "This value set includes codes to represent eye movement and position observations.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelChildReport.html" : "Child Report Logical Model"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSNeonatalHearingScreeningResults",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSNeonatalHearingScreeningResults",
+      "title" : "Neonatal Hearing Screening Results",
+      "description" : "This value set includes codes for neonatal hearing screening results.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelChildReport.html" : "Child Report Logical Model"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/VSOphthalmologistTreatments",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSOphthalmologistTreatments",
+      "title" : "Ophthalmologist Treatments",
+      "description" : "This value set includes codes for ophthalmologist treatment status.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelChildReport.html" : "Child Report Logical Model"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSEyeScreeningOutcome",
+      "title" : "Eye Screening Results",
+      "description" : "A value set that includes codes for eye screening results.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelChildReport.html" : "Child Report Logical Model"
+    }
+  ]
+}

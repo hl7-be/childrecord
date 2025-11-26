@@ -1,0 +1,27 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"BeModelObservation","BeModelObservation","","","",0,*,"","","","null {[]} {[]}
+","Observation model","A model for observations, which are measurements or assessments made about a patient or subject. This model is used to represent various types of clinical observations.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelObservation.subject","BeModelObservation.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.1.2]]}
+","Subject of the observation","The patient or subject to whom the observation applies.","","","","","","","","","",,,,,"",,,,"BeModelObservation.subject",1,1,"",""
+"BeModelObservation.code","BeModelObservation.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation code","A code that identifies the type of observation being made, such as a clinical measurement or assessment.","","","","","","","","","",,"required","The code that identifies the type of observation, such as a clinical measurement or assessment.","","",,,,"BeModelObservation.code",1,1,"",""
+"BeModelObservation.value[x]","BeModelObservation.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Value of the observation","The value of the observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.value[x]",0,1,"",""
+"BeModelObservation.effective[x]","BeModelObservation.effective[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Effective time or period","The time or period during which the observation was made.","","","","","","","","","",,,,,"",,,,"BeModelObservation.effective[x]",0,1,"",""
+"BeModelObservation.status","BeModelObservation.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Observation status","The status of the observation, indicating whether it is preliminary, final, etc.","","","","","","","","","",,"required","The status of the observation, such as preliminary, final, amended, etc.","","",,,,"BeModelObservation.status",1,1,"",""
+"BeModelObservation.statusReason[x]","BeModelObservation.statusReason[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+string {[]} {[]}","Reason for the observation status","The reason for the current status of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.statusReason[x]",0,1,"",""
+"BeModelObservation.performer","BeModelObservation.performer","","","",0,*,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2]]}
+","Performer of the observation","The individual or organization that performed the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.performer",0,*,"",""
+"BeModelObservation.component","BeModelObservation.component","","","",0,*,"","","","Base {[]} {[]}
+","Component observations","Components of the observation, which can include additional measurements or assessments related to the main observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component",0,*,"",""
+"BeModelObservation.component.code","BeModelObservation.component.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Component code","A code that identifies the component of the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.code",1,1,"",""
+"BeModelObservation.component.value[x]","BeModelObservation.component.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}","Component value","The value of the component observation, which can be a quantity, a coded value, or a string.","","","","","","","","","",,,,,"",,,,"BeModelObservation.component.value[x]",0,1,"",""
+"BeModelObservation.interpretation","BeModelObservation.interpretation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Interpretation of the observation","An interpretation of the observation, such as normal, abnormal, etc.","","","","","","","","","",,,,,"",,,,"BeModelObservation.interpretation",0,1,"",""
+"BeModelObservation.note","BeModelObservation.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Notes or comments about the observation","Additional notes or comments related to the observation.","","","","","","","","","",,,,,"",,,,"BeModelObservation.note",0,*,"",""

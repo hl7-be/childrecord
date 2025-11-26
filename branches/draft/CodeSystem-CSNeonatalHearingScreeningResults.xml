@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSNeonatalHearingScreeningResults"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem CSNeonatalHearingScreeningResults</b></p><a name="CSNeonatalHearingScreeningResults"> </a><a name="hcCSNeonatalHearingScreeningResults"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">pass<a name="CSNeonatalHearingScreeningResults-pass"> </a></td></tr><tr><td style="white-space:nowrap">refer<a name="CSNeonatalHearingScreeningResults-refer"> </a></td></tr><tr><td style="white-space:nowrap">aborted-test<a name="CSNeonatalHearingScreeningResults-aborted-test"> </a></td></tr><tr><td style="white-space:nowrap">not-performed<a name="CSNeonatalHearingScreeningResults-not-performed"> </a></td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults"/>
+  <version value="0.1.0"/>
+  <name value="CSNeonatalHearingScreeningResults"/>
+  <title value="Neonatal Hearing Screening Results"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-11-26T09:32:29+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes for the results of neonatal hearing screening tests."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="pass"/>
+  </concept>
+  <concept>
+    <code value="refer"/>
+  </concept>
+  <concept>
+    <code value="aborted-test"/>
+  </concept>
+  <concept>
+    <code value="not-performed"/>
+  </concept>
+</CodeSystem>

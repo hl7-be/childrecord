@@ -1,0 +1,51 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSEyeMovementAndPosition",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSEyeMovementAndPosition</b></p><a name=\"CSEyeMovementAndPosition\"> </a><a name=\"hcCSEyeMovementAndPosition\"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/eye-movement-and-position</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">intermittent-strabismus<a name=\"CSEyeMovementAndPosition-intermittent-strabismus\"> </a></td></tr><tr><td style=\"white-space:nowrap\">continuous-strabismus<a name=\"CSEyeMovementAndPosition-continuous-strabismus\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nystagmus<a name=\"CSEyeMovementAndPosition-nystagmus\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+  "version" : "0.1.0",
+  "name" : "CSEyeMovementAndPosition",
+  "status" : "draft",
+  "date" : "2025-08-11T07:08:33+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "intermittent-strabismus"
+  },
+  {
+    "code" : "continuous-strabismus"
+  },
+  {
+    "code" : "nystagmus"
+  }]
+}

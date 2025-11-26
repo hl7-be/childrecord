@@ -1,0 +1,50 @@
+# hl7.fhir.be.childrecord#0.1.0: Child Record(en)
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Eye Movement and Position](CodeSystem-CSEyeMovementAndPosition.md)
+* [Eye Screening Results](CodeSystem-CSEyeScreeningResults.md)
+* [Neonatal Hearing Screening Results](CodeSystem-CSNeonatalHearingScreeningResults.md)
+* [Ophthalmologist Treatment statuses](CodeSystem-CSOphthalmologistTreatments.md)
+
+### ValueSets
+
+* [Eye Movement and Position](ValueSet-VSEyeMovementAndPosition.md)
+* [Neonatal Hearing Screening Results](ValueSet-VSNeonatalHearingScreeningResults.md)
+* [Ophthalmologist Treatments](ValueSet-VSOphthalmologistTreatments.md)
+* [Eye Screening Results](ValueSet-eye-screening-results.md)
+
+### Logicals
+
+* [Child Report Logical Model](StructureDefinition-BeModelChildReport.md)
+* [Document model](StructureDefinition-BeModelDocument.md)
+* [Related Person](StructureDefinition-BeModelRelatedPerson.md)
+
+### Resource Profiles
+
+* [BeBacterialMeningitis](StructureDefinition-BeBacterialMeningitis.md)
+* [Child Record Composition](StructureDefinition-BeChildRecordComposition.md)
+* [BeEyeScreening](StructureDefinition-BeEyeScreening.md)
+* [Neonatal Hearing Screening](StructureDefinition-BeNeonatalHearingScreening.md)
+* [Neonatal Hearing Screening - Left Ear](StructureDefinition-BeNeonatalHearingScreeningLeft.md)
+* [Neonatal Hearing Screening - Right Ear](StructureDefinition-BeNeonatalHearingScreeningRight.md)
+* [BeObservation](StructureDefinition-BeObservation.md)
+* [BePregnancyCMVInfection](StructureDefinition-BePregnancyCMVInfection.md)
+* [BePregnancyDuration](StructureDefinition-BePregnancyDuration.md)
+* [BeSevereHeadTrauma](StructureDefinition-BeSevereHeadTrauma.md)
+* [ChildReport](StructureDefinition-ChildReport.md)
+* [Eye movement and position](StructureDefinition-EyeResultsEyeMovementAndPosition.md)
+* [Eye remarks](StructureDefinition-EyeResultsEyeRemarks.md)
+* [Inspection of pupil abnormal](StructureDefinition-EyeResultsInspectionPupilAbnormal.md)
+* [InTreatmentWithOphthalmologist](StructureDefinition-InTreatmentWithOphthalmologist.md)
+
+### ImplementationGuides
+
+* [Child Record](ImplementationGuide-hl7.fhir.be.childrecord.md)

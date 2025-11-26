@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSEyeScreeningAgeRange",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSEyeScreeningAgeRange</b></p><a name=\"VSEyeScreeningAgeRange\"> </a><a name=\"hcVSEyeScreeningAgeRange\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSEyeMovementAndPosition.html\"><code>http://example.org/fhir/CodeSystem/eye-movement-and-position</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range",
+  "version" : "0.1.0",
+  "name" : "VSEyeScreeningAgeRange",
+  "status" : "draft",
+  "date" : "2025-08-11T07:08:33+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/eye-movement-and-position"
+    }]
+  }
+}

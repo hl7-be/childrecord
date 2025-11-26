@@ -1,0 +1,20 @@
+{
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/ImplementationGuide/hl7.fhir.be.childrecord",
+  "name" : "ChildRecord",
+  "title" : "Child Record",
+  "description" : "Child Record FHIR specifications",
+  "ig-date" : "2025-02-26",
+  "status" : "draft",
+  "package-id" : "hl7.fhir.be.childrecord",
+  "ig-ver" : "0.1.0",
+  "date" : "Thu, 20 Nov, 2025 07:39:28 +0000",
+  "dateISO8601" : "2025-11-20T07:39:28+00:00",
+  "errs" : 6,
+  "warnings" : 104,
+  "hints" : 5,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2026273640
+}

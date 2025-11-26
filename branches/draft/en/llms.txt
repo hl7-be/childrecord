@@ -1,0 +1,32 @@
+# hl7.fhir.be.childrecord#0.1.0: Child Record(en)
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Eye Movement and Position](CodeSystem-CSEyeMovementAndPosition.md)
+* [Eye Screening Results](CodeSystem-CSEyeScreeningResults.md)
+* [Neonatal Hearing Screening Results](CodeSystem-CSNeonatalHearingScreeningResults.md)
+* [Ophthalmologist Treatment statuses](CodeSystem-CSOphthalmologistTreatments.md)
+
+### ValueSets
+
+* [Eye Movement and Position](ValueSet-VSEyeMovementAndPosition.md)
+* [Neonatal Hearing Screening Results](ValueSet-VSNeonatalHearingScreeningResults.md)
+* [Ophthalmologist Treatments](ValueSet-VSOphthalmologistTreatments.md)
+* [Eye Screening Results](ValueSet-eye-screening-results.md)
+
+### Logicals
+
+* [Child Report Logical Model](StructureDefinition-BeModelChildReport.md)
+* [Document model](StructureDefinition-BeModelDocument.md)
+* [Related Person](StructureDefinition-BeModelRelatedPerson.md)
+
+### ImplementationGuides
+
+* [Child Record](ImplementationGuide-hl7.fhir.be.childrecord.md)

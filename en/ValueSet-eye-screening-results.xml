@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="eye-screening-results"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet eye-screening-results</b></p><a name="eye-screening-results"> </a><a name="hceye-screening-results"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CSEyeScreeningResults.html"><code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/childrecord/ValueSet/eye-screening-results"/>
+  <version value="0.1.0"/>
+  <name value="VSEyeScreeningOutcome"/>
+  <title value="Eye Screening Results"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-11-26T09:50:03+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A value set that includes codes for eye screening results."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults"/>
+    </include>
+  </compose>
+</ValueSet>

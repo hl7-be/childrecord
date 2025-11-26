@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"BeModelRelatedPerson","BeModelRelatedPerson","","","",0,*,"","","","null {[]} {[]}
+","Document model","EHDS refined base model for common document data elements, including the common header. Data relevant to document type and its content for administrative and searching purposes.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelRelatedPerson.subject","BeModelRelatedPerson.subject","","","",1,1,"","","","https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/BeModelPatient {[]} {[]}
+","Subject","Patient/subject information","","","","","","","","","",,,,,"",,,,"BeModelRelatedPerson.subject",1,1,"",""
+"BeModelRelatedPerson.relatedperson","BeModelRelatedPerson.relatedperson","","","",1,1,"","","","https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/BeModelPatient {[]} {[]}
+","Related person","A person related to the patient/subject, such as a family member or guardian.","","","","","","","","","",,,,,"",,,,"BeModelRelatedPerson.relatedperson",1,1,"",""
+"BeModelRelatedPerson.relationship","BeModelRelatedPerson.relationship","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Relationship to subject","The relationship of the related person to the patient/subject. This can include roles such as mother, father, guardian, etc.","","","","","","","","","",,,,,"",,,,"BeModelRelatedPerson.relationship",1,1,"",""

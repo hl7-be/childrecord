@@ -68,7 +68,7 @@ Characteristics: #can-be-target
 //   * subject 1..1 BeModelPatient "Child that the report is about" "The child that the report is about."
 
 //  * component contains left 1..1 and right 1..1
-* neonatalHearingScreeningLeft 0..1 Base "Left ear result" "Result of neonatal hearing screening for the left ear."
+* neonatalHearingScreeningLeft 0..1 Base "[BeClinicalObservation] Left ear result" "Result of neonatal hearing screening for the left ear."
   * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
   * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * code 1..1 CodeableConcept "Result of neonatal hearing screening - left"
@@ -76,7 +76,7 @@ Characteristics: #can-be-target
     * valueCode 1..1 code "Result of neonatal hearing screening (left ear)" "Neonatal hearing screening result for the left ear."
     * valueCode from VSNeonatalHearingScreeningResults
 
-* neonatalHearingScreeningRight 0..1 Base "Right ear result" "Result of neonatal hearing screening for the right ear."
+* neonatalHearingScreeningRight 0..1 Base "[BeClinicalObservation] Right ear result" "Result of neonatal hearing screening for the right ear."
   * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
   * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
     * code 1..1 CodeableConcept "Result of neonatal hearing screening - right"

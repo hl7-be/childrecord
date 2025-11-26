@@ -107,7 +107,7 @@ Characteristics: #can-be-target
   * valueBoolean 1..1 boolean "Indicates whether severe head trauma was identified." "The value indicates whether severe head trauma was identified in the child."
 
 
-* eyeScreening 0..* BackboneElement "Eye screening" "Details about the eye screening."
+* eyeScreening 0..* BackboneElement "[BeClinicalObservation] Eye screening" "Details about the eye screening."
 //  * eyeScreeningOutcome 0..* BackboneElement "[BeObservation] Eye screening" "Details about the eye screening."
   * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
   * date 1..1 date "Date of eye screening" "The date of eye screening."

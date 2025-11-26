@@ -19,7 +19,8 @@ version: 0.1.0
 
 dependencies:
   hl7.fhir.be.core: 2.1.2
-  hl7.fhir.be.patientwill: 1.0.0
+#  hl7.fhir.be.patientwill: dev
+#  hl7.fhir.be.core-clinical: current
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -70,11 +71,9 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
-  index.xml:
+  index.md:
     title: Home
 #  guidance.md:
-  changes.xml:
-  downloads.xml:
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
 # should follow the format defined in ImplementationGuide:
@@ -100,8 +99,8 @@ menu:
   Home: index.html
 #  Guidance: guidance.html
   Artifacts: artifacts.html
-  Downloads: downloads.html
-  Changes: changes.html
+  # Downloads: downloads.html
+  # Changes: changes.html
 #  History: ../history.html
 
 # The parameters property represents IG.definition.parameter. Rather
@@ -110,9 +109,8 @@ menu:
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-#parameters:
-#  excludettl: true
-#  validation: [allow-any-extensions, no-broken-links]
+parameters:
+  pin-canonicals: pin-multiples
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.

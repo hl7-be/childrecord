@@ -1,0 +1,94 @@
+Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
+
+Logical: BeModelEBirthReport
+Parent: BeModelDocument
+Title: "eBirth Report Logical Model"
+Description: "A logical model representing the eBirth diagnostic report (CareSet) data elements."
+Characteristics: #can-be-target
+
+// Override subject cardinality - can have multiple patients (Mother/Baby(ies))
+* subject 1..1
+* subject ^short = "Patient"
+* subject ^definition = "The unique identifier of the patient. The unique identifier should be the national patient registry number (NISS) but in some cases, another unique identifier may be authorized (such as the biss or name, first name(s), date of birth). Can be one or multiple patients (Mother / Baby(ies))."
+
+* mother 0..1 Reference "The mother"
+* sibling 0..1 Reference "Siblings"
+
+// Business Identifier (NISS for eBirth context)
+* identifier 1..1
+* identifier ^short = "Unique identifier for the eBirth CareSet instance"
+* identifier ^definition = "Unique identifier for an instance of the CareSet 'Diagnostic Report eBirth'. This identifier is guaranteed to be able to identify and distinguish each instantiation of an eBirth CareSet in a unique way."
+// Reference: https://docs.google.com/document/d/13qamEPfdQ2HgUiXmjwHQNchpEU3LsQHF5MN9jKufX2g/edit?usp=sharing
+
+* identifier.value ^short = "National birth registration identification number (in addition to NISS)"
+* identifier.use ^short = "Business identifier for eBirth"
+
+// RecordedDate - Date of recording or last update
+* recordedDate 1..1
+* recordedDate ^short = "Recording date or last update date (functional)"
+* recordedDate ^definition = "Date of recording or last update (functional) of the report, such as completing data that was omitted or was initially erroneous (for example omitting a parameter of a requested baby in the eBirth project)."
+// Extension: http://hl7.org/fhir/StructureDefinition/be-ext-recordeddate
+
+// Observation Period - period the report covers (max 15 days after birth)
+* observationPeriod 0..1 Period "Observation Period" "The period over which the report covers (max 15 days after birth)."
+* observationPeriod ^short = "Period the report covers"
+* observationPeriod ^definition = "Date to date corresponding to the period over which the report covers (max 15 days after birth)."
+// Maps to Effective[x] in FHIR
+
+// Encounter - Transfer to another service
+* encounter 0..* Reference "Encounter" "Transfer to another service."
+// Maps to Encounter in FHIR
+
+// Recorder - Organization responsible for encoding
+* recorder 1..1 Reference(BeOrganization) "Recorder" "Reference to the provider or organization responsible for encoding the eBirth information and producing the report."
+* recorder ^short = "Provider/Organization responsible for encoding"
+* recorder ^definition = "Reference to the provider or organization responsible for encoding eBirth information and producing the report. The unique identifier of each person is the NISS, while for each organization the enterprise number serves as unique identifier."
+// Extension: http://hl7.org/fhir/StructureDefinition/be-ext-recorder
+
+// Interpreter - Provider/Organization interpreting the report
+* interpreter 0..1 Reference(BePractitioner or BeOrganization) "Interpreter" "Provider/Organization who interprets the report."
+* interpreter ^short = "Provider/Organization interpreting the report"
+* interpreter ^definition = "Provider/Organization who interprets the report. This interpretation can be in the form of notes included in the CareSet."
+// Maps to ResultsInterpreter in FHIR
+
+// Status - Status of the report (default is "Final")
+* status 1..1
+* status ^short = "Status of the report"
+* status ^definition = "Status of the report. The default is 'Final'."
+// Reference: VS_DiagRep_Status
+
+// Category - Report category (default: "eBirth Report")
+* category 1..*
+* category ^short = "Report categories"
+* category ^definition = "Categories of the report. Default value: 'eBirth Report' (LOINC / SNOMED CT invariant)."
+// Reference: VS_DiagRep_Category
+
+// Code - Report code ("eBirth")
+* code 1..1
+* code ^short = "Report code"
+* code ^definition = "Report code. 'eBirth' (LOINC / SNOMED CT invariant)."
+// Reference: VS_DiagRep_Code
+
+// Observations at birth - List of birth observation references
+* observationsAtBirth 0..* Reference "Observations at birth" "List of references to birth observations."
+* observationsAtBirth ^short = "Birth observations"
+* observationsAtBirth ^definition = "List of references to observations at birth."
+// Maps to SupportingInfo with type = Observation.reference
+
+// Birth complications - List of birth complication references
+* birthComplications 0..* Reference "Birth complications" "List of references to birth complications."
+* birthComplications ^short = "Birth complications"
+* birthComplications ^definition = "List of references to complications at birth."
+// Maps to SupportingInfo with type = Problem.reference
+
+// Note - Interpretation comments in free text
+* note 0..* Annotation "Note" "Interpretation comments in free text format."
+* note ^short = "Interpretation notes"
+* note ^definition = "Interpretation comments in free text format. This element will not be provided by the report producer, but will be provided by the provider providing the interpretation."
+
+// Document - Complete PDF report
+* presentedForm 0..1
+* presentedForm ^short = "Complete PDF report document"
+* presentedForm ^definition = "PDF document representing the complete report (text, graphics, deducted observations, conclusions, etc.)."
+// Maps to PresentedForm.attachment

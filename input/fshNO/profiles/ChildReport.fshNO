@@ -56,3 +56,43 @@ Parent: Bundle
 * entry[neonatalHearingScreeningRight].resource 1..
 * entry[neonatalHearingScreeningRight].resource only BeNeonatalHearingScreeningRight
 * entry[neonatalHearingScreeningRight] MS
+
+* entry[pregnancyDuration].resource 1..
+* entry[pregnancyDuration].resource only BePregnancyDuration
+* entry[pregnancyDuration] MS
+
+* entry[pregnancyCMVInfection].resource 1..
+* entry[pregnancyCMVInfection].resource only BePregnancyCMVInfection
+* entry[pregnancyCMVInfection] MS
+
+* entry[pregnancyBacterialMeningitis].resource 1..
+* entry[pregnancyBacterialMeningitis].resource only BeBacterialMeningitis
+* entry[pregnancyBacterialMeningitis] MS
+
+* entry[neonatalHearingScreening].resource 1..
+* entry[neonatalHearingScreening].resource only BeNeonatalHearingScreening
+* entry[neonatalHearingScreening] MS
+
+* entry[severeHeadTrauma].resource 1..
+* entry[severeHeadTrauma].resource only BeSevereHeadTrauma
+* entry[severeHeadTrauma] MS
+
+* entry[eyeScreening].resource 1..
+* entry[eyeScreening].resource only BeEyeScreening
+* entry[eyeScreening] MS
+
+* entry[inspectionPupilAbnormal].resource 1..
+* entry[inspectionPupilAbnormal].resource only EyeResultsInspectionPupilAbnormal
+* entry[inspectionPupilAbnormal] MS
+
+* entry[eyeMovementAndPosition].resource 1..
+* entry[eyeMovementAndPosition].resource only EyeResultsEyeMovementAndPosition
+* entry[eyeMovementAndPosition] MS
+
+* entry[eyeRemarks].resource 1..
+* entry[eyeRemarks].resource only EyeResultsEyeRemarks
+* entry[eyeRemarks] MS
+
+* entry[inTreatmentWithOphthalmologist].resource 1..
+* entry[inTreatmentWithOphthalmologist].resource only InTreatmentWithOphthalmologist
+* entry[inTreatmentWithOphthalmologist] MS

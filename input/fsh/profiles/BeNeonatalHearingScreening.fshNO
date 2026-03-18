@@ -9,3 +9,8 @@ Description: "Main observation for neonatal hearing screening."
 * subject only Reference(BePatient)
 * effective[x] only dateTime
 * effectiveDateTime 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSNeonatalHearingScreeningResults
+
+//* extension containsbodylocation

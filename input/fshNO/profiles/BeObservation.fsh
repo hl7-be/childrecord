@@ -1,2 +1,0 @@
-Profile: BeObservation
-Parent: Observation

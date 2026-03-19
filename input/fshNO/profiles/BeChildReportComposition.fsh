@@ -1,7 +1,7 @@
-Profile: BeChildRecordComposition
+Profile: BeChildReportComposition
 Parent: Composition
-Id: BeChildRecordComposition
-Title: "Child Record Composition"
+Id: BeChildReportComposition
+Title: "Child Report Composition"
 
 * author 1.. MS
 * author only Reference(BePractitioner or BeOrganization)

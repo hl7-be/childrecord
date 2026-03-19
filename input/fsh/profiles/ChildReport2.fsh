@@ -41,7 +41,7 @@ Parent: Bundle
 // --- Non-observation entries (keep specific profiles) ---
 
 * entry[composition].resource 1..
-* entry[composition].resource only BeChildRecordComposition
+* entry[composition].resource only BeChildReportComposition
 * entry[composition] MS
 
 * entry[patient].resource 1..
@@ -121,7 +121,7 @@ Parent: Bundle
 
 * entry[eyeScreening].resource 1..
 * entry[eyeScreening].resource only BeClinicalObservation
-* entry[eyeScreening].resource.code = $sct#274412005x
+* entry[eyeScreening].resource.code = $sct#274412005
 * entry[eyeScreening].resource.value[x] only CodeableConcept
 * entry[eyeScreening].resource.valueCodeableConcept from VSEyeScreeningOutcome
 * entry[eyeScreening] MS

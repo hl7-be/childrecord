@@ -9,9 +9,9 @@
 id: hl7.fhir.be.childrecord
 canonical: https://www.ehealth.fgov.be/standards/fhir/childrecord
 # url: https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide-hl7.fhir.be.medication
-name: ChildRecord 
-title: "Child Record"
-description: Child Record FHIR specifications
+name: ChildReport 
+title: "Child Report"
+description: Child Report FHIR specifications
 status: draft
 license: CC0-1.0
 date: 2025-02-26

@@ -1,6 +1,6 @@
-Child Record IG
+Child Report IG
 ---
-Child record IG
+Child report IG
 <br> </br>
 ###
 ### Publication

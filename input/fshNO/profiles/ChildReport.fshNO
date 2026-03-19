@@ -39,7 +39,7 @@ Parent: Bundle
 
 
 * entry[composition].resource 1..
-* entry[composition].resource only BeChildRecordComposition
+* entry[composition].resource only BeChildReportComposition
 * entry[composition] MS
 * entry[patient].resource 1..
 * entry[patient].resource only BePatient

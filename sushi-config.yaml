@@ -6,8 +6,8 @@
 # │  specific packageId is also provided in this file.                                             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-id: hl7.fhir.be.childrecord
-canonical: https://www.ehealth.fgov.be/standards/fhir/childrecord
+id: hl7.fhir.be.childreport
+canonical: https://www.ehealth.fgov.be/standards/fhir/childreport
 # url: https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide-hl7.fhir.be.medication
 name: ChildReport 
 title: "Child Report"
@@ -21,6 +21,8 @@ dependencies:
   hl7.fhir.be.core: 2.1.2
 #  hl7.fhir.be.patientwill: dev
   hl7.fhir.be.core-clinical: current
+  hl7.fhir.be.patient-dossier: dev
+  
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -109,6 +111,14 @@ menu:
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+special-urls:
+  - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation
+  - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position
+  - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results
+  - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results
+  - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position
+  - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments
+
 parameters:
   pin-canonicals: pin-multiples
 

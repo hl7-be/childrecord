@@ -1,6 +1,8 @@
 CodeSystem: CSChildReportDocumentation
+Id: cs-child-report-documentation
 Title: "Child Report Documentation"
 Description: "Codes for documents or sections in the Child Report."
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false

@@ -15,6 +15,11 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * identifier ^short = "Persistent identifier for the Bundle"
 
 
+* entry ^slicing.discriminator[0].type = #type
+* entry ^slicing.discriminator[=].path = "resource"
+* entry ^slicing.discriminator[+].type = #value
+* entry ^slicing.discriminator[=].path = "resource"
+* entry ^slicing.rules = #open
 * entry ^slicing.ordered = true
 * entry ^orderMeaning = "The first entry in this bundle is always a Composition."
 * entry ^short = "Entry resource in the child report bundle"
@@ -22,6 +27,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry ^comment = "Must contain the Composition as the first entry (only a single Composition resource instance may be included) and a Patient resource."
 * entry.fullUrl 1.. MS
 * entry contains
+    composition 1..1 MS and
     patient 1..1 and
     relatedPerson 1..1 and
     pregnancyDuration 0..1 and

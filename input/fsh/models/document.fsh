@@ -22,8 +22,8 @@ Characteristics: #can-be-target
 * presentedForm 0..* Attachment "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document"
 * documentTitle 1..1 string "Document title"
 
-* section 0..1 * "Sections"
-* section ^type.code = #*
+* section 0..1 BackboneElement "Sections"
+// * section ^type.code = #Resource
 
   * subsection 0..* contentReference #BeModelDocument.section "subsection"
 

@@ -14,8 +14,8 @@ title: "Child Report"
 description: Child Report FHIR specifications
 status: draft
 license: CC0-1.0
-date: 2025-02-26
-version: 0.1.0
+date: 2026-02-27
+version: 1.0.0
 
 dependencies:
   hl7.fhir.be.core: 2.1.2

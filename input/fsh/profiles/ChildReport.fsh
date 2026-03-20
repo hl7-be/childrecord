@@ -15,6 +15,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * identifier ^short = "Persistent identifier for the Bundle"
 
 
+* entry[careSet] 0..0
 * entry ^slicing.ordered = true
 * entry ^orderMeaning = "The first entry in this bundle is always a Composition."
 * entry ^short = "Entry resource in the child report bundle"

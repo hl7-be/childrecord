@@ -21,7 +21,6 @@ Title: "Child Report Composition"
 * section contains
     pregnancyDetails 1..1 MS and
     neonatalHearingScreening 0..1 and
-    refusalOfHearingTest 0..1 and
     severeHeadTrauma 0..1 and
     eyeScreening 0..1 and
     eyeResults 0..1 and
@@ -52,15 +51,7 @@ Title: "Child Report Composition"
 
 
 
-// * section[refusalOfHearingTest]
-//   * ^short = "Refusal of hearing test section"
-//   * ^definition = "This section contains details about the refusal of hearing test."
-//   * emptyReason MS
-//   * code 1..
-//   * code = CSChildReportDocumentation#refusal-of-hearing-test
-//   * entry only Reference(BeClinicalObservation)
-//   * entry ^short = "Refusal of hearing test entry"
-//   * entry ^definition = "An entry in the refusal of hearing test section of the child record composition."
+// refusalOfHearingTest - removed for now, to be added back when needed
 
 
 

@@ -121,6 +121,13 @@ special-url:
 
 parameters:
   pin-canonicals: pin-multiples
+  special-url:
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.

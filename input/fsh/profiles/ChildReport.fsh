@@ -2,6 +2,7 @@ Alias: $sct = http://snomed.info/sct
 Alias: $laterality = https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality
 
 Profile: BeVlChildReport
+Id: be-vl-childreport
 Parent: BeDocument
 Description: "Profile for the child report document - a Bundle of type 'document' that contains a Composition resource and other related resources with information about the child and the pregnancy. This profile is used for the exchange of information about the child, to be first implemented in Flanders."
 
@@ -83,7 +84,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[pregnancyCMVInfection].resource 1..
 * entry[pregnancyCMVInfection].resource ^short = "Observation for CMV infection during pregnancy (focus: the mother)"
 * entry[pregnancyCMVInfection].resource only BeClinicalObservation
-* entry[pregnancyCMVInfection].resource.code = $sct#28944009 "Infection caused by Cytomegalovirus"
+* entry[pregnancyCMVInfection].resource.code = $sct#28944009 "CMV - Cytomegalovirus infection"
 * entry[pregnancyCMVInfection].resource.code ^short = "CMV infection"
 * entry[pregnancyCMVInfection].resource.subject only Reference(BePatient)
 * entry[pregnancyCMVInfection].resource.subject ^short = "The child that is the subject of this document"
@@ -279,7 +280,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[eyeRemarks].resource ^short = "Observation for free text eye remarks"
 * entry[eyeRemarks].resource only BeClinicalObservation
 * entry[eyeRemarks].resource.code 1.. MS
-* entry[eyeRemarks].resource.code = #eye-remarks
+* entry[eyeRemarks].resource.code = CSChildReportDocumentation#eye-remarks-observation
 * entry[eyeRemarks].resource.code ^short = "Eye remarks"
 * entry[eyeRemarks].resource.subject only Reference(BePatient)
 * entry[eyeRemarks].resource.subject ^short = "The child that is the subject of this document"
@@ -295,7 +296,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[inTreatmentWithOphthalmologist].resource 1..
 * entry[inTreatmentWithOphthalmologist].resource ^short = "Observation for treatment with an ophthalmologist"
 * entry[inTreatmentWithOphthalmologist].resource only BeClinicalObservation
-* entry[inTreatmentWithOphthalmologist].resource.code = #in-treatment-with-ophthalmologist
+* entry[inTreatmentWithOphthalmologist].resource.code = CSChildReportDocumentation#ophthalmologist-treatment-observation
 * entry[inTreatmentWithOphthalmologist].resource.code ^short = "In treatment with ophthalmologist"
 * entry[inTreatmentWithOphthalmologist].resource.subject only Reference(BePatient)
 * entry[inTreatmentWithOphthalmologist].resource.subject ^short = "The child that is the subject of this document"

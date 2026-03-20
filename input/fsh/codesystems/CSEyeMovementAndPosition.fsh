@@ -6,6 +6,6 @@ Description: "Custom codes for eye movement and position conditions not availabl
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
-* ^experimental = true
+* ^experimental = false
 * #intermittent-strabismus "Intermittent strabismus"
 * #continuous-strabismus "Continuous strabismus"

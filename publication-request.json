@@ -1,0 +1,17 @@
+{
+  "package-id": "hl7.fhir.be.childrecord",
+  "version": "1.0.0",
+  "first": true,
+  "status": "release",
+  "sequence": "Trial Use",
+  "fhirversion": "R4",
+  "title": "HL7 BE child record IG",
+  "desc": "eHealth FHIR Child Record Profiles for Belgium",
+  "introduction": "eHealth FHIR Child Record Profiles for Belgium",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/childrecord/1.0.0",
+  "ci-build": "http://build.fhir.org/ig/hl7-be/childrecord",
+  "category": "National Base",
+  "date": "2026-03-27",
+  "mode" : "milestone",
+  "milestone" : true
+}

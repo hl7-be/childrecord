@@ -9,7 +9,7 @@ Description: "Composition profile for the Child Report (KindRapport). This resou
 * date 1.. MS
 
 
-* section ^slicing.discriminator[0].type = #pattern
+* section ^slicing.discriminator[0].type = #value
 * section ^slicing.discriminator[=].path = "code"
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open

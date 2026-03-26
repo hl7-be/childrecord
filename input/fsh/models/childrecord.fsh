@@ -75,18 +75,18 @@ Characteristics: #can-be-target
 * neonatalHearingScreeningLeft 0..1 Base "[BeClinicalObservation] Left ear result" "Result of neonatal hearing screening for the left ear."
   * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
   * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-    * code 1..1 CodeableConcept "Result of neonatal hearing screening - left"
-    * code = $sct#102972004 "Brain stem auditory evoked potential, function"
-    * valueCode 1..1 code "Result of neonatal hearing screening (left ear)" "Neonatal hearing screening result for the left ear."
-    * valueCode from VSNeonatalHearingScreeningResults
+  * code 1..1 CodeableConcept "Result of neonatal hearing screening - left"
+  * code = $sct#102972004 "Brain stem auditory evoked potential, function"
+  * valueCode 1..1 code "Result of neonatal hearing screening (left ear)" "Neonatal hearing screening result for the left ear."
+  * valueCode from VSNeonatalHearingScreeningResults
 
 * neonatalHearingScreeningRight 0..1 Base "[BeClinicalObservation] Right ear result" "Result of neonatal hearing screening for the right ear."
   * date 1..1 date "Date of neonatal hearing screening" "The date of neonatal hearing screening."
   * subject 1..1 Reference(BePatient) "Child that the report is about" "The child that the report is about."
-    * code 1..1 CodeableConcept "Result of neonatal hearing screening - right"
-    * code = $sct#102972004 "Brain stem auditory evoked potential, function"
-    * valueCode 1..1 code "Result of neonatal hearing screening (right ear)" "Neonatal hearing screening result for the right ear."
-    * valueCode from VSNeonatalHearingScreeningResults 
+  * code 1..1 CodeableConcept "Result of neonatal hearing screening - right"
+  * code = $sct#102972004 "Brain stem auditory evoked potential, function"
+  * valueCode 1..1 code "Result of neonatal hearing screening (right ear)" "Neonatal hearing screening result for the right ear."
+  * valueCode from VSNeonatalHearingScreeningResults 
 
 
 // * refusalOfHearingTest 0..1 BackboneElement "Refusal by the parents of a hearing test for the child" "Indicates whether the hearing test was refused."

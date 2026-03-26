@@ -118,6 +118,20 @@ This Implementation Guide is provided as a **draft** and is not approved for pro
 
 The final publication will supersede this version once officially approved and released.
 
+{% lang-fragment cross-version-analysis-inline.xhtml %}
+ 
+ 
+{% lang-fragment globals-table.xhtml %}
+
+
+{% lang-fragment expansion-params.xhtml %}
+
+
+{% lang-fragment dependency-table-short.xhtml %}
+
+
+{% lang-fragment ip-statements.xhtml %}
+
 ---
 
 ## Feedback & Contribution

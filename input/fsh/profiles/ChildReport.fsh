@@ -15,8 +15,8 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * identifier ^short = "Persistent identifier for the Bundle"
 
 
-* entry ^slicing.discriminator[0].type = #type
-* entry ^slicing.discriminator[=].path = "resource"
+//* entry ^slicing.discriminator[0].type = #type
+//* entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.discriminator[+].type = #value
 * entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.rules = #open

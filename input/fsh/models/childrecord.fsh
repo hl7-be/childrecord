@@ -4,7 +4,7 @@ Alias: $sct = http://snomed.info/sct
 
 Logical: BeModelChildReport
 Parent: BeModelDocument
-Title: "Child Report Logical Model"
+Title: "Child Report model"
 Description: "A logical model representing child report data elements."
 Characteristics: #can-be-target
 

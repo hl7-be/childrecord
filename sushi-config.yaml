@@ -121,6 +121,7 @@ special-url:
 
 parameters:
   pin-canonicals: pin-multiples
+  path-expansion-params: ../../Parameters-terminology-expansion.json
   special-url:
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position

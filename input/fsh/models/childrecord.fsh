@@ -8,7 +8,9 @@ Title: "Child Report Logical Model"
 Description: "A logical model representing child report data elements."
 Characteristics: #can-be-target
 
-* subject 1..1
+//* subject 1..1
+
+* subject ^min = 1
 
 * subject ^short = "Child that the report is about"
 //* relatedPerson 0..1 BeModelRelatedPerson "Biological mother of the child that the report is about" "The biological mother of the child is the related subject in this report."
@@ -21,8 +23,10 @@ Characteristics: #can-be-target
   * ^comment = "The date of the child report is the date when the report was created, not the date of the examination or observation. In case of reports migrated from KMEHR, the date is the date of the conversion, not the KMEHR message creation, which is unknown."
 
 //* version - to be used from the BeDocument */
-
-* presentedForm 1..1 
+//
+* presentedForm 
+  * ^min = 1
+  * ^max = "1" 
   * ^short = "Child report PDF file"
   * ^definition = "A base64 encoded PDF file with the remaining child report information (biometric data, charts, etc.)."
 

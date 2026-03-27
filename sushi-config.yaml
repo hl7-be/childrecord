@@ -12,9 +12,9 @@ canonical: https://www.ehealth.fgov.be/standards/fhir/childreport
 name: ChildReport 
 title: "Child Report"
 description: Child Report FHIR specifications
-status: draft
+status: active
 license: CC0-1.0
-date: 2026-02-27
+date: 2026-03-27
 version: 1.0.0
 
 dependencies:

@@ -103,7 +103,7 @@ menu:
   Artifacts: artifacts.html
   # Downloads: downloads.html
   # Changes: changes.html
-#  History: ../history.html
+  History: https://www.ehealth.fgov.be/standards/fhir/childreport/history.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -122,6 +122,7 @@ special-url:
 parameters:
   pin-canonicals: pin-multiples
   path-expansion-params: ../../Parameters-terminology-expansion.json
+  path-history: https://www.ehealth.fgov.be/standards/fhir/childreport/history.html
   special-url:
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position

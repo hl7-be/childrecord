@@ -123,6 +123,12 @@ parameters:
   pin-canonicals: pin-multiples
   path-expansion-params: ../../Parameters-terminology-expansion.json
   path-history: https://www.ehealth.fgov.be/standards/fhir/childreport/history.html
+  excludettl: true
+  shownav: 'true'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
   special-url:
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position

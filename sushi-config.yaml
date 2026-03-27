@@ -43,16 +43,16 @@ releaseLabel: STU
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: HL7 Belgium 
-  url: https://www.hl7belgium.org
-  email: hl7belgium@hl7belgium.org
+  name: eHealth Platform
+  url: https://www.ehealth.fgov.be
+  email: support@be-ehealth-standards.atlassian.net
 
 # ContactDetail is required by the template.
 contact:
-  - name: Message Structure eHealth
+  - name: Message-Structure
     telecom:
       - system: email
-        value: message-structure@ehealth.fgov.be
+        value: support@be-ehealth-standards.atlassian.net
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand

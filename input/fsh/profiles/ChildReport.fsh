@@ -2,7 +2,7 @@ Alias: $sct = http://snomed.info/sct
 Alias: $laterality = https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality
 
 Profile: BeVlChildReport
-Id: be-vl-childreport
+Id: be-childreport
 Parent: BeDocument
 Description: "Profile for the child report document - a Bundle of type 'document' that contains a Composition resource and other related resources with information about the child and the pregnancy. This profile is used for the exchange of information about the child, to be first implemented in Flanders."
 

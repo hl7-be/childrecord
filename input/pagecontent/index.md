@@ -1,5 +1,11 @@
 # Child Report (KindRapport) Implementation Guide
 
+
+{:.stu-note}
+This Belgian standard is based on requirements raised by Flanders and will continue to evolve in the future to respond to new needs and insights from other entities. Its use implies acceptance that changes may occur, including breaking changes that could impact existing implementations.  
+These evolutions are always developed through a structured process, in which stakeholders are actively involved in working groups, both from existing and new initiatives.
+
+
 **Scope:**
 This guide defines a FHIR-based Child Report ("KindRapport"), a structured medical report summarizing key aspects of a child's health and care journey. It serves as a shared reference for healthcare professionals — such as general practitioners, pediatricians, school doctors, and child health services — working together to support the health and development of children.
 

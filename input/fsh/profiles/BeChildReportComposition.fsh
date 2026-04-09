@@ -1,7 +1,6 @@
 Profile: BeChildReportComposition
 Parent: Composition
 Id: BeChildReportComposition
-Title: "Child Report Composition"
 Description: "Composition profile for the Child Report (KindRapport). This resource serves as the document index, organizing the child report into sections such as pregnancy details, neonatal hearing screening, head trauma, eye screening and results, and ophthalmologist treatment. Each section references BeClinicalObservation entries contained in the document Bundle."
 
 * author 1.. MS

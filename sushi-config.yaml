@@ -6,21 +6,23 @@
 # │  specific packageId is also provided in this file.                                             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-id: hl7.fhir.be.childrecord
-canonical: https://www.ehealth.fgov.be/standards/fhir/childrecord
+id: hl7.fhir.be.childreport
+canonical: https://www.ehealth.fgov.be/standards/fhir/childreport
 # url: https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide-hl7.fhir.be.medication
-name: ChildRecord 
-title: "Child Record"
-description: Child Record FHIR specifications
-status: draft
+name: ChildReport 
+title: "Child Report"
+description: Child Report FHIR specifications
+status: active
 license: CC0-1.0
-date: 2025-02-26
-version: 0.1.0
+date: 2026-03-27
+version: 1.0.0
 
 dependencies:
   hl7.fhir.be.core: 2.1.2
 #  hl7.fhir.be.patientwill: dev
-#  hl7.fhir.be.core-clinical: current
+  hl7.fhir.be.core-clinical: 1.1.0
+  hl7.fhir.be.patient-dossier: 1.0.0
+  
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -41,16 +43,16 @@ releaseLabel: STU
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: HL7 Belgium 
-  url: https://www.hl7belgium.org
-  email: hl7belgium@hl7belgium.org
+  name: eHealth Platform
+  url: https://www.ehealth.fgov.be
+  email: support@be-ehealth-standards.atlassian.net
 
 # ContactDetail is required by the template.
 contact:
-  - name: Message Structure eHealth
+  - name: Message-Structure
     telecom:
       - system: email
-        value: message-structure@ehealth.fgov.be
+        value: support@be-ehealth-standards.atlassian.net
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
@@ -73,6 +75,7 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 pages:
   index.md:
     title: Home
+  changes.xml:
 #  guidance.md:
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -100,8 +103,8 @@ menu:
 #  Guidance: guidance.html
   Artifacts: artifacts.html
   # Downloads: downloads.html
-  # Changes: changes.html
-#  History: ../history.html
+  Changes: changes.html
+  History: https://www.ehealth.fgov.be/standards/fhir/childreport/history.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -111,6 +114,21 @@ menu:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 parameters:
   pin-canonicals: pin-multiples
+  path-expansion-params: ../../Parameters-terminology-expansion.json
+  path-history: https://www.ehealth.fgov.be/standards/fhir/childreport/history.html
+  excludettl: true
+  shownav: 'true'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  special-url:
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.

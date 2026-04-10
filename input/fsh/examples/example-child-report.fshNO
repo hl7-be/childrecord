@@ -1,0 +1,426 @@
+Alias: $sct = http://snomed.info/sct
+Alias: $laterality = https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality
+Alias: $cs-doc = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation
+
+// ============================================================
+// Bundle - the Child Report document
+// ============================================================
+
+Instance: child-report-example
+InstanceOf: BeVlChildReport
+Usage: #example
+Title: "Example Child Report"
+Description: "A complete example of a Child Report (KindRapport) document for a newborn."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+* type = #document
+* timestamp = "2026-03-15T10:30:00+01:00"
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50001"
+* entry[=].resource = composition-1
+
+* entry[+].fullUrl = "urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"
+* entry[=].resource = patient-baby
+
+* entry[+].fullUrl = "urn:uuid:c3b2a1d4-6f5e-4890-bcda-234567890bcd"
+* entry[=].resource = mother-1
+
+* entry[+].fullUrl = "urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"
+* entry[=].resource = practitioner-1
+
+* entry[+].fullUrl = "urn:uuid:e5d4c3b2-8f9e-4012-def0-456789012def"
+* entry[=].resource = obs-pregnancy-duration
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50005"
+* entry[=].resource = obs-cmv
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50006"
+* entry[=].resource = obs-meningitis
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50007"
+* entry[=].resource = obs-hearing-overall
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50008"
+* entry[=].resource = obs-hearing-left
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50009"
+* entry[=].resource = obs-hearing-right
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50010"
+* entry[=].resource = obs-head-trauma
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50011"
+* entry[=].resource = obs-eye-screening
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50012"
+* entry[=].resource = obs-pupil
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50013"
+* entry[=].resource = obs-eye-movement-left
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50014"
+* entry[=].resource = obs-eye-movement-right
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50015"
+* entry[=].resource = obs-eye-remarks
+
+* entry[+].fullUrl = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50016"
+* entry[=].resource = obs-ophthalmologist
+
+
+// ============================================================
+// Composition
+// ============================================================
+
+Instance: composition-1
+InstanceOf: BeChildReportComposition
+Usage: #inline
+Title: "Example Composition"
+Description: "Composition for the example child report."
+
+* status = #final
+* type = http://loinc.org#11503-0 "Medical records"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* date = "2026-03-15"
+* author = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* title = "KindRapport - Child Report"
+
+* section[pregnancyDetails].title = "Pregnancy Details"
+* section[pregnancyDetails].code = $cs-doc#pregnancy-details
+* section[pregnancyDetails].text.status = #generated
+* section[pregnancyDetails].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pregnancy duration: 38 weeks. No CMV infection. No bacterial meningitis.</div>"
+* section[pregnancyDetails].entry[0] = Reference(urn:uuid:e5d4c3b2-8f9e-4012-def0-456789012def)
+* section[pregnancyDetails].entry[1] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50005)
+* section[pregnancyDetails].entry[2] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50006)
+
+* section[neonatalHearingScreening].title = "Neonatal Hearing Screening"
+* section[neonatalHearingScreening].code = $cs-doc#neonatal-hearing-screening
+* section[neonatalHearingScreening].text.status = #generated
+* section[neonatalHearingScreening].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hearing screening: normal result. Left ear: normal. Right ear: normal.</div>"
+* section[neonatalHearingScreening].entry[0] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50007)
+* section[neonatalHearingScreening].entry[1] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50008)
+* section[neonatalHearingScreening].entry[2] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50009)
+
+* section[severeHeadTrauma].title = "Severe Head Trauma"
+* section[severeHeadTrauma].code = $cs-doc#severe-head-trauma
+* section[severeHeadTrauma].text.status = #generated
+* section[severeHeadTrauma].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No severe head trauma during delivery.</div>"
+* section[severeHeadTrauma].entry[0] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50010)
+
+* section[eyeScreening].title = "Eye Screening"
+* section[eyeScreening].code = $cs-doc#eye-screening
+* section[eyeScreening].text.status = #generated
+* section[eyeScreening].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Eye screening: normal result.</div>"
+* section[eyeScreening].entry[0] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50011)
+
+* section[eyeResults].title = "Eye Results"
+* section[eyeResults].code = $cs-doc#eye-results
+* section[eyeResults].text.status = #generated
+* section[eyeResults].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pupil inspection normal. Eye movement normal both eyes. Remark: slight redness observed.</div>"
+* section[eyeResults].entry[0] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50012)
+* section[eyeResults].entry[1] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50013)
+* section[eyeResults].entry[2] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50014)
+* section[eyeResults].entry[3] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50015)
+
+* section[inTreatmentWithOphthalmologist].title = "In Treatment with Ophthalmologist"
+* section[inTreatmentWithOphthalmologist].code = $cs-doc#in-treatment-with-ophthalmologist
+* section[inTreatmentWithOphthalmologist].text.status = #generated
+* section[inTreatmentWithOphthalmologist].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Prescription of spectacles.</div>"
+* section[inTreatmentWithOphthalmologist].entry[0] = Reference(urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50016)
+
+
+// ============================================================
+// Patient - the child
+// ============================================================
+
+Instance: patient-baby
+InstanceOf: BePatient
+Usage: #inline
+Title: "Baby Janssens"
+Description: "The child that is the subject of this report."
+
+* identifier[0].system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
+* identifier[0].value = "26031512345"
+* name[0].family = "Janssens"
+* name[0].given[0] = "Emma"
+* gender = #female
+* birthDate = "2026-03-01"
+
+
+// ============================================================
+// RelatedPerson - the mother
+// ============================================================
+
+Instance: mother-1
+InstanceOf: RelatedPerson
+Usage: #inline
+Title: "Mother of Baby Janssens"
+Description: "The mother of the child."
+
+* patient = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH "mother"
+* name[0].family = "Peeters"
+* name[0].given[0] = "Marie"
+
+
+// ============================================================
+// Practitioner - the author / performer
+// ============================================================
+
+Instance: practitioner-1
+InstanceOf: BePractitioner
+Usage: #inline
+Title: "Dr. De Smet"
+Description: "The practitioner who authored the report and performed the observations."
+
+* identifier[0].system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
+* identifier[0].value = "12345678901"
+* name[0].family = "De Smet"
+* name[0].given[0] = "Jan"
+
+
+// ============================================================
+// Observations - Pregnancy Details
+// ============================================================
+
+Instance: obs-pregnancy-duration
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Pregnancy Duration"
+Description: "Duration of pregnancy: 38 weeks."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-pd-001"
+* status = #final
+* code = $sct#412726003 "Length of gestation at birth"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* focus = Reference(urn:uuid:c3b2a1d4-6f5e-4890-bcda-234567890bcd)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-01"
+* valueQuantity.value = 38
+* valueQuantity.unit = "weeks"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #wk
+
+
+Instance: obs-cmv
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "CMV Infection"
+Description: "No CMV infection during pregnancy."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50005-001"
+* status = #final
+* code = $sct#28944009 "Cytomegalovirus infection"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* focus = Reference(urn:uuid:c3b2a1d4-6f5e-4890-bcda-234567890bcd)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-01"
+* valueBoolean = false
+
+
+Instance: obs-meningitis
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Bacterial Meningitis"
+Description: "No bacterial meningitis."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-men-001"
+* status = #final
+* code = $sct#95883001 "Bacterial meningitis"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* focus = Reference(urn:uuid:c3b2a1d4-6f5e-4890-bcda-234567890bcd)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-01"
+* valueBoolean = false
+
+
+// ============================================================
+// Observations - Neonatal Hearing Screening
+// ============================================================
+
+Instance: obs-hearing-overall
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Hearing Screening Overall"
+Description: "Overall hearing screening result: normal."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-hear-001"
+* status = #final
+* code = $sct#102972004 "Brain stem auditory evoked potential, function"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-03"
+* valueCodeableConcept = $sct#280413001 "Normal result"
+
+
+Instance: obs-hearing-left
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Hearing Screening Left Ear"
+Description: "Left ear hearing screening result: normal."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-hear-left-001"
+* status = #final
+* code = $sct#102972004 "Brain stem auditory evoked potential, function"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-03"
+* bodySite = $sct#117590005 "Ear structure"
+* bodySite.extension[$laterality].valueCoding = $sct#7771000 "Left"
+* valueCodeableConcept = $sct#280413001 "Normal result"
+
+
+Instance: obs-hearing-right
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Hearing Screening Right Ear"
+Description: "Right ear hearing screening result: normal."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-hear-right-001"
+* status = #final
+* code = $sct#102972004 "Brain stem auditory evoked potential, function"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-03"
+* bodySite = $sct#117590005 "Ear structure"
+* bodySite.extension[$laterality].valueCoding = $sct#24028007 "Right"
+* valueCodeableConcept = $sct#280413001 "Normal result"
+
+
+// ============================================================
+// Observations - Severe Head Trauma
+// ============================================================
+
+Instance: obs-head-trauma
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Severe Head Trauma"
+Description: "No severe head trauma during delivery."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-ht-001"
+* status = #final
+* code = $sct#127296001 "Intracranial injury"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-01"
+* valueBoolean = false
+
+
+// ============================================================
+// Observations - Eye Screening
+// ============================================================
+
+Instance: obs-eye-screening
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Eye Screening"
+Description: "Eye screening result: normal."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-eye-001"
+* status = #final
+* code = $sct#363926002 "Eye/vision observable"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-10"
+* valueCodeableConcept = $sct#280413001 "Normal result"
+
+
+// ============================================================
+// Observations - Eye Results
+// ============================================================
+
+Instance: obs-pupil
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Pupil Inspection"
+Description: "Pupil inspection: no abnormality found."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50012-001"
+* status = #final
+* code = $sct#274093008 "Abnormal pupil"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-10"
+* valueBoolean = false
+
+
+Instance: obs-eye-movement-left
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Eye Movement Left"
+Description: "Eye movement and position left eye: no findings."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-eml-001"
+* status = #final
+* code = $sct#31763002 "Ocular motility observable"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-10"
+* bodySite = $sct#81745001 "Structure of eye proper"
+* bodySite.extension[$laterality].valueCoding = $sct#7771000 "Left"
+* dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable "Not Applicable"
+
+
+Instance: obs-eye-movement-right
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Eye Movement Right"
+Description: "Eye movement and position right eye: no findings."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-emr-001"
+* status = #final
+* code = $sct#31763002 "Ocular motility observable"
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-10"
+* bodySite = $sct#81745001 "Structure of eye proper"
+* bodySite.extension[$laterality].valueCoding = $sct#24028007 "Right"
+* dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable "Not Applicable"
+
+
+Instance: obs-eye-remarks
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Eye Remarks"
+Description: "Free text remarks about the eyes."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-er-001"
+* status = #final
+* code = $cs-doc#eye-remarks-observation
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-10"
+* valueString = "Slight redness observed in both eyes, likely due to birth. No treatment needed."
+
+
+// ============================================================
+// Observations - Ophthalmologist Treatment
+// ============================================================
+
+Instance: obs-ophthalmologist
+InstanceOf: BeClinicalObservation
+Usage: #inline
+Title: "Ophthalmologist Treatment"
+Description: "In treatment with ophthalmologist: prescription of spectacles."
+
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:obs-oph-001"
+* status = #final
+* code = $cs-doc#ophthalmologist-treatment-observation
+* subject = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+* performer = Reference(urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde)
+* effectiveDateTime = "2026-03-10"
+* valueCodeableConcept = $sct#183131009 "Prescription of spectacles"

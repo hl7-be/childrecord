@@ -1,0 +1,16 @@
+{
+  "package-id": "hl7.fhir.be.childreport",
+  "version": "1.0.0",
+  "first": true,
+  "status": "release",
+  "sequence": "Trial Use",
+  "fhirversion": "R4",
+  "title": "HL7 BE child report IG",
+  "desc": "eHealth FHIR Child Report Profiles for Belgium",
+  "introduction": "eHealth FHIR Child Report Profiles for Belgium",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/childreport/1.0.0",
+  "ci-build": "http://build.fhir.org/ig/hl7-be/childreport",
+  "category": "National Base",
+  "mode" : "milestone",
+  "milestone" : true
+}

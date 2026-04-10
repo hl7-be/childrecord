@@ -75,6 +75,7 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 pages:
   index.md:
     title: Home
+  changes.xml:
 #  guidance.md:
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -102,7 +103,7 @@ menu:
 #  Guidance: guidance.html
   Artifacts: artifacts.html
   # Downloads: downloads.html
-  # Changes: changes.html
+  Changes: changes.html
   History: https://www.ehealth.fgov.be/standards/fhir/childreport/history.html
 
 # The parameters property represents IG.definition.parameter. Rather

@@ -42,7 +42,8 @@ Description: "Profile for the child report document - a Bundle of type 'document
     eyeMovementAndPositionLeft 0..* and
     eyeMovementAndPositionRight 0..* and
     eyeRemarks 0..1 and
-    inTreatmentWithOphthalmologist 0..*
+    inTreatmentWithOphthalmologist 0..* and
+    presentedForm 1..1
 
 // --- Non-observation entries ---
 
@@ -312,3 +313,14 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[inTreatmentWithOphthalmologist].resource.valueCodeableConcept ^short = "prescription of spectacles | application of eye patch | surgical procedure on eye proper | (extensible)"
 * entry[inTreatmentWithOphthalmologist].resource.valueCodeableConcept from VSOphthalmologistTreatments (extensible)
 * entry[inTreatmentWithOphthalmologist] MS
+
+// Presented form - PDF rendition of the child report
+* entry[presentedForm] ^short = "PDF rendition of the child report"
+* entry[presentedForm].resource 1..
+* entry[presentedForm].resource ^short = "Binary resource containing the PDF file"
+* entry[presentedForm].resource only Binary
+* entry[presentedForm].resource.contentType = #application/pdf
+* entry[presentedForm].resource.contentType ^short = "application/pdf"
+* entry[presentedForm].resource.data 1..1 MS
+* entry[presentedForm].resource.data ^short = "(Encoded) PDF content"
+* entry[presentedForm] MS

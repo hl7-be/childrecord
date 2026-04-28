@@ -29,7 +29,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry contains
     composition 1..1 MS and
     patient 1..1 and
-    relatedPerson 0..1 and
+//    relatedPerson 0..1 and
     pregnancyDuration 0..1 and
     pregnancyCMVInfection 0..1 and
     pregnancyBacterialMeningitis 0..1 and
@@ -57,11 +57,11 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[patient].resource only BePatient
 * entry[patient] MS
 
-* entry[relatedPerson] ^short = "The mother or guardian"
-* entry[relatedPerson].resource 0..
-* entry[relatedPerson].resource ^short = "The mother or guardian"
-* entry[relatedPerson].resource only RelatedPerson
-* entry[relatedPerson] MS
+//* entry[relatedPerson] ^short = "The mother or guardian"
+//* entry[relatedPerson].resource 0..
+//* entry[relatedPerson].resource ^short = "The mother or guardian"
+//* entry[relatedPerson].resource only RelatedPerson
+//* entry[relatedPerson] MS
 
 // --- Observation entries ---
 
@@ -74,9 +74,9 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[pregnancyDuration].resource.code ^short = "Length of gestation at birth"
 * entry[pregnancyDuration].resource.subject only Reference(BePatient)
 * entry[pregnancyDuration].resource.subject ^short = "The child that is the subject of this document"
-* entry[pregnancyDuration].resource.focus MS
-* entry[pregnancyDuration].resource.focus only Reference(RelatedPerson)
-* entry[pregnancyDuration].resource.focus ^short = "The mother (RelatedPerson)"
+//* entry[pregnancyDuration].resource.focus MS
+//* entry[pregnancyDuration].resource.focus only Reference(RelatedPerson)
+//* entry[pregnancyDuration].resource.focus ^short = "The mother (RelatedPerson)"
 * entry[pregnancyDuration].resource.bodySite ..0
 * entry[pregnancyDuration].resource.component ..0
 * entry[pregnancyDuration].resource.value[x] only Quantity
@@ -95,9 +95,9 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[pregnancyCMVInfection].resource.code ^short = "CMV infection"
 * entry[pregnancyCMVInfection].resource.subject only Reference(BePatient)
 * entry[pregnancyCMVInfection].resource.subject ^short = "The child that is the subject of this document"
-* entry[pregnancyCMVInfection].resource.focus 0..1 MS
-* entry[pregnancyCMVInfection].resource.focus only Reference(RelatedPerson)
-* entry[pregnancyCMVInfection].resource.focus ^short = "The mother (RelatedPerson)"
+//* entry[pregnancyCMVInfection].resource.focus 0..1 MS
+//* entry[pregnancyCMVInfection].resource.focus only Reference(RelatedPerson)
+//* entry[pregnancyCMVInfection].resource.focus ^short = "The mother (RelatedPerson)"
 * entry[pregnancyCMVInfection].resource.bodySite ..0
 * entry[pregnancyCMVInfection].resource.component ..0
 * entry[pregnancyCMVInfection].resource.value[x] only boolean
@@ -113,9 +113,9 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[pregnancyBacterialMeningitis].resource.code ^short = "Bacterial meningitis"
 * entry[pregnancyBacterialMeningitis].resource.subject only Reference(BePatient)
 * entry[pregnancyBacterialMeningitis].resource.subject ^short = "The child that is the subject of this document"
-* entry[pregnancyBacterialMeningitis].resource.focus MS
-* entry[pregnancyBacterialMeningitis].resource.focus only Reference(RelatedPerson)
-* entry[pregnancyBacterialMeningitis].resource.focus ^short = "The mother (RelatedPerson)"
+//* entry[pregnancyBacterialMeningitis].resource.focus MS
+//* entry[pregnancyBacterialMeningitis].resource.focus only Reference(RelatedPerson)
+//* entry[pregnancyBacterialMeningitis].resource.focus ^short = "The mother (RelatedPerson)"
 * entry[pregnancyBacterialMeningitis].resource.bodySite ..0
 * entry[pregnancyBacterialMeningitis].resource.component ..0
 * entry[pregnancyBacterialMeningitis].resource.value[x] only boolean

@@ -29,7 +29,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry contains
     composition 1..1 MS and
     patient 1..1 and
-    relatedPerson 1..1 and
+    relatedPerson 0..1 and
     pregnancyDuration 0..1 and
     pregnancyCMVInfection 0..1 and
     pregnancyBacterialMeningitis 0..1 and
@@ -58,7 +58,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[patient] MS
 
 * entry[relatedPerson] ^short = "The mother or guardian"
-* entry[relatedPerson].resource 1..
+* entry[relatedPerson].resource 0..
 * entry[relatedPerson].resource ^short = "The mother or guardian"
 * entry[relatedPerson].resource only RelatedPerson
 * entry[relatedPerson] MS
@@ -86,7 +86,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[pregnancyDuration] MS
 
 // CMV infection during pregnancy (SNOMED 28944009 - Infection caused by Cytomegalovirus)
-// The focus is the mother (RelatedPerson), as CMV infection is observed on the mother
+// The optional focus is the mother (RelatedPerson), as CMV infection is observed on the mother
 * entry[pregnancyCMVInfection] ^short = "Whether CMV infection occurred during pregnancy"
 * entry[pregnancyCMVInfection].resource 1..
 * entry[pregnancyCMVInfection].resource ^short = "Observation for CMV infection during pregnancy (focus: the mother)"
@@ -95,7 +95,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[pregnancyCMVInfection].resource.code ^short = "CMV infection"
 * entry[pregnancyCMVInfection].resource.subject only Reference(BePatient)
 * entry[pregnancyCMVInfection].resource.subject ^short = "The child that is the subject of this document"
-* entry[pregnancyCMVInfection].resource.focus 1..1 MS
+* entry[pregnancyCMVInfection].resource.focus 0..1 MS
 * entry[pregnancyCMVInfection].resource.focus only Reference(RelatedPerson)
 * entry[pregnancyCMVInfection].resource.focus ^short = "The mother (RelatedPerson)"
 * entry[pregnancyCMVInfection].resource.bodySite ..0

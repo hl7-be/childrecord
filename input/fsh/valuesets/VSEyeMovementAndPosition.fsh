@@ -2,7 +2,7 @@ Alias: $sct = http://snomed.info/sct
 
 ValueSet: VSEyeMovementAndPosition
 Id: vs-eye-movement-and-position
-Title: "Eye Movement and Position"
+Title: "Eye Movement and Position ValueSet"
 Description: "This value set includes codes to represent eye movement and position observations."
 
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position"

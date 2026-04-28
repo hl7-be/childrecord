@@ -89,7 +89,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 // The optional focus is the mother (RelatedPerson), as CMV infection is observed on the mother
 * entry[pregnancyCMVInfection] ^short = "Whether CMV infection occurred during pregnancy"
 * entry[pregnancyCMVInfection].resource 1..
-* entry[pregnancyCMVInfection].resource ^short = "Observation for CMV infection during pregnancy (focus: the mother)"
+* entry[pregnancyCMVInfection].resource ^short = "Observation for CMV infection during pregnancy"
 * entry[pregnancyCMVInfection].resource only BeClinicalObservation
 * entry[pregnancyCMVInfection].resource.code = $sct#28944009 "CMV - Cytomegalovirus infection"
 * entry[pregnancyCMVInfection].resource.code ^short = "CMV infection"

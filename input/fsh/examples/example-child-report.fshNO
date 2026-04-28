@@ -152,16 +152,16 @@ Description: "The child that is the subject of this report."
 // RelatedPerson - the mother
 // ============================================================
 
-Instance: mother-1
-InstanceOf: RelatedPerson
-Usage: #inline
-Title: "Mother of Baby Janssens"
-Description: "The mother of the child."
+//Instance: mother-1
+//InstanceOf: RelatedPerson
+//Usage: #inline
+//Title: "Mother of Baby Janssens"
+//Description: "The mother of the child."
 
-* patient = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
-* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH "mother"
-* name[0].family = "Peeters"
-* name[0].given[0] = "Marie"
+//* patient = Reference(urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc)
+//* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH "mother"
+//* name[0].family = "Peeters"
+//* name[0].given[0] = "Marie"
 
 
 // ============================================================

@@ -58,7 +58,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[patient] MS
 
 * entry[relatedPerson] ^short = "The mother or guardian"
-* entry[relatedPerson].resource 0..
+* entry[relatedPerson].resource 0..1
 * entry[relatedPerson].resource ^short = "The mother or guardian"
 * entry[relatedPerson].resource only RelatedPerson
 * entry[relatedPerson] MS

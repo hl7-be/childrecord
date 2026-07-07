@@ -7,6 +7,13 @@ Description: "Composition profile for the Child Report (KindRapport). This resou
 * author only Reference(BePractitioner or BeOrganization)
 * date 1.. MS
 
+* subject 1..1 MS
+* subject only Reference(BePatient)
+* subject ^short = "The child that is the subject of the document"
+* subject ^definition = "The child. May be a literal reference to a BePatient included in the document Bundle, or a logical reference (identifier only) when the Patient resource is not included."
+* subject.reference MS
+* subject.identifier MS
+
 
 * section ^slicing.discriminator[0].type = #value
 * section ^slicing.discriminator[=].path = "code"

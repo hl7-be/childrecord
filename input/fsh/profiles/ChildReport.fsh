@@ -28,7 +28,6 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry.fullUrl 1.. MS
 * entry contains
     composition 1..1 MS and
-    patient 1..1 and
     patient 0..1 and
 //    relatedPerson 0..1 and
     pregnancyDuration 0..1 and

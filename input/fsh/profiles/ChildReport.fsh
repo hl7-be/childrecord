@@ -314,13 +314,20 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[inTreatmentWithOphthalmologist].resource.valueCodeableConcept from VSOphthalmologistTreatments (extensible)
 * entry[inTreatmentWithOphthalmologist] MS
 
-// Presented form - PDF rendition of the child report
-* entry[presentedForm] ^short = "PDF rendition of the child report"
+// Presented form - PDF rendition of the child report (inline data or remote URL)
+* entry[presentedForm] ^short = "PDF rendition of the child report (inline data or remote URL)"
 * entry[presentedForm].resource 1..
-* entry[presentedForm].resource ^short = "Binary resource containing the PDF file"
-* entry[presentedForm].resource only Binary
 * entry[presentedForm].resource.contentType = #application/pdf
 * entry[presentedForm].resource.contentType ^short = "application/pdf"
-* entry[presentedForm].resource.data 1..1 MS
-* entry[presentedForm].resource.data ^short = "(Encoded) PDF content"
+* entry[presentedForm].resource ^short = "DocumentReference pointing to the PDF rendition"
+* entry[presentedForm].resource only BeDocumentReference
+* entry[presentedForm].resource.status = #current
+* entry[presentedForm].resource.content 1..1 MS
+* entry[presentedForm].resource.content.attachment 1..1 MS
+* entry[presentedForm].resource.content.attachment.contentType = #application/pdf
+* entry[presentedForm].resource.content.attachment.contentType ^short = "application/pdf"
+* entry[presentedForm].resource.content.attachment.data 0..1 MS
+* entry[presentedForm].resource.content.attachment.data ^short = "Inline (base64) PDF content - use for embedded delivery"
+* entry[presentedForm].resource.content.attachment.url 0..1 MS
+* entry[presentedForm].resource.content.attachment.url ^short = "Link to the PDF - use for remote delivery"
 * entry[presentedForm] MS

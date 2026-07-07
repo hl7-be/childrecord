@@ -24,7 +24,8 @@ Description: "Composition profile for the Child Report (KindRapport). This resou
     severeHeadTrauma 0..1 and
     eyeScreening 0..1 and
     eyeResults 0..1 and
-    inTreatmentWithOphthalmologist 0..1
+    inTreatmentWithOphthalmologist 0..1 and
+    presentedForm 1..1 MS
 
 
 * section[pregnancyDetails]
@@ -102,3 +103,14 @@ Description: "Composition profile for the Child Report (KindRapport). This resou
   * entry only Reference(BeClinicalObservation)
   * entry ^short = "In treatment with ophthalmologist"
   * entry ^definition = "Entry for treatment with ophthalmologist."
+
+
+* section[presentedForm]
+  * ^short = "Presented form section"
+  * ^definition = "This section references the PDF rendition (presented form) of the child report."
+  * code 1..
+  * code = CSChildReportDocumentation#presented-form
+  * entry 1..1
+  * entry only Reference(BeDocumentReference)
+  * entry ^short = "Reference to the DocumentReference holding the PDF rendition"
+  * entry ^definition = "An entry referencing the DocumentReference (presented form) contained in the document Bundle."

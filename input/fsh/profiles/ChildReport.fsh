@@ -24,11 +24,11 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry ^orderMeaning = "The first entry in this bundle is always a Composition."
 * entry ^short = "Entry resource in the child report bundle"
 * entry ^definition = "An entry resource included in the child report document bundle resource."
-* entry ^comment = "Must contain the Composition as the first entry (only a single Composition resource instance may be included) and a Patient resource."
+* entry ^comment = "Must contain the Composition as the first entry (only a single Composition resource instance may be included) and may include a Patient resource."
 * entry.fullUrl 1.. MS
 * entry contains
     composition 1..1 MS and
-    patient 1..1 and
+    patient 0..1 and
 //    relatedPerson 0..1 and
     pregnancyDuration 0..1 and
     pregnancyCMVInfection 0..1 and
@@ -52,6 +52,7 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[composition].resource only BeChildReportComposition
 
 * entry[patient] ^short = "The child (patient)"
+* entry[patient] ^short = "The child (patient) - this is an optional entry - in cases where a patient is identified with a logical reference"
 * entry[patient].resource 1..
 * entry[patient].resource ^short = "The child"
 * entry[patient].resource only BePatient
@@ -314,13 +315,18 @@ Description: "Profile for the child report document - a Bundle of type 'document
 * entry[inTreatmentWithOphthalmologist].resource.valueCodeableConcept from VSOphthalmologistTreatments (extensible)
 * entry[inTreatmentWithOphthalmologist] MS
 
-// Presented form - PDF rendition of the child report
-* entry[presentedForm] ^short = "PDF rendition of the child report"
+// Presented form - PDF rendition of the child report (inline data or remote URL)
+* entry[presentedForm] ^short = "PDF rendition of the child report (inline data or remote URL)"
 * entry[presentedForm].resource 1..
-* entry[presentedForm].resource ^short = "Binary resource containing the PDF file"
-* entry[presentedForm].resource only Binary
-* entry[presentedForm].resource.contentType = #application/pdf
-* entry[presentedForm].resource.contentType ^short = "application/pdf"
-* entry[presentedForm].resource.data 1..1 MS
-* entry[presentedForm].resource.data ^short = "(Encoded) PDF content"
+* entry[presentedForm].resource ^short = "DocumentReference pointing to the PDF rendition"
+* entry[presentedForm].resource only BeDocumentReference
+* entry[presentedForm].resource.status = #current
+* entry[presentedForm].resource.content 1..1 MS
+* entry[presentedForm].resource.content.attachment 1..1 MS
+* entry[presentedForm].resource.content.attachment.contentType = #application/pdf
+* entry[presentedForm].resource.content.attachment.contentType ^short = "application/pdf"
+* entry[presentedForm].resource.content.attachment.data 0..1 MS
+* entry[presentedForm].resource.content.attachment.data ^short = "Inline (base64) PDF content - use for embedded delivery"
+* entry[presentedForm].resource.content.attachment.url 0..1 MS
+* entry[presentedForm].resource.content.attachment.url ^short = "Link to the PDF - use for remote delivery"
 * entry[presentedForm] MS

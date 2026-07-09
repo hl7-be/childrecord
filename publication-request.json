@@ -1,11 +1,11 @@
 {
   "package-id": "hl7.fhir.be.childreport",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "status": "release",
   "sequence": "Trial Use",
   "fhirversion": "R4",
   "desc": "eHealth FHIR Child Report Profiles for Belgium",
-  "path": "https://www.ehealth.fgov.be/standards/fhir/childreport/1.0.1",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/childreport/1.0.2",
   "mode" : "milestone",
   "milestone" : true,
   "first": false

@@ -1,16 +1,4 @@
 == Suppressed Messages ==
 
-# All observation entry slices use the same profile (BeClinicalObservation) by design.
-# The #profile discriminator cannot distinguish between them, which is expected.
-# Each slice exists for documentation and cardinality purposes, not for validation discrimination.
-# This is a known limitation of the "one profile with inline constraints" approach.
-Element matches more than one slice
-
-# The BeChildReportComposition is used inside the Bundle example as an inline resource
-The Implementation Guide contains no explicitly linked examples for this profile
-
 # Examples are still missing
 The Implementation Guide contains no examples for this profile
-
-# This is not relevant for this IG
-The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated

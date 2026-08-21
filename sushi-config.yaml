@@ -122,6 +122,7 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'
+  pin-canonicals: pin-multiples
   special-url:
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position

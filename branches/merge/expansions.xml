@@ -1,0 +1,3279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="0cf74d12-e091-441e-8b86-5a84c6a78520"/>
+  <meta>
+    <lastUpdated value="2026-08-26T12:27:03.001+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from 178.104.103.200.sslip.io based on:</p>
+              <ul>
+                <li>SNOMED CT Belgian Edition edition 15-May 2026
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="CodeSystem-cs-eye-movement-and-position.html">codesystem Eye Movement and Position v1.0.2 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position|1.0.2" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position-intermittent-strabismus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-eye-movement-and-position.html#cs-eye-movement-and-position-intermittent-strabismus">intermittent-strabismus</a>
+                </td>
+                <td>Intermittent strabismus</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position&quot;, &quot;version&quot;: &quot;1.0.2&quot;, &quot;code&quot;: &quot;intermittent-strabismus&quot;, &quot;display&quot;: &quot;Intermittent strabismus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position&quot;&gt;&lt;version value=&quot;1.0.2&quot;&gt;&lt;code value=&quot;intermittent-strabismus&quot;&gt;&lt;display value=&quot;Intermittent strabismus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position-continuous-strabismus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-eye-movement-and-position.html#cs-eye-movement-and-position-continuous-strabismus">continuous-strabismus</a>
+                </td>
+                <td>Continuous strabismus</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position&quot;, &quot;version&quot;: &quot;1.0.2&quot;, &quot;code&quot;: &quot;continuous-strabismus&quot;, &quot;display&quot;: &quot;Continuous strabismus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position&quot;&gt;&lt;version value=&quot;1.0.2&quot;&gt;&lt;code value=&quot;continuous-strabismus&quot;&gt;&lt;display value=&quot;Continuous strabismus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-307699005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/307699005">307699005</a>
+                </td>
+                <td>Nystagmus present</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;307699005&quot;, &quot;display&quot;: &quot;Nystagmus present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;307699005&quot;&gt;&lt;display value=&quot;Nystagmus present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Designations and Language Displays</b>
+            </p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Other Display (null)</b>
+                </td>
+                <td>
+                  <b>Deutsch (German, de)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>intermittent-strabismus</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>continuous-strabismus</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>307699005</td>
+                <td>Nystagmus present</td>
+                <td>Augenzittern vorhanden</td>
+                <td>Nystagmus present (finding)</td>
+                <td>nystagmus présent</td>
+                <td>nystagmus aanwezig</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position"/>
+        <version value="1.0.2"/>
+        <name value="VSEyeMovementAndPosition"/>
+        <title value="Eye Movement and Position ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-26T12:27:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5c879132-050f-4dc8-99f6-cbfbb5ca4238"/>
+          <timestamp value="2026-08-26T12:29:12+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position|1.0.2"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position"/>
+            <code value="intermittent-strabismus"/>
+            <display value="Intermittent strabismus"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position"/>
+            <code value="continuous-strabismus"/>
+            <display value="Continuous strabismus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="307699005"/>
+            <display value="Nystagmus present"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Nystagmus present (finding)"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Nystagmus vorhanden"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Augenzittern vorhanden"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="nystagmus aanwezig"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="présence d'un nystagmus"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="nystagmus présent"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Nystagmus present"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from 178.104.103.200.sslip.io based on:</p>
+              <ul>
+                <li>SNOMED CT Belgian Edition edition 15-May 2026
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="CodeSystem-cs-eye-movement-and-position.html">codesystem Eye Movement and Position v1.0.2 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position|1.0.2" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position-intermittent-strabismus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-eye-movement-and-position.html#cs-eye-movement-and-position-intermittent-strabismus">intermittent-strabismus</a>
+                </td>
+                <td>Intermittent strabismus</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position&quot;, &quot;version&quot;: &quot;1.0.2&quot;, &quot;code&quot;: &quot;intermittent-strabismus&quot;, &quot;display&quot;: &quot;Intermittent strabismus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position&quot;&gt;&lt;version value=&quot;1.0.2&quot;&gt;&lt;code value=&quot;intermittent-strabismus&quot;&gt;&lt;display value=&quot;Intermittent strabismus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position-continuous-strabismus"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-eye-movement-and-position.html#cs-eye-movement-and-position-continuous-strabismus">continuous-strabismus</a>
+                </td>
+                <td>Continuous strabismus</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position&quot;, &quot;version&quot;: &quot;1.0.2&quot;, &quot;code&quot;: &quot;continuous-strabismus&quot;, &quot;display&quot;: &quot;Continuous strabismus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position&quot;&gt;&lt;version value=&quot;1.0.2&quot;&gt;&lt;code value=&quot;continuous-strabismus&quot;&gt;&lt;display value=&quot;Continuous strabismus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-307699005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/307699005">307699005</a>
+                </td>
+                <td>Nystagmus present</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;307699005&quot;, &quot;display&quot;: &quot;Nystagmus present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;307699005&quot;&gt;&lt;display value=&quot;Nystagmus present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Designations and Language Displays</b>
+            </p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Other Display (null)</b>
+                </td>
+                <td>
+                  <b>Deutsch (German, de)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>intermittent-strabismus</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>continuous-strabismus</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>307699005</td>
+                <td>Nystagmus present</td>
+                <td>Augenzittern vorhanden</td>
+                <td>Nystagmus present (finding)</td>
+                <td>nystagmus présent</td>
+                <td>nystagmus aanwezig</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position"/>
+        <version value="1.0.2"/>
+        <name value="VSEyeMovementAndPosition"/>
+        <title value="Eye Movement and Position ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-26T12:27:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5c879132-050f-4dc8-99f6-cbfbb5ca4238"/>
+          <timestamp value="2026-08-26T12:29:12+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position|1.0.2"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position"/>
+            <code value="intermittent-strabismus"/>
+            <display value="Intermittent strabismus"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position"/>
+            <code value="continuous-strabismus"/>
+            <display value="Continuous strabismus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="307699005"/>
+            <display value="Nystagmus present"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Nystagmus present (finding)"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Nystagmus vorhanden"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Augenzittern vorhanden"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="nystagmus aanwezig"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="présence d'un nystagmus"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="nystagmus présent"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Nystagmus present"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 178.104.103.200.sslip.io based on SNOMED CT Belgian Edition edition 15-May 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-280413001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/280413001">280413001</a>
+                </td>
+                <td>Normal result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;280413001&quot;, &quot;display&quot;: &quot;Normal result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;280413001&quot;&gt;&lt;display value=&quot;Normal result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-280415008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/280415008">280415008</a>
+                </td>
+                <td>Abnormal result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;280415008&quot;, &quot;display&quot;: &quot;Abnormal result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;280415008&quot;&gt;&lt;display value=&quot;Abnormal result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-455371000124106"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/455371000124106">455371000124106</a>
+                </td>
+                <td>Invalid result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;455371000124106&quot;, &quot;display&quot;: &quot;Invalid result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;455371000124106&quot;&gt;&lt;display value=&quot;Invalid result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-373121007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/373121007">373121007</a>
+                </td>
+                <td>Test not done</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;373121007&quot;, &quot;display&quot;: &quot;Test not done&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;373121007&quot;&gt;&lt;display value=&quot;Test not done&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Designations and Language Displays</b>
+            </p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Other Display (null)</b>
+                </td>
+                <td>
+                  <b>Deutsch (German, de)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>280413001</td>
+                <td>Normal result</td>
+                <td></td>
+                <td>Normal result (qualifier value)</td>
+                <td>résultat normal</td>
+                <td>normaal resultaat</td>
+              </tr>
+              <tr>
+                <td>280415008</td>
+                <td>Abnormal result</td>
+                <td>Abnormes Untersuchungsergebnis</td>
+                <td>Abnormal result (qualifier value)</td>
+                <td>résultat hors norme</td>
+                <td>afwijkend resultaat</td>
+              </tr>
+              <tr>
+                <td>455371000124106</td>
+                <td>Invalid result</td>
+                <td>Ungültiges Ergebnis</td>
+                <td>Invalid result (qualifier value)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>373121007</td>
+                <td>Test not done</td>
+                <td></td>
+                <td>Test not done (qualifier value)</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results"/>
+        <version value="1.0.2"/>
+        <name value="VSEyeScreeningOutcome"/>
+        <title value="Eye Screening Results"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-26T12:27:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ec2cace1-a05d-49b7-82ca-b8b5bd621a4e"/>
+          <timestamp value="2026-08-26T12:29:12+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="Normal result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Normal result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="normaal resultaat"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat normal"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Normal result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280415008"/>
+            <display value="Abnormal result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Abnormal result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="abnormaal resultaat"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat anormal"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat hors norme"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="afwijkend resultaat"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Auffälliges Untersuchungsergebnis"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Abnormes Untersuchungsergebnis"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Abnormal result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="455371000124106"/>
+            <display value="Invalid result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Invalid result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ungültiges Ergebnis"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Invalid result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373121007"/>
+            <display value="Test not done"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Test not done (qualifier value)"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Test not done"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 178.104.103.200.sslip.io based on SNOMED CT Belgian Edition edition 15-May 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-280413001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/280413001">280413001</a>
+                </td>
+                <td>Normal result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;280413001&quot;, &quot;display&quot;: &quot;Normal result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;280413001&quot;&gt;&lt;display value=&quot;Normal result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-280415008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/280415008">280415008</a>
+                </td>
+                <td>Abnormal result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;280415008&quot;, &quot;display&quot;: &quot;Abnormal result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;280415008&quot;&gt;&lt;display value=&quot;Abnormal result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-455371000124106"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/455371000124106">455371000124106</a>
+                </td>
+                <td>Invalid result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;455371000124106&quot;, &quot;display&quot;: &quot;Invalid result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;455371000124106&quot;&gt;&lt;display value=&quot;Invalid result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-373121007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/373121007">373121007</a>
+                </td>
+                <td>Test not done</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;373121007&quot;, &quot;display&quot;: &quot;Test not done&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;373121007&quot;&gt;&lt;display value=&quot;Test not done&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Designations and Language Displays</b>
+            </p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Other Display (null)</b>
+                </td>
+                <td>
+                  <b>Deutsch (German, de)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>280413001</td>
+                <td>Normal result</td>
+                <td></td>
+                <td>Normal result (qualifier value)</td>
+                <td>résultat normal</td>
+                <td>normaal resultaat</td>
+              </tr>
+              <tr>
+                <td>280415008</td>
+                <td>Abnormal result</td>
+                <td>Abnormes Untersuchungsergebnis</td>
+                <td>Abnormal result (qualifier value)</td>
+                <td>résultat hors norme</td>
+                <td>afwijkend resultaat</td>
+              </tr>
+              <tr>
+                <td>455371000124106</td>
+                <td>Invalid result</td>
+                <td>Ungültiges Ergebnis</td>
+                <td>Invalid result (qualifier value)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>373121007</td>
+                <td>Test not done</td>
+                <td></td>
+                <td>Test not done (qualifier value)</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results"/>
+        <version value="1.0.2"/>
+        <name value="VSEyeScreeningOutcome"/>
+        <title value="Eye Screening Results"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-26T12:27:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ec2cace1-a05d-49b7-82ca-b8b5bd621a4e"/>
+          <timestamp value="2026-08-26T12:29:12+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="Normal result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Normal result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="normaal resultaat"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat normal"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Normal result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280415008"/>
+            <display value="Abnormal result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Abnormal result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="abnormaal resultaat"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat anormal"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat hors norme"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="afwijkend resultaat"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Auffälliges Untersuchungsergebnis"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Abnormes Untersuchungsergebnis"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Abnormal result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="455371000124106"/>
+            <display value="Invalid result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Invalid result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ungültiges Ergebnis"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Invalid result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373121007"/>
+            <display value="Test not done"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Test not done (qualifier value)"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Test not done"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 178.104.103.200.sslip.io based on SNOMED CT Belgian Edition edition 15-May 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-280413001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/280413001">280413001</a>
+                </td>
+                <td>Normal result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;280413001&quot;, &quot;display&quot;: &quot;Normal result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;280413001&quot;&gt;&lt;display value=&quot;Normal result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-280415008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/280415008">280415008</a>
+                </td>
+                <td>Abnormal result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;280415008&quot;, &quot;display&quot;: &quot;Abnormal result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;280415008&quot;&gt;&lt;display value=&quot;Abnormal result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-455371000124106"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/455371000124106">455371000124106</a>
+                </td>
+                <td>Invalid result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;455371000124106&quot;, &quot;display&quot;: &quot;Invalid result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;455371000124106&quot;&gt;&lt;display value=&quot;Invalid result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-373121007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/373121007">373121007</a>
+                </td>
+                <td>Test not done</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;373121007&quot;, &quot;display&quot;: &quot;Test not done&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;373121007&quot;&gt;&lt;display value=&quot;Test not done&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Designations and Language Displays</b>
+            </p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Other Display (null)</b>
+                </td>
+                <td>
+                  <b>Deutsch (German, de)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>280413001</td>
+                <td>Normal result</td>
+                <td></td>
+                <td>Normal result (qualifier value)</td>
+                <td>résultat normal</td>
+                <td>normaal resultaat</td>
+              </tr>
+              <tr>
+                <td>280415008</td>
+                <td>Abnormal result</td>
+                <td>Abnormes Untersuchungsergebnis</td>
+                <td>Abnormal result (qualifier value)</td>
+                <td>résultat hors norme</td>
+                <td>afwijkend resultaat</td>
+              </tr>
+              <tr>
+                <td>455371000124106</td>
+                <td>Invalid result</td>
+                <td>Ungültiges Ergebnis</td>
+                <td>Invalid result (qualifier value)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>373121007</td>
+                <td>Test not done</td>
+                <td></td>
+                <td>Test not done (qualifier value)</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results"/>
+        <version value="1.0.2"/>
+        <name value="VSNeonatalHearingScreeningResults"/>
+        <title value="Neonatal Hearing Screening Results"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-26T12:27:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:38da038c-4ad9-4f8b-a0fe-6133d43ad39d"/>
+          <timestamp value="2026-08-26T12:29:12+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="Normal result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Normal result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="normaal resultaat"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat normal"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Normal result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280415008"/>
+            <display value="Abnormal result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Abnormal result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="abnormaal resultaat"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat anormal"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat hors norme"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="afwijkend resultaat"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Auffälliges Untersuchungsergebnis"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Abnormes Untersuchungsergebnis"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Abnormal result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="455371000124106"/>
+            <display value="Invalid result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Invalid result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ungültiges Ergebnis"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Invalid result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373121007"/>
+            <display value="Test not done"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Test not done (qualifier value)"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Test not done"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 178.104.103.200.sslip.io based on SNOMED CT Belgian Edition edition 15-May 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-280413001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/280413001">280413001</a>
+                </td>
+                <td>Normal result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;280413001&quot;, &quot;display&quot;: &quot;Normal result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;280413001&quot;&gt;&lt;display value=&quot;Normal result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-280415008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/280415008">280415008</a>
+                </td>
+                <td>Abnormal result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;280415008&quot;, &quot;display&quot;: &quot;Abnormal result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;280415008&quot;&gt;&lt;display value=&quot;Abnormal result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-455371000124106"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/455371000124106">455371000124106</a>
+                </td>
+                <td>Invalid result</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;455371000124106&quot;, &quot;display&quot;: &quot;Invalid result&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;455371000124106&quot;&gt;&lt;display value=&quot;Invalid result&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-373121007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/373121007">373121007</a>
+                </td>
+                <td>Test not done</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;373121007&quot;, &quot;display&quot;: &quot;Test not done&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;373121007&quot;&gt;&lt;display value=&quot;Test not done&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Designations and Language Displays</b>
+            </p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Other Display (null)</b>
+                </td>
+                <td>
+                  <b>Deutsch (German, de)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>280413001</td>
+                <td>Normal result</td>
+                <td></td>
+                <td>Normal result (qualifier value)</td>
+                <td>résultat normal</td>
+                <td>normaal resultaat</td>
+              </tr>
+              <tr>
+                <td>280415008</td>
+                <td>Abnormal result</td>
+                <td>Abnormes Untersuchungsergebnis</td>
+                <td>Abnormal result (qualifier value)</td>
+                <td>résultat hors norme</td>
+                <td>afwijkend resultaat</td>
+              </tr>
+              <tr>
+                <td>455371000124106</td>
+                <td>Invalid result</td>
+                <td>Ungültiges Ergebnis</td>
+                <td>Invalid result (qualifier value)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>373121007</td>
+                <td>Test not done</td>
+                <td></td>
+                <td>Test not done (qualifier value)</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results"/>
+        <version value="1.0.2"/>
+        <name value="VSNeonatalHearingScreeningResults"/>
+        <title value="Neonatal Hearing Screening Results"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-26T12:27:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:38da038c-4ad9-4f8b-a0fe-6133d43ad39d"/>
+          <timestamp value="2026-08-26T12:29:12+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="Normal result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Normal result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="normaal resultaat"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat normal"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Normal result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280415008"/>
+            <display value="Abnormal result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Abnormal result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="abnormaal resultaat"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat anormal"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="résultat hors norme"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="afwijkend resultaat"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Auffälliges Untersuchungsergebnis"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Abnormes Untersuchungsergebnis"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Abnormal result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="455371000124106"/>
+            <display value="Invalid result"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Invalid result (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ungültiges Ergebnis"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Invalid result"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373121007"/>
+            <display value="Test not done"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Test not done (qualifier value)"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Test not done"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 178.104.103.200.sslip.io based on SNOMED CT Belgian Edition edition 15-May 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-183131009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/183131009">183131009</a>
+                </td>
+                <td>Prescription of spectacles</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;183131009&quot;, &quot;display&quot;: &quot;Prescription of spectacles&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;183131009&quot;&gt;&lt;display value=&quot;Prescription of spectacles&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-448748005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/448748005">448748005</a>
+                </td>
+                <td>Application of eye patch</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;448748005&quot;, &quot;display&quot;: &quot;Application of eye patch&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;448748005&quot;&gt;&lt;display value=&quot;Application of eye patch&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-373353005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/373353005">373353005</a>
+                </td>
+                <td>Surgical procedure on eye proper</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;373353005&quot;, &quot;display&quot;: &quot;Surgical procedure on eye proper&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;373353005&quot;&gt;&lt;display value=&quot;Surgical procedure on eye proper&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Designations and Language Displays</b>
+            </p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Other Display (null)</b>
+                </td>
+                <td>
+                  <b>Deutsch (German, de)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>183131009</td>
+                <td>Prescription of spectacles</td>
+                <td></td>
+                <td>Prescription of eyeglasses</td>
+                <td>prescription de lunettes</td>
+                <td>prescriptie van bril</td>
+              </tr>
+              <tr>
+                <td>448748005</td>
+                <td>Application of eye patch</td>
+                <td></td>
+                <td>Application of eye patch (procedure)</td>
+                <td>pose d'un pansement orthoptique cache-œil</td>
+                <td>aanbrengen van beschermkapje op oog</td>
+              </tr>
+              <tr>
+                <td>373353005</td>
+                <td>Surgical procedure on eye proper</td>
+                <td>Chirurgische Prozedur am Auge</td>
+                <td>Ophthalmic surgery procedure</td>
+                <td>intervention chirurgicale oculaire</td>
+                <td>chirurgische ingreep op oogbol</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments"/>
+        <version value="1.0.2"/>
+        <name value="VSOphthalmologistTreatments"/>
+        <title value="Ophthalmologist Treatments"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-26T12:27:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a27a9664-adab-4dae-8a94-624d33e02ecb"/>
+          <timestamp value="2026-08-26T12:29:12+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="183131009"/>
+            <display value="Prescription of spectacles"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Prescription of spectacles (procedure)"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Prescription of eyeglasses"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="voorschrijven van bril"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="prescriptie van bril"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="prescription de lunettes"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Prescription of spectacles"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="448748005"/>
+            <display value="Application of eye patch"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Application of eye patch (procedure)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="aanbrengen van oogkapje"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="aanbrengen van oogbeschermkapje"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="aanbrengen van beschermkapje op oog"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="pose d'un pansement oculaire"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="application d'un pansement oculaire"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="application d'un patch oculaire"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="application d'un cache-œil"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="application d'un cache oculaire"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="pose d'un pansement orthoptique cache-œil"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Application of eye patch"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373353005"/>
+            <display value="Surgical procedure on eye proper"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Surgical procedure on eye proper (procedure)"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Eyeball operations"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on eyeball"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on eyeball, NOS"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ocular operation, NOS"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Eye operation"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ophthalmologic operation, NOS"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ophthalmologic operation"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on eye proper"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ocular operation"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on globe"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on eye"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ophthalmic surgery procedure"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="oogoperatie"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="chirurgische ingreep op oogbol"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="intervention chirurgicale oculaire"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Augenoperation"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation am Auge"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Chirurgische Prozedur am Auge"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Surgical procedure on eye proper"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 178.104.103.200.sslip.io based on SNOMED CT Belgian Edition edition 15-May 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-183131009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/183131009">183131009</a>
+                </td>
+                <td>Prescription of spectacles</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;183131009&quot;, &quot;display&quot;: &quot;Prescription of spectacles&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;183131009&quot;&gt;&lt;display value=&quot;Prescription of spectacles&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-448748005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/448748005">448748005</a>
+                </td>
+                <td>Application of eye patch</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;448748005&quot;, &quot;display&quot;: &quot;Application of eye patch&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;448748005&quot;&gt;&lt;display value=&quot;Application of eye patch&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-373353005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/373353005">373353005</a>
+                </td>
+                <td>Surgical procedure on eye proper</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109&quot;, &quot;code&quot;: &quot;373353005&quot;, &quot;display&quot;: &quot;Surgical procedure on eye proper&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109&quot;&gt;&lt;code value=&quot;373353005&quot;&gt;&lt;display value=&quot;Surgical procedure on eye proper&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Designations and Language Displays</b>
+            </p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Other Display (null)</b>
+                </td>
+                <td>
+                  <b>Deutsch (German, de)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>183131009</td>
+                <td>Prescription of spectacles</td>
+                <td></td>
+                <td>Prescription of eyeglasses</td>
+                <td>prescription de lunettes</td>
+                <td>prescriptie van bril</td>
+              </tr>
+              <tr>
+                <td>448748005</td>
+                <td>Application of eye patch</td>
+                <td></td>
+                <td>Application of eye patch (procedure)</td>
+                <td>pose d'un pansement orthoptique cache-œil</td>
+                <td>aanbrengen van beschermkapje op oog</td>
+              </tr>
+              <tr>
+                <td>373353005</td>
+                <td>Surgical procedure on eye proper</td>
+                <td>Chirurgische Prozedur am Auge</td>
+                <td>Ophthalmic surgery procedure</td>
+                <td>intervention chirurgicale oculaire</td>
+                <td>chirurgische ingreep op oogbol</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments"/>
+        <version value="1.0.2"/>
+        <name value="VSOphthalmologistTreatments"/>
+        <title value="Ophthalmologist Treatments"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-26T12:27:03+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a27a9664-adab-4dae-8a94-624d33e02ecb"/>
+          <timestamp value="2026-08-26T12:29:12+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20260515"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="183131009"/>
+            <display value="Prescription of spectacles"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Prescription of spectacles (procedure)"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Prescription of eyeglasses"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="voorschrijven van bril"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="prescriptie van bril"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="prescription de lunettes"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Prescription of spectacles"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="448748005"/>
+            <display value="Application of eye patch"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Application of eye patch (procedure)"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="aanbrengen van oogkapje"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="aanbrengen van oogbeschermkapje"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="aanbrengen van beschermkapje op oog"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="pose d'un pansement oculaire"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="application d'un pansement oculaire"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="application d'un patch oculaire"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="application d'un cache-œil"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="application d'un cache oculaire"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="pose d'un pansement orthoptique cache-œil"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Application of eye patch"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373353005"/>
+            <display value="Surgical procedure on eye proper"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="volledig gespecificeerde naam"/>
+              </use>
+              <value value="Surgical procedure on eye proper (procedure)"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Eyeball operations"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on eyeball"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on eyeball, NOS"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ocular operation, NOS"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Eye operation"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ophthalmologic operation, NOS"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ophthalmologic operation"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on eye proper"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ocular operation"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on globe"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation on eye"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Ophthalmic surgery procedure"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="oogoperatie"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="chirurgische ingreep op oogbol"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="intervention chirurgicale oculaire"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Augenoperation"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Operation am Auge"/>
+            </designation>
+            <designation>
+              <language value="de"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="synoniem"/>
+              </use>
+              <value value="Chirurgische Prozedur am Auge"/>
+            </designation>
+            <designation>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+              </use>
+              <value value="Surgical procedure on eye proper"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

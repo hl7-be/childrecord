@@ -1,0 +1,61 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "1cfc7f83-0898-45b3-9041-ee09f021939b-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1cfc7f83-0898-45b3-9041-ee09f021939b-2",
+  "name" : "UnionCSChildReportDocumentationAndCSChildReportDocumentation",
+  "title" : "Union of Child Report Documentation And Child Report Documentation",
+  "status" : "active",
+  "date" : "2026-04-29T13:12:54+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "concept" : [{
+    "code" : "pregnancy-details",
+    "display" : "Pregnancy details documentation",
+    "definition" : "Document or section containing pregnancy details."
+  },
+  {
+    "code" : "neonatal-hearing-screening",
+    "display" : "Neonatal hearing screening documentation",
+    "definition" : "Document or section containing neonatal hearing screening results."
+  },
+  {
+    "code" : "refusal-of-hearing-test",
+    "display" : "Refusal of hearing test documentation",
+    "definition" : "Document or section containing refusal of hearing test information."
+  },
+  {
+    "code" : "severe-head-trauma",
+    "display" : "Severe head trauma documentation",
+    "definition" : "Document or section containing severe head trauma information."
+  },
+  {
+    "code" : "eye-screening",
+    "display" : "Eye screening documentation",
+    "definition" : "Document or section containing eye screening results."
+  },
+  {
+    "code" : "eye-results",
+    "display" : "Eye results documentation",
+    "definition" : "Document or section containing eye examination results."
+  },
+  {
+    "code" : "in-treatment-with-ophthalmologist",
+    "display" : "In treatment with ophthalmologist documentation",
+    "definition" : "Document or section containing ophthalmologist treatment information."
+  },
+  {
+    "code" : "eye-remarks-observation",
+    "display" : "Eye remarks",
+    "definition" : "Observation code for free text remarks about the eyes."
+  },
+  {
+    "code" : "ophthalmologist-treatment-observation",
+    "display" : "In treatment with ophthalmologist",
+    "definition" : "Observation code for treatment followed with an ophthalmologist."
+  }]
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-child-report-documentation"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-child-report-documentation</b></p><a name="cs-child-report-documentation"> </a><a name="hccs-child-report-documentation"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">pregnancy-details<a name="cs-child-report-documentation-pregnancy-details"> </a></td><td>Pregnancy details documentation</td><td>Document or section containing pregnancy details.</td></tr><tr><td style="white-space:nowrap">neonatal-hearing-screening<a name="cs-child-report-documentation-neonatal-hearing-screening"> </a></td><td>Neonatal hearing screening documentation</td><td>Document or section containing neonatal hearing screening results.</td></tr><tr><td style="white-space:nowrap">refusal-of-hearing-test<a name="cs-child-report-documentation-refusal-of-hearing-test"> </a></td><td>Refusal of hearing test documentation</td><td>Document or section containing refusal of hearing test information.</td></tr><tr><td style="white-space:nowrap">severe-head-trauma<a name="cs-child-report-documentation-severe-head-trauma"> </a></td><td>Severe head trauma documentation</td><td>Document or section containing severe head trauma information.</td></tr><tr><td style="white-space:nowrap">eye-screening<a name="cs-child-report-documentation-eye-screening"> </a></td><td>Eye screening documentation</td><td>Document or section containing eye screening results.</td></tr><tr><td style="white-space:nowrap">eye-results<a name="cs-child-report-documentation-eye-results"> </a></td><td>Eye results documentation</td><td>Document or section containing eye examination results.</td></tr><tr><td style="white-space:nowrap">in-treatment-with-ophthalmologist<a name="cs-child-report-documentation-in-treatment-with-ophthalmologist"> </a></td><td>In treatment with ophthalmologist documentation</td><td>Document or section containing ophthalmologist treatment information.</td></tr><tr><td style="white-space:nowrap">eye-remarks-observation<a name="cs-child-report-documentation-eye-remarks-observation"> </a></td><td>Eye remarks</td><td>Observation code for free text remarks about the eyes.</td></tr><tr><td style="white-space:nowrap">ophthalmologist-treatment-observation<a name="cs-child-report-documentation-ophthalmologist-treatment-observation"> </a></td><td>In treatment with ophthalmologist</td><td>Observation code for treatment followed with an ophthalmologist.</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+  <version value="1.0.0"/>
+  <name value="CSChildReportDocumentation"/>
+  <title value="Child Report Documentation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-28T12:40:36+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message-Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes for documents, sections, and observations in the Child Report."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="pregnancy-details"/>
+    <display value="Pregnancy details documentation"/>
+    <definition value="Document or section containing pregnancy details."/>
+  </concept>
+  <concept>
+    <code value="neonatal-hearing-screening"/>
+    <display value="Neonatal hearing screening documentation"/>
+    <definition value="Document or section containing neonatal hearing screening results."/>
+  </concept>
+  <concept>
+    <code value="refusal-of-hearing-test"/>
+    <display value="Refusal of hearing test documentation"/>
+    <definition value="Document or section containing refusal of hearing test information."/>
+  </concept>
+  <concept>
+    <code value="severe-head-trauma"/>
+    <display value="Severe head trauma documentation"/>
+    <definition value="Document or section containing severe head trauma information."/>
+  </concept>
+  <concept>
+    <code value="eye-screening"/>
+    <display value="Eye screening documentation"/>
+    <definition value="Document or section containing eye screening results."/>
+  </concept>
+  <concept>
+    <code value="eye-results"/>
+    <display value="Eye results documentation"/>
+    <definition value="Document or section containing eye examination results."/>
+  </concept>
+  <concept>
+    <code value="in-treatment-with-ophthalmologist"/>
+    <display value="In treatment with ophthalmologist documentation"/>
+    <definition value="Document or section containing ophthalmologist treatment information."/>
+  </concept>
+  <concept>
+    <code value="eye-remarks-observation"/>
+    <display value="Eye remarks"/>
+    <definition value="Observation code for free text remarks about the eyes."/>
+  </concept>
+  <concept>
+    <code value="ophthalmologist-treatment-observation"/>
+    <display value="In treatment with ophthalmologist"/>
+    <definition value="Observation code for treatment followed with an ophthalmologist."/>
+  </concept>
+</CodeSystem>

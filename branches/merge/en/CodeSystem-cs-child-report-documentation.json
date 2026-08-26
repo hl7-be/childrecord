@@ -1,0 +1,97 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-child-report-documentation",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-child-report-documentation</b></p><a name=\"cs-child-report-documentation\"> </a><a name=\"hccs-child-report-documentation\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pregnancy-details<a name=\"cs-child-report-documentation-pregnancy-details\"> </a></td><td>Pregnancy details documentation</td><td>Document or section containing pregnancy details.</td></tr><tr><td style=\"white-space:nowrap\">neonatal-hearing-screening<a name=\"cs-child-report-documentation-neonatal-hearing-screening\"> </a></td><td>Neonatal hearing screening documentation</td><td>Document or section containing neonatal hearing screening results.</td></tr><tr><td style=\"white-space:nowrap\">refusal-of-hearing-test<a name=\"cs-child-report-documentation-refusal-of-hearing-test\"> </a></td><td>Refusal of hearing test documentation</td><td>Document or section containing refusal of hearing test information.</td></tr><tr><td style=\"white-space:nowrap\">severe-head-trauma<a name=\"cs-child-report-documentation-severe-head-trauma\"> </a></td><td>Severe head trauma documentation</td><td>Document or section containing severe head trauma information.</td></tr><tr><td style=\"white-space:nowrap\">eye-screening<a name=\"cs-child-report-documentation-eye-screening\"> </a></td><td>Eye screening documentation</td><td>Document or section containing eye screening results.</td></tr><tr><td style=\"white-space:nowrap\">eye-results<a name=\"cs-child-report-documentation-eye-results\"> </a></td><td>Eye results documentation</td><td>Document or section containing eye examination results.</td></tr><tr><td style=\"white-space:nowrap\">in-treatment-with-ophthalmologist<a name=\"cs-child-report-documentation-in-treatment-with-ophthalmologist\"> </a></td><td>In treatment with ophthalmologist documentation</td><td>Document or section containing ophthalmologist treatment information.</td></tr><tr><td style=\"white-space:nowrap\">presented-form<a name=\"cs-child-report-documentation-presented-form\"> </a></td><td>Presented form</td><td>Section referencing the PDF rendition (presented form) of the child report.</td></tr><tr><td style=\"white-space:nowrap\">eye-remarks-observation<a name=\"cs-child-report-documentation-eye-remarks-observation\"> </a></td><td>Eye remarks</td><td>Observation code for free text remarks about the eyes.</td></tr><tr><td style=\"white-space:nowrap\">ophthalmologist-treatment-observation<a name=\"cs-child-report-documentation-ophthalmologist-treatment-observation\"> </a></td><td>In treatment with ophthalmologist</td><td>Observation code for treatment followed with an ophthalmologist.</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation",
+  "version" : "1.0.2",
+  "name" : "CSChildReportDocumentation",
+  "title" : "Child Report Documentation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-26T12:27:03+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message-Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes for documents, sections, and observations in the Child Report.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "pregnancy-details",
+    "display" : "Pregnancy details documentation",
+    "definition" : "Document or section containing pregnancy details."
+  },
+  {
+    "code" : "neonatal-hearing-screening",
+    "display" : "Neonatal hearing screening documentation",
+    "definition" : "Document or section containing neonatal hearing screening results."
+  },
+  {
+    "code" : "refusal-of-hearing-test",
+    "display" : "Refusal of hearing test documentation",
+    "definition" : "Document or section containing refusal of hearing test information."
+  },
+  {
+    "code" : "severe-head-trauma",
+    "display" : "Severe head trauma documentation",
+    "definition" : "Document or section containing severe head trauma information."
+  },
+  {
+    "code" : "eye-screening",
+    "display" : "Eye screening documentation",
+    "definition" : "Document or section containing eye screening results."
+  },
+  {
+    "code" : "eye-results",
+    "display" : "Eye results documentation",
+    "definition" : "Document or section containing eye examination results."
+  },
+  {
+    "code" : "in-treatment-with-ophthalmologist",
+    "display" : "In treatment with ophthalmologist documentation",
+    "definition" : "Document or section containing ophthalmologist treatment information."
+  },
+  {
+    "code" : "presented-form",
+    "display" : "Presented form",
+    "definition" : "Section referencing the PDF rendition (presented form) of the child report."
+  },
+  {
+    "code" : "eye-remarks-observation",
+    "display" : "Eye remarks",
+    "definition" : "Observation code for free text remarks about the eyes."
+  },
+  {
+    "code" : "ophthalmologist-treatment-observation",
+    "display" : "In treatment with ophthalmologist",
+    "definition" : "Observation code for treatment followed with an ophthalmologist."
+  }]
+}

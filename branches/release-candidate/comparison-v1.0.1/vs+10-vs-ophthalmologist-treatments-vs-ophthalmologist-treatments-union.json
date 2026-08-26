@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8a148ada-d185-4f36-855d-7211bbfb20d6-23",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8a148ada-d185-4f36-855d-7211bbfb20d6-23",
+  "name" : "UnionVSOphthalmologistTreatmentsAndVSOphthalmologistTreatments",
+  "title" : "Union of Ophthalmologist Treatments And Ophthalmologist Treatments",
+  "status" : "active",
+  "date" : "2026-07-15T09:11:38+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "183131009",
+        "display" : "Prescription of spectacles"
+      },
+      {
+        "code" : "448748005",
+        "display" : "Application of eye patch"
+      },
+      {
+        "code" : "373353005",
+        "display" : "Surgical procedure on eye proper"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSEyeScreeningAgeRange",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSEyeScreeningAgeRange</b></p><a name=\"CSEyeScreeningAgeRange\"> </a><a name=\"hcCSEyeScreeningAgeRange\"> </a><p>This  code system <code>https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningAgeRange</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0-2<a name=\"CSEyeScreeningAgeRange-0-2\"> </a></td><td>From birth to 2 years</td></tr><tr><td style=\"white-space:nowrap\">2-3<a name=\"CSEyeScreeningAgeRange-2-3\"> </a></td><td>Between 2 and 3 years</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningAgeRange",
+  "version" : "0.1.0",
+  "name" : "CSEyeScreeningAgeRange",
+  "status" : "draft",
+  "date" : "2025-07-12T11:16:16+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "0-2",
+    "display" : "From birth to 2 years"
+  },
+  {
+    "code" : "2-3",
+    "display" : "Between 2 and 3 years"
+  }]
+}

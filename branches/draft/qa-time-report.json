@@ -1,0 +1,629 @@
+{
+  "date" : "Thu, 19 Mar, 2026 20:22:22 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.childreport.json",
+    "size" : 5391,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 69,
+      "length" : 307
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 71,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 71,
+      "length" : 64
+    },
+    {
+      "activity" : "validate",
+      "start" : 84,
+      "length" : 3416
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 87,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 87,
+      "length" : 75
+    },
+    {
+      "activity" : "generate2",
+      "start" : 95,
+      "length" : 69
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-cs-child-report-documentation.json",
+    "size" : 1794,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 9
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 71,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 71,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 73,
+      "length" : 1288
+    },
+    {
+      "activity" : "generate1",
+      "start" : 87,
+      "length" : 17
+    },
+    {
+      "activity" : "generate2",
+      "start" : 95,
+      "length" : 66
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-cs-eye-movement-and-position.json",
+    "size" : 682,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 71,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 71,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 74,
+      "length" : 12
+    },
+    {
+      "activity" : "generate1",
+      "start" : 87,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 95,
+      "length" : 40
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-BeChildReportComposition.json",
+    "size" : 10833,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 7
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 14
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 69,
+      "length" : 160
+    },
+    {
+      "activity" : "loadInfo",
+      "start" : 71,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 71,
+      "length" : 151
+    },
+    {
+      "activity" : "validate",
+      "start" : 75,
+      "length" : 950
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 87,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 87,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 87,
+      "length" : 609
+    },
+    {
+      "activity" : "generate2",
+      "start" : 95,
+      "length" : 1578
+    },
+    {
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1483
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 27
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 147,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-BeModelChildReport.json",
+    "size" : 27383,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 13
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 19
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 69,
+      "length" : 88
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 72,
+      "length" : 92
+    },
+    {
+      "activity" : "validate",
+      "start" : 76,
+      "length" : 2068
+    },
+    {
+      "activity" : "generate1",
+      "start" : 88,
+      "length" : 494
+    },
+    {
+      "activity" : "generate2",
+      "start" : 97,
+      "length" : 413
+    },
+    {
+      "activity" : "generate2",
+      "start" : 103,
+      "length" : 373
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 20
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 147,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-BeModelDocument.json",
+    "size" : 4764,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 7
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 69,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 72,
+      "length" : 11
+    },
+    {
+      "activity" : "validate",
+      "start" : 78,
+      "length" : 38
+    },
+    {
+      "activity" : "generate1",
+      "start" : 88,
+      "length" : 54
+    },
+    {
+      "activity" : "generate2",
+      "start" : 97,
+      "length" : 94
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 61
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-BeVlChildReport.json",
+    "size" : 39743,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 18
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 28
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 69,
+      "length" : 702
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 71,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 72,
+      "length" : 414
+    },
+    {
+      "activity" : "validate",
+      "start" : 78,
+      "length" : 5414
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 87,
+      "length" : 2
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 87,
+      "length" : 9
+    },
+    {
+      "activity" : "generate1",
+      "start" : 88,
+      "length" : 3702
+    },
+    {
+      "activity" : "generate2",
+      "start" : 97,
+      "length" : 3708
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 2363
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 194
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 147,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 147,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-vs-eye-movement-and-position.json",
+    "size" : 1039,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 71,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 72,
+      "length" : 393
+    },
+    {
+      "activity" : "validate",
+      "start" : 74,
+      "length" : 232
+    },
+    {
+      "activity" : "generate1",
+      "start" : 92,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 101,
+      "length" : 260
+    },
+    {
+      "activity" : "generate2",
+      "start" : 106,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-vs-eye-screening-results.json",
+    "size" : 895,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 72,
+      "length" : 206
+    },
+    {
+      "activity" : "validate",
+      "start" : 74,
+      "length" : 366
+    },
+    {
+      "activity" : "generate1",
+      "start" : 92,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 101,
+      "length" : 243
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-vs-neonatal-hearing-screening-results.json",
+    "size" : 957,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 69,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 71,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 73,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 75,
+      "length" : 13
+    },
+    {
+      "activity" : "generate1",
+      "start" : 92,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 34
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-vs-ophthalmologist-treatments.json",
+    "size" : 862,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 69,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 69,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 73,
+      "length" : 207
+    },
+    {
+      "activity" : "validate",
+      "start" : 75,
+      "length" : 370
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 87,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 92,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 237
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1043
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 711,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/data/features.yml",
+    "size" : 5
+  },
+  {
+    "name" : "/input/pagecontent/CodeSystem-CSChildReportDocumentation-intro.md",
+    "size" : 101
+  },
+  {
+    "name" : "/input/pagecontent/StructureDefinition-ChildReport-notes.md",
+    "size" : 55
+  },
+  {
+    "name" : "/input/pagecontent/StructureDefinition-BeChildReportComposition-intro.md",
+    "size" : 109
+  },
+  {
+    "name" : "/input/pagecontent/StructureDefinition-ChildReport-intro.md",
+    "size" : 109
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 3304,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/background.xml",
+    "size" : 271,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 35
+    }]
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 46
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/childrecordmodel.png",
+    "size" : 20907
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 6368,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1
+    }]
+  }]
+}

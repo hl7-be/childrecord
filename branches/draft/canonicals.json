@@ -1,0 +1,77 @@
+[{
+  "id" : "hl7.fhir.be.childreport",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childreport/ImplementationGuide/hl7.fhir.be.childreport",
+  "version" : "0.1.0",
+  "name" : "ChildReport"
+},
+{
+  "id" : "BeChildReportComposition",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childreport/StructureDefinition/BeChildReportComposition",
+  "version" : "0.1.0",
+  "name" : "BeChildReportComposition"
+},
+{
+  "id" : "BeModelChildReport",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childreport/StructureDefinition/BeModelChildReport",
+  "version" : "0.1.0",
+  "name" : "BeModelChildReport"
+},
+{
+  "id" : "BeModelDocument",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childreport/StructureDefinition/BeModelDocument",
+  "version" : "0.1.0",
+  "name" : "BeModelDocument"
+},
+{
+  "id" : "BeVlChildReport",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childreport/StructureDefinition/BeVlChildReport",
+  "version" : "0.1.0",
+  "name" : "BeVlChildReport"
+},
+{
+  "id" : "cs-child-report-documentation",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation",
+  "version" : "0.1.0",
+  "name" : "CSChildReportDocumentation"
+},
+{
+  "id" : "cs-eye-movement-and-position",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position",
+  "version" : "0.1.0",
+  "name" : "CSEyeMovementAndPosition"
+},
+{
+  "id" : "vs-eye-movement-and-position",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position",
+  "version" : "0.1.0",
+  "name" : "VSEyeMovementAndPosition"
+},
+{
+  "id" : "vs-eye-screening-results",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results",
+  "version" : "0.1.0",
+  "name" : "VSEyeScreeningOutcome"
+},
+{
+  "id" : "vs-neonatal-hearing-screening-results",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results",
+  "version" : "0.1.0",
+  "name" : "VSNeonatalHearingScreeningResults"
+},
+{
+  "id" : "vs-ophthalmologist-treatments",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments",
+  "version" : "0.1.0",
+  "name" : "VSOphthalmologistTreatments"
+}]

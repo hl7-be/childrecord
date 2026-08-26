@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position,1.0.2,active,,VSEyeMovementAndPosition,Eye Movement and Position ValueSet,"This value set includes codes to represent eye movement and position observations.",,"SCT,Internal"
+https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results,1.0.2,active,,VSEyeScreeningOutcome,Eye Screening Results,"A value set that includes codes for eye screening results.",,"SCT"
+https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results,1.0.2,active,,VSNeonatalHearingScreeningResults,Neonatal Hearing Screening Results,"This value set includes codes for neonatal hearing screening results.",,"SCT"
+https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments,1.0.2,active,,VSOphthalmologistTreatments,Ophthalmologist Treatments,"This value set includes codes for ophthalmologist treatment status.",,"SCT"

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSEyeScreeningAgeRange"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem CSEyeScreeningAgeRange</b></p><a name="CSEyeScreeningAgeRange"> </a><a name="hcCSEyeScreeningAgeRange"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0-2<a name="CSEyeScreeningAgeRange-0-2"> </a></td><td>From birth to 2 years</td></tr><tr><td style="white-space:nowrap">2-3<a name="CSEyeScreeningAgeRange-2-3"> </a></td><td>Between 2 and 3 years</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range"/>
+  <version value="0.1.0"/>
+  <name value="CSEyeScreeningAgeRange"/>
+  <status value="draft"/>
+  <date value="2025-08-11T07:08:33+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="0-2"/>
+    <display value="From birth to 2 years"/>
+  </concept>
+  <concept>
+    <code value="2-3"/>
+    <display value="Between 2 and 3 years"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,34 @@
+# hl7.fhir.be.childreport#0.1.0: Child Report
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Child Report Documentation](CodeSystem-cs-child-report-documentation.md)
+* [Eye Movement and Position](CodeSystem-cs-eye-movement-and-position.md)
+
+### ValueSets
+
+* [Eye Movement and Position](ValueSet-vs-eye-movement-and-position.md)
+* [Eye Screening Results](ValueSet-vs-eye-screening-results.md)
+* [Neonatal Hearing Screening Results](ValueSet-vs-neonatal-hearing-screening-results.md)
+* [Ophthalmologist Treatments](ValueSet-vs-ophthalmologist-treatments.md)
+
+### Logicals
+
+* [Child Report Logical Model](StructureDefinition-BeModelChildReport.md)
+* [Document model](StructureDefinition-BeModelDocument.md)
+
+### Resource Profiles
+
+* [Child Report Composition](StructureDefinition-BeChildReportComposition.md)
+* [BeVlChildReport](StructureDefinition-BeVlChildReport.md)
+
+### ImplementationGuides
+
+* [Child Report](index.md)

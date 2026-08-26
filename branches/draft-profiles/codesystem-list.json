@@ -1,0 +1,44 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSEyeMovementAndPosition",
+      "title" : null,
+      "description" : ""
+    },
+    {
+      "url" : "http://example.org/fhir/CodeSystem/eye-screening-results",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSEyeScreeningResults",
+      "title" : null,
+      "description" : ""
+    },
+    {
+      "url" : "http://example.org/fhir/CodeSystem/neonatal-eye-screening-age-range",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSEyeScreeningAgeRange",
+      "title" : null,
+      "description" : ""
+    },
+    {
+      "url" : "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSNeonatalHearingScreeningResults",
+      "title" : null,
+      "description" : ""
+    },
+    {
+      "url" : "http://example.org/fhir/CodeSystem/ophthalmologist-treatments",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSOphthalmologistTreatments",
+      "title" : null,
+      "description" : ""
+    }
+  ]
+}

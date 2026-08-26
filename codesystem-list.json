@@ -1,0 +1,18 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation",
+    "version" : "1.0.2",
+    "status" : "active",
+    "name" : "CSChildReportDocumentation",
+    "title" : "Child Report Documentation",
+    "description" : "Codes for documents, sections, and observations in the Child Report."
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position",
+    "version" : "1.0.2",
+    "status" : "active",
+    "name" : "CSEyeMovementAndPosition",
+    "title" : "Eye Movement and Position",
+    "description" : "Custom codes for eye movement and position conditions not available in SNOMED CT."
+  }]
+}

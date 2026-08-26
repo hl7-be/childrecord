@@ -1,0 +1,300 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "80eda792-7afd-49b5-8f62-b60ef2f27533",
+  "meta" : {
+    "lastUpdated" : "2025-08-11T07:09:28.258+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.org/fhir/ValueSet/eye-movement-and-position",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-CSEyeMovementAndPosition.html\">codesystem CSEyeMovementAndPosition v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-movement-and-position-intermittent-strabismus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-intermittent-strabismus\">intermittent-strabismus</a></td><td>http://example.org/fhir/CodeSystem/eye-movement-and-position</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-movement-and-position-continuous-strabismus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-continuous-strabismus\">continuous-strabismus</a></td><td>http://example.org/fhir/CodeSystem/eye-movement-and-position</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-movement-and-position-nystagmus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-nystagmus\">nystagmus</a></td><td>http://example.org/fhir/CodeSystem/eye-movement-and-position</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/eye-movement-and-position",
+      "version" : "0.1.0",
+      "name" : "VSEyeMovementAndPosition",
+      "status" : "draft",
+      "date" : "2025-08-11T07:08:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:cfbe88fe-bf56-413e-8f05-e4f53aad584c",
+        "timestamp" : "2025-08-11T07:09:47+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/fhir/CodeSystem/eye-movement-and-position|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+          "code" : "intermittent-strabismus"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+          "code" : "continuous-strabismus"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+          "code" : "nystagmus"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-CSEyeMovementAndPosition.html\">codesystem CSEyeMovementAndPosition v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-movement-and-position-intermittent-strabismus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-intermittent-strabismus\">intermittent-strabismus</a></td><td>http://example.org/fhir/CodeSystem/eye-movement-and-position</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-movement-and-position-continuous-strabismus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-continuous-strabismus\">continuous-strabismus</a></td><td>http://example.org/fhir/CodeSystem/eye-movement-and-position</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-movement-and-position-nystagmus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeMovementAndPosition.html#CSEyeMovementAndPosition-nystagmus\">nystagmus</a></td><td>http://example.org/fhir/CodeSystem/eye-movement-and-position</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range",
+      "version" : "0.1.0",
+      "name" : "VSEyeScreeningAgeRange",
+      "status" : "draft",
+      "date" : "2025-08-11T07:08:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:0303278d-a569-4dfb-aa36-ee731d274835",
+        "timestamp" : "2025-08-11T07:09:47+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/fhir/CodeSystem/eye-movement-and-position|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+          "code" : "intermittent-strabismus"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+          "code" : "continuous-strabismus"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/eye-movement-and-position",
+          "code" : "nystagmus"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/neonatal-hearing-screening-results",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-CSNeonatalHearingScreeningResults.html\">codesystem CSNeonatalHearingScreeningResults v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results-pass\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-pass\">pass</a></td><td>http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results-refer\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-refer\">refer</a></td><td>http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results-aborted-test\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-aborted-test\">aborted-test</a></td><td>http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results-not-performed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSNeonatalHearingScreeningResults.html#CSNeonatalHearingScreeningResults-not-performed\">not-performed</a></td><td>http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/neonatal-hearing-screening-results",
+      "version" : "0.1.0",
+      "name" : "VSNeonatalHearingScreeningResults",
+      "status" : "draft",
+      "date" : "2025-08-11T07:08:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:cd9976d6-c1a0-4b2e-8ff4-bae82afc78c9",
+        "timestamp" : "2025-08-11T07:09:47+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results",
+          "code" : "pass"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results",
+          "code" : "refer"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results",
+          "code" : "aborted-test"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/neonatal-hearing-screening-results",
+          "code" : "not-performed"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/ophthalmologist-treatments",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-CSOphthalmologistTreatments.html\">codesystem CSOphthalmologistTreatments v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/ophthalmologist-treatments-glasses\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-glasses\">glasses</a></td><td>http://example.org/fhir/CodeSystem/ophthalmologist-treatments</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/ophthalmologist-treatments-occlusion\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-occlusion\">occlusion</a></td><td>http://example.org/fhir/CodeSystem/ophthalmologist-treatments</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/ophthalmologist-treatments-operation\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-operation\">operation</a></td><td>http://example.org/fhir/CodeSystem/ophthalmologist-treatments</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/ophthalmologist-treatments-other-treatment\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOphthalmologistTreatments.html#CSOphthalmologistTreatments-other-treatment\">other-treatment</a></td><td>http://example.org/fhir/CodeSystem/ophthalmologist-treatments</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/ophthalmologist-treatments",
+      "version" : "0.1.0",
+      "name" : "VSOphthalmologistTreatments",
+      "status" : "draft",
+      "date" : "2025-08-11T07:08:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9bfa9e70-7088-48e5-af74-97345aeaa5fe",
+        "timestamp" : "2025-08-11T07:09:47+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/fhir/CodeSystem/ophthalmologist-treatments|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/fhir/CodeSystem/ophthalmologist-treatments",
+          "code" : "glasses"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/ophthalmologist-treatments",
+          "code" : "occlusion"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/ophthalmologist-treatments",
+          "code" : "operation"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/ophthalmologist-treatments",
+          "code" : "other-treatment"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/eye-screening-results",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-CSEyeScreeningResults.html\">codesystem CSEyeScreeningResults v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-screening-results-refer\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-refer\">refer</a></td><td>http://example.org/fhir/CodeSystem/eye-screening-results</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-screening-results-pass\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-pass\">pass</a></td><td>http://example.org/fhir/CodeSystem/eye-screening-results</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-screening-results-measurement-not-possible\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-measurement-not-possible\">measurement-not-possible</a></td><td>http://example.org/fhir/CodeSystem/eye-screening-results</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/fhir/CodeSystem/eye-screening-results-child-not-testable\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSEyeScreeningResults.html#CSEyeScreeningResults-child-not-testable\">child-not-testable</a></td><td>http://example.org/fhir/CodeSystem/eye-screening-results</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/eye-screening-results",
+      "version" : "0.1.0",
+      "name" : "VSEyeScreeningResults",
+      "status" : "draft",
+      "date" : "2025-08-11T07:08:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:deb08825-3230-4488-91f0-b7e47241c336",
+        "timestamp" : "2025-08-11T07:09:47+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/fhir/CodeSystem/eye-screening-results|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/fhir/CodeSystem/eye-screening-results",
+          "code" : "refer"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/eye-screening-results",
+          "code" : "pass"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/eye-screening-results",
+          "code" : "measurement-not-possible"
+        },
+        {
+          "system" : "http://example.org/fhir/CodeSystem/eye-screening-results",
+          "code" : "child-not-testable"
+        }]
+      }
+    }
+  }]
+}

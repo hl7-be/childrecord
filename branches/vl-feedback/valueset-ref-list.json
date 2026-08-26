@@ -1,0 +1,55 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "VSEyeMovementAndPosition",
+    "title" : "Eye Movement and Position ValueSet",
+    "description" : "This value set includes codes to represent eye movement and position observations.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position",
+    "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-be-childreport.html" : "BeChildReport",
+    "StructureDefinition-BeModelChildReport.html" : "Child Report model"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "VSEyeScreeningOutcome",
+    "title" : "Eye Screening Results",
+    "description" : "A value set that includes codes for eye screening results.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-be-childreport.html" : "BeChildReport",
+    "StructureDefinition-BeModelChildReport.html" : "Child Report model"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "VSNeonatalHearingScreeningResults",
+    "title" : "Neonatal Hearing Screening Results",
+    "description" : "This value set includes codes for neonatal hearing screening results.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-be-childreport.html" : "BeChildReport",
+    "StructureDefinition-BeModelChildReport.html" : "Child Report model"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "VSOphthalmologistTreatments",
+    "title" : "Ophthalmologist Treatments",
+    "description" : "This value set includes codes for ophthalmologist treatment status.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-be-childreport.html" : "BeChildReport",
+    "StructureDefinition-BeModelChildReport.html" : "Child Report model"
+  }]
+}

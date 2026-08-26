@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="child-report-example"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/childreport/StructureDefinition/be-vl-childreport"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2026-03-15T10:30:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50001"/>
+    <resource>
+      <Composition>
+        <id value="composition-1"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/childreport/StructureDefinition/BeChildReportComposition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Composition_composition-1"> </a><p class="res-header-id"><b>Generated Narrative: Composition composition-1</b></p><a name="composition-1"> </a><a name="hccomposition-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BeChildReportComposition.html">Child Report Composition</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11503-0}">Medical records</span></p><p><b>date</b>: 2026-03-15</p><p><b>author</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>title</b>: KindRapport - Child Report</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11503-0"/>
+            <display value="Medical records"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <date value="2026-03-15"/>
+        <author>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </author>
+        <title value="KindRapport - Child Report"/>
+        <section>
+          <title value="Pregnancy Details"/>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+              <code value="pregnancy-details"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Pregnancy duration: 38 weeks. No CMV infection. No bacterial meningitis.</div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:e5d4c3b2-8f9e-4012-def0-456789012def"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50005"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50006"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Neonatal Hearing Screening"/>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+              <code value="neonatal-hearing-screening"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Hearing screening: normal result. Left ear: normal. Right ear: normal.</div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50007"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50008"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50009"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Severe Head Trauma"/>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+              <code value="severe-head-trauma"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">No severe head trauma during delivery.</div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50010"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Eye Screening"/>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+              <code value="eye-screening"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Eye screening: normal result.</div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50011"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Eye Results"/>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+              <code value="eye-results"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Pupil inspection normal. Eye movement normal both eyes. Remark: slight redness observed.</div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50012"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50013"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50014"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50015"/>
+          </entry>
+        </section>
+        <section>
+          <title value="In Treatment with Ophthalmologist"/>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+              <code value="in-treatment-with-ophthalmologist"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Prescription of spectacles.</div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50016"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+    <resource>
+      <Patient>
+        <id value="patient-baby"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-baby"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-baby</b></p><a name="patient-baby"> </a><a name="hcpatient-baby"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core/StructureDefinition-be-patient.html">BePatient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</p><hr/></div>
+        </text>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"/>
+          <value value="26031512345"/>
+        </identifier>
+        <name>
+          <family value="Janssens"/>
+          <given value="Emma"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="2026-03-01"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c3b2a1d4-6f5e-4890-bcda-234567890bcd"/>
+    <resource>
+      <RelatedPerson>
+        <id value="mother-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RelatedPerson_mother-1"> </a><p class="res-header-id"><b>Generated Narrative: RelatedPerson mother-1</b></p><a name="mother-1"> </a><a name="hcmother-1"> </a><p><b>patient</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}">mother</span></p><p><b>name</b>: Marie Peeters </p></div>
+        </text>
+        <patient>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </patient>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="MTH"/>
+            <display value="mother"/>
+          </coding>
+        </relationship>
+        <name>
+          <family value="Peeters"/>
+          <given value="Marie"/>
+        </name>
+      </RelatedPerson>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+    <resource>
+      <Practitioner>
+        <id value="practitioner-1"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_practitioner-1"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner practitioner-1</b></p><a name="practitioner-1"> </a><a name="hcpractitioner-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core/StructureDefinition-be-practitioner.html">BePractitioner</a></p></div><p><b>identifier</b>: <a href="https://build.fhir.org/ig/hl7-be/core/NamingSystem-be-nihdi.html" title="RIZIV/INAMI">BeNIHDINamingSystem</a>/12345678901</p><p><b>name</b>: Jan De Smet </p></div>
+        </text>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+          <value value="12345678901"/>
+        </identifier>
+        <name>
+          <family value="De Smet"/>
+          <given value="Jan"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e5d4c3b2-8f9e-4012-def0-456789012def"/>
+    <resource>
+      <Observation>
+        <id value="obs-pregnancy-duration"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-pregnancy-duration"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-pregnancy-duration</b></p><a name="obs-pregnancy-duration"> </a><a name="hcobs-pregnancy-duration"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-pd-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 412726003}">Length of gestation at birth</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>focus</b>: <a href="Bundle-child-report-example.html#urn-uuid-c3b2a1d4-6f5e-4890-bcda-234567890bcd">RelatedPerson Marie Peeters </a></p><p><b>effective</b>: 2026-03-01</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: 38 weeks<span style="background: LightGoldenRodYellow"> (Details: UCUM  codewk = 'wk')</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-pd-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="412726003"/>
+            <display value="Length of gestation at birth"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <focus>
+          <reference value="urn:uuid:c3b2a1d4-6f5e-4890-bcda-234567890bcd"/>
+        </focus>
+        <effectiveDateTime value="2026-03-01"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueQuantity>
+          <value value="38"/>
+          <unit value="weeks"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="wk"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50005"/>
+    <resource>
+      <Observation>
+        <id value="obs-cmv"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-cmv"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-cmv</b></p><a name="obs-cmv"> </a><a name="hcobs-cmv"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50005-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 28944009}">Cytomegalovirus infection</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>focus</b>: <a href="Bundle-child-report-example.html#urn-uuid-c3b2a1d4-6f5e-4890-bcda-234567890bcd">RelatedPerson Marie Peeters </a></p><p><b>effective</b>: 2026-03-01</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: false</p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50005-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="28944009"/>
+            <display value="Cytomegalovirus infection"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <focus>
+          <reference value="urn:uuid:c3b2a1d4-6f5e-4890-bcda-234567890bcd"/>
+        </focus>
+        <effectiveDateTime value="2026-03-01"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueBoolean value="false"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50006"/>
+    <resource>
+      <Observation>
+        <id value="obs-meningitis"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-meningitis"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-meningitis</b></p><a name="obs-meningitis"> </a><a name="hcobs-meningitis"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-men-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 95883001}">Bacterial meningitis</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>focus</b>: <a href="Bundle-child-report-example.html#urn-uuid-c3b2a1d4-6f5e-4890-bcda-234567890bcd">RelatedPerson Marie Peeters </a></p><p><b>effective</b>: 2026-03-01</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: false</p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-men-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="95883001"/>
+            <display value="Bacterial meningitis"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <focus>
+          <reference value="urn:uuid:c3b2a1d4-6f5e-4890-bcda-234567890bcd"/>
+        </focus>
+        <effectiveDateTime value="2026-03-01"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueBoolean value="false"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50007"/>
+    <resource>
+      <Observation>
+        <id value="obs-hearing-overall"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-hearing-overall"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-hearing-overall</b></p><a name="obs-hearing-overall"> </a><a name="hcobs-hearing-overall"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-hear-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 102972004}">Brain stem auditory evoked potential, function</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-03</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 280413001}">Normal result</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-hear-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="102972004"/>
+            <display value="Brain stem auditory evoked potential, function"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-03"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="Normal result"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50008"/>
+    <resource>
+      <Observation>
+        <id value="obs-hearing-left"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-hearing-left"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-hearing-left</b></p><a name="obs-hearing-left"> </a><a name="hcobs-hearing-left"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-hear-left-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 102972004}">Brain stem auditory evoked potential, function</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-03</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 280413001}">Normal result</span></p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 117590005}">Ear structure</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-hear-left-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="102972004"/>
+            <display value="Brain stem auditory evoked potential, function"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-03"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="Normal result"/>
+          </coding>
+        </valueCodeableConcept>
+        <bodySite>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality">
+            <valueCoding>
+              <system value="http://snomed.info/sct"/>
+              <code value="7771000"/>
+              <display value="Left"/>
+            </valueCoding>
+          </extension>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="117590005"/>
+            <display value="Ear structure"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50009"/>
+    <resource>
+      <Observation>
+        <id value="obs-hearing-right"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-hearing-right"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-hearing-right</b></p><a name="obs-hearing-right"> </a><a name="hcobs-hearing-right"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-hear-right-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 102972004}">Brain stem auditory evoked potential, function</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-03</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 280413001}">Normal result</span></p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 117590005}">Ear structure</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-hear-right-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="102972004"/>
+            <display value="Brain stem auditory evoked potential, function"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-03"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="Normal result"/>
+          </coding>
+        </valueCodeableConcept>
+        <bodySite>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality">
+            <valueCoding>
+              <system value="http://snomed.info/sct"/>
+              <code value="24028007"/>
+              <display value="Right"/>
+            </valueCoding>
+          </extension>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="117590005"/>
+            <display value="Ear structure"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50010"/>
+    <resource>
+      <Observation>
+        <id value="obs-head-trauma"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-head-trauma"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-head-trauma</b></p><a name="obs-head-trauma"> </a><a name="hcobs-head-trauma"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-ht-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 127296001}">Intracranial injury</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-01</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: false</p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-ht-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="127296001"/>
+            <display value="Intracranial injury"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-01"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueBoolean value="false"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50011"/>
+    <resource>
+      <Observation>
+        <id value="obs-eye-screening"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-eye-screening"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-eye-screening</b></p><a name="obs-eye-screening"> </a><a name="hcobs-eye-screening"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-eye-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 363926002}">Eye/vision observable</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-10</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 280413001}">Normal result</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-eye-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="363926002"/>
+            <display value="Eye/vision observable"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-10"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="Normal result"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50012"/>
+    <resource>
+      <Observation>
+        <id value="obs-pupil"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-pupil"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-pupil</b></p><a name="obs-pupil"> </a><a name="hcobs-pupil"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50012-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 274093008}">Abnormal pupil</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-10</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: false</p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50012-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="274093008"/>
+            <display value="Abnormal pupil"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-10"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueBoolean value="false"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50013"/>
+    <resource>
+      <Observation>
+        <id value="obs-eye-movement-left"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-eye-movement-left"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-eye-movement-left</b></p><a name="obs-eye-movement-left"> </a><a name="hcobs-eye-movement-left"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-eml-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 31763002}">Ocular motility observable</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-10</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>dataAbsentReason</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-applicable}">Not Applicable</span></p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 81745001}">Structure of eye proper</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-eml-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="31763002"/>
+            <display value="Ocular motility observable"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-10"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <dataAbsentReason>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+            <code value="not-applicable"/>
+            <display value="Not Applicable"/>
+          </coding>
+        </dataAbsentReason>
+        <bodySite>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality">
+            <valueCoding>
+              <system value="http://snomed.info/sct"/>
+              <code value="7771000"/>
+              <display value="Left"/>
+            </valueCoding>
+          </extension>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="81745001"/>
+            <display value="Structure of eye proper"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50014"/>
+    <resource>
+      <Observation>
+        <id value="obs-eye-movement-right"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-eye-movement-right"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-eye-movement-right</b></p><a name="obs-eye-movement-right"> </a><a name="hcobs-eye-movement-right"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-emr-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 31763002}">Ocular motility observable</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-10</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>dataAbsentReason</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-applicable}">Not Applicable</span></p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 81745001}">Structure of eye proper</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-emr-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="31763002"/>
+            <display value="Ocular motility observable"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-10"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <dataAbsentReason>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+            <code value="not-applicable"/>
+            <display value="Not Applicable"/>
+          </coding>
+        </dataAbsentReason>
+        <bodySite>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality">
+            <valueCoding>
+              <system value="http://snomed.info/sct"/>
+              <code value="24028007"/>
+              <display value="Right"/>
+            </valueCoding>
+          </extension>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="81745001"/>
+            <display value="Structure of eye proper"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50015"/>
+    <resource>
+      <Observation>
+        <id value="obs-eye-remarks"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-eye-remarks"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-eye-remarks</b></p><a name="obs-eye-remarks"> </a><a name="hcobs-eye-remarks"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-er-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation eye-remarks-observation}">Eye remarks</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-10</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: Slight redness observed in both eyes, likely due to birth. No treatment needed.</p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-er-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+            <code value="eye-remarks-observation"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-10"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueString value="Slight redness observed in both eyes, likely due to birth. No treatment needed."/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d1c4b5a2-3e6f-4890-b1c7-a2d3e4f50016"/>
+    <resource>
+      <Observation>
+        <id value="obs-ophthalmologist"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-clinical-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_obs-ophthalmologist"> </a><p class="res-header-id"><b>Generated Narrative: Observation obs-ophthalmologist</b></p><a name="obs-ophthalmologist"> </a><a name="hcobs-ophthalmologist"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7-be/core-clinical/StructureDefinition-be-clinical-observation.html">BeClinicalObservation</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:obs-oph-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation ophthalmologist-treatment-observation}">In treatment with ophthalmologist</span></p><p><b>subject</b>: <a href="Bundle-child-report-example.html#urn-uuid-b2a1c3d4-5e6f-7890-abcd-123456789abc">Emma Janssens  Female, DoB: 2026-03-01 ( https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#26031512345)</a></p><p><b>effective</b>: 2026-03-10</p><p><b>performer</b>: <a href="Bundle-child-report-example.html#urn-uuid-d4c3b2a1-7e8f-4901-cdef-345678901cde">Practitioner Jan De Smet </a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 183131009}">Prescription of spectacles</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:obs-oph-001"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"/>
+            <code value="ophthalmologist-treatment-observation"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:b2a1c3d4-5e6f-7890-abcd-123456789abc"/>
+        </subject>
+        <effectiveDateTime value="2026-03-10"/>
+        <performer>
+          <reference value="urn:uuid:d4c3b2a1-7e8f-4901-cdef-345678901cde"/>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="183131009"/>
+            <display value="Prescription of spectacles"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

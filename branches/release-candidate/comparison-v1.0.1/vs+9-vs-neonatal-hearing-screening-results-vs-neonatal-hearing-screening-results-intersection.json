@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8a148ada-d185-4f36-855d-7211bbfb20d6-21",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8a148ada-d185-4f36-855d-7211bbfb20d6-21",
+  "name" : "IntersectionVSNeonatalHearingScreeningResultsAndVSNeonatalHearingScreeningResults",
+  "title" : "Intersection of Neonatal Hearing Screening Results And Neonatal Hearing Screening Results",
+  "status" : "active",
+  "date" : "2026-07-15T09:11:38+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "280413001",
+        "display" : "Normal result"
+      },
+      {
+        "code" : "280415008",
+        "display" : "Abnormal result"
+      },
+      {
+        "code" : "455371000124106",
+        "display" : "Invalid result"
+      },
+      {
+        "code" : "373121007",
+        "display" : "Test not done"
+      }]
+    }]
+  }
+}

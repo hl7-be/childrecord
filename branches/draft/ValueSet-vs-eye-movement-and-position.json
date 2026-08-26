@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-eye-movement-and-position",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-eye-movement-and-position</b></p><a name=\"vs-eye-movement-and-position\"> </a><a name=\"hcvs-eye-movement-and-position\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-eye-movement-and-position.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-eye-movement-and-position.html#cs-eye-movement-and-position-intermittent-strabismus\">intermittent-strabismus</a></td><td>Intermittent strabismus</td></tr><tr><td><a href=\"CodeSystem-cs-eye-movement-and-position.html#cs-eye-movement-and-position-continuous-strabismus\">continuous-strabismus</a></td><td>Continuous strabismus</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/307699005\">307699005</a></td><td>Nystagmus present</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position",
+  "version" : "0.1.0",
+  "name" : "VSEyeMovementAndPosition",
+  "title" : "Eye Movement and Position",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-03-19T20:22:22+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This value set includes codes to represent eye movement and position observations.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position",
+      "concept" : [{
+        "code" : "intermittent-strabismus",
+        "display" : "Intermittent strabismus"
+      },
+      {
+        "code" : "continuous-strabismus",
+        "display" : "Continuous strabismus"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "307699005",
+        "display" : "Nystagmus present"
+      }]
+    }]
+  }
+}

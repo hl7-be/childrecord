@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "7578365b-9050-4863-9a63-bb2963b648f8-33",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/7578365b-9050-4863-9a63-bb2963b648f8-33",
+  "name" : "IntersectionVSOphthalmologistTreatmentsAndVSOphthalmologistTreatments",
+  "title" : "Intersection of Ophthalmologist Treatments And Ophthalmologist Treatments",
+  "status" : "active",
+  "date" : "2026-08-21T13:40:46+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "183131009",
+        "display" : "Prescription of spectacles"
+      },
+      {
+        "code" : "448748005",
+        "display" : "Application of eye patch"
+      },
+      {
+        "code" : "373353005",
+        "display" : "Surgical procedure on eye proper"
+      }]
+    }]
+  }
+}

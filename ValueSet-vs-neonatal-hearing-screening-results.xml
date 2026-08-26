@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-neonatal-hearing-screening-results"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-neonatal-hearing-screening-results</b></p><a name="vs-neonatal-hearing-screening-results"> </a><a name="hcvs-neonatal-hearing-screening-results"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/280413001">280413001</a></td><td>Normal result</td></tr><tr><td><a href="http://snomed.info/id/280415008">280415008</a></td><td>Abnormal result</td></tr><tr><td><a href="http://snomed.info/id/455371000124106">455371000124106</a></td><td>Invalid result</td></tr><tr><td><a href="http://snomed.info/id/373121007">373121007</a></td><td>Test not done</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results"/>
+  <version value="1.0.2"/>
+  <name value="VSNeonatalHearingScreeningResults"/>
+  <title value="Neonatal Hearing Screening Results"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-26T12:32:12+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message-Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes codes for neonatal hearing screening results."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="280413001"/>
+        <display value="Normal result"/>
+      </concept>
+      <concept>
+        <code value="280415008"/>
+        <display value="Abnormal result"/>
+      </concept>
+      <concept>
+        <code value="455371000124106"/>
+        <display value="Invalid result"/>
+      </concept>
+      <concept>
+        <code value="373121007"/>
+        <display value="Test not done"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

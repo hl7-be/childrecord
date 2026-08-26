@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/childreport/CodeSystem/cs-child-report-documentation> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-child-report-documentation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-child-report-documentation</b></p><a name=\"cs-child-report-documentation\"> </a><a name=\"hccs-child-report-documentation\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pregnancy-details<a name=\"cs-child-report-documentation-pregnancy-details\"> </a></td><td>Pregnancy details documentation</td><td>Document or section containing pregnancy details.</td></tr><tr><td style=\"white-space:nowrap\">neonatal-hearing-screening<a name=\"cs-child-report-documentation-neonatal-hearing-screening\"> </a></td><td>Neonatal hearing screening documentation</td><td>Document or section containing neonatal hearing screening results.</td></tr><tr><td style=\"white-space:nowrap\">refusal-of-hearing-test<a name=\"cs-child-report-documentation-refusal-of-hearing-test\"> </a></td><td>Refusal of hearing test documentation</td><td>Document or section containing refusal of hearing test information.</td></tr><tr><td style=\"white-space:nowrap\">severe-head-trauma<a name=\"cs-child-report-documentation-severe-head-trauma\"> </a></td><td>Severe head trauma documentation</td><td>Document or section containing severe head trauma information.</td></tr><tr><td style=\"white-space:nowrap\">eye-screening<a name=\"cs-child-report-documentation-eye-screening\"> </a></td><td>Eye screening documentation</td><td>Document or section containing eye screening results.</td></tr><tr><td style=\"white-space:nowrap\">eye-results<a name=\"cs-child-report-documentation-eye-results\"> </a></td><td>Eye results documentation</td><td>Document or section containing eye examination results.</td></tr><tr><td style=\"white-space:nowrap\">in-treatment-with-ophthalmologist<a name=\"cs-child-report-documentation-in-treatment-with-ophthalmologist\"> </a></td><td>In treatment with ophthalmologist documentation</td><td>Document or section containing ophthalmologist treatment information.</td></tr><tr><td style=\"white-space:nowrap\">eye-remarks-observation<a name=\"cs-child-report-documentation-eye-remarks-observation\"> </a></td><td>Eye remarks</td><td>Observation code for free text remarks about the eyes.</td></tr><tr><td style=\"white-space:nowrap\">ophthalmologist-treatment-observation<a name=\"cs-child-report-documentation-ophthalmologist-treatment-observation\"> </a></td><td>In treatment with ophthalmologist</td><td>Observation code for treatment followed with an ophthalmologist.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CSChildReportDocumentation"] ; # 
+  fhir:title [ fhir:v "Child Report Documentation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-10T11:30:30+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message-Structure" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for documents, sections, and observations in the Child Report."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pregnancy-details" ] ;
+     fhir:display [ fhir:v "Pregnancy details documentation" ] ;
+     fhir:definition [ fhir:v "Document or section containing pregnancy details." ]
+  ] [
+     fhir:code [ fhir:v "neonatal-hearing-screening" ] ;
+     fhir:display [ fhir:v "Neonatal hearing screening documentation" ] ;
+     fhir:definition [ fhir:v "Document or section containing neonatal hearing screening results." ]
+  ] [
+     fhir:code [ fhir:v "refusal-of-hearing-test" ] ;
+     fhir:display [ fhir:v "Refusal of hearing test documentation" ] ;
+     fhir:definition [ fhir:v "Document or section containing refusal of hearing test information." ]
+  ] [
+     fhir:code [ fhir:v "severe-head-trauma" ] ;
+     fhir:display [ fhir:v "Severe head trauma documentation" ] ;
+     fhir:definition [ fhir:v "Document or section containing severe head trauma information." ]
+  ] [
+     fhir:code [ fhir:v "eye-screening" ] ;
+     fhir:display [ fhir:v "Eye screening documentation" ] ;
+     fhir:definition [ fhir:v "Document or section containing eye screening results." ]
+  ] [
+     fhir:code [ fhir:v "eye-results" ] ;
+     fhir:display [ fhir:v "Eye results documentation" ] ;
+     fhir:definition [ fhir:v "Document or section containing eye examination results." ]
+  ] [
+     fhir:code [ fhir:v "in-treatment-with-ophthalmologist" ] ;
+     fhir:display [ fhir:v "In treatment with ophthalmologist documentation" ] ;
+     fhir:definition [ fhir:v "Document or section containing ophthalmologist treatment information." ]
+  ] [
+     fhir:code [ fhir:v "eye-remarks-observation" ] ;
+     fhir:display [ fhir:v "Eye remarks" ] ;
+     fhir:definition [ fhir:v "Observation code for free text remarks about the eyes." ]
+  ] [
+     fhir:code [ fhir:v "ophthalmologist-treatment-observation" ] ;
+     fhir:display [ fhir:v "In treatment with ophthalmologist" ] ;
+     fhir:definition [ fhir:v "Observation code for treatment followed with an ophthalmologist." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

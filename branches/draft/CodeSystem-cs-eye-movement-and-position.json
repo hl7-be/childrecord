@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-eye-movement-and-position",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-eye-movement-and-position</b></p><a name=\"cs-eye-movement-and-position\"> </a><a name=\"hccs-eye-movement-and-position\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">intermittent-strabismus<a name=\"cs-eye-movement-and-position-intermittent-strabismus\"> </a></td><td>Intermittent strabismus</td></tr><tr><td style=\"white-space:nowrap\">continuous-strabismus<a name=\"cs-eye-movement-and-position-continuous-strabismus\"> </a></td><td>Continuous strabismus</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-eye-movement-and-position",
+  "version" : "0.1.0",
+  "name" : "CSEyeMovementAndPosition",
+  "title" : "Eye Movement and Position",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-03-19T20:22:22+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Custom codes for eye movement and position conditions not available in SNOMED CT.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "intermittent-strabismus",
+    "display" : "Intermittent strabismus"
+  },
+  {
+    "code" : "continuous-strabismus",
+    "display" : "Continuous strabismus"
+  }]
+}

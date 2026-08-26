@@ -1,0 +1,303 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"BeModelChildReport","BeModelChildReport","","","",0,*,"","","","null {[]} {[]}
+","Child Report model","A logical model representing child report data elements.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelChildReport.identifier","BeModelChildReport.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Document identifier","Document identifier","","","","","","","","","",,,,,"",,,,"BeModelDocument.identifier",0,*,"",""
+"BeModelChildReport.type","BeModelChildReport.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Document type","Document type","","","","","","","","","",,,,,"",,,,"BeModelDocument.type",1,1,"",""
+"BeModelChildReport.dateTime","BeModelChildReport.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
+","Document date/time","Document date/time","The date of the child report is the date when the report was created, not the date of the examination or observation. In case of reports migrated from KMEHR, the date is the date of the conversion, not the KMEHR message creation, which is unknown.","","","","","","","","",,,,,"",,,,"BeModelDocument.dateTime",1,1,"",""
+"BeModelChildReport.title","BeModelChildReport.title","","","",0,1,"","","","string {[]} {[]}
+","Title","Title","","","","","","","","","",,,,,"",,,,"BeModelDocument.title",0,1,"",""
+"BeModelChildReport.status","BeModelChildReport.status","","","",0,1,"","","","code {[]} {[]}
+","Status","Status","","","","","","","","","",,,,,"",,,,"BeModelDocument.status",0,1,"",""
+"BeModelChildReport.language","BeModelChildReport.language","","","",0,1,"","","","code {[]} {[]}
+","Language","Language","","","","","","","","","",,,,,"",,,,"BeModelDocument.language",0,1,"",""
+"BeModelChildReport.subject","BeModelChildReport.subject","","","",1,1,"","","","Reference {[]} {[]}
+","Child that the report is about","Subject","","","","","","","","","",,,,,"",,,,"BeModelDocument.subject",0,1,"",""
+"BeModelChildReport.author","BeModelChildReport.author","","","",0,*,"","","","Reference {[]} {[]}
+","Author(s)","Author(s)","","","","","","","","","",,,,,"",,,,"BeModelDocument.author",0,*,"",""
+"BeModelChildReport.section","BeModelChildReport.section","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Document content sections","Document content sections","","","","","","","","","",,,,,"",,,,"BeModelDocument.section",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeModelChildReport.section.id","BeModelChildReport.section.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"BeModelChildReport.section.extension","BeModelChildReport.section.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.section.modifierExtension","BeModelChildReport.section.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.section.code","BeModelChildReport.section.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Section classification","Section classification","","","","","","","","","",,,,,"",,,,"BeModelDocument.section.code",0,1,"",""
+"BeModelChildReport.section.entry","BeModelChildReport.section.entry","","","",0,*,"","","","Reference {[]} {[]}
+","Referenced resources","FHIR references to CareSets, e.g. CarePlan/1, Observation/2","","","","","","","","","",,,,,"",,,,"BeModelDocument.section.entry",0,*,"",""
+"BeModelChildReport.section.section","BeModelChildReport.section.section","","","",0,*,"","","","null {[]} {[]}
+","Child sections","Child sections","","","","","","","","","",,,,,"",,,,"BeModelDocument.section.section",0,*,"",""
+"BeModelChildReport.entries","BeModelChildReport.entries","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Entries (CareSets) in the document","Entries (CareSets) in the document","","","","","","","","","",,,,,"",,,,"BeModelDocument.entries",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeModelChildReport.entries.id","BeModelChildReport.entries.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"BeModelChildReport.entries.extension","BeModelChildReport.entries.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.entries.modifierExtension","BeModelChildReport.entries.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.entries.reference","BeModelChildReport.entries.reference","","","",1,1,"","","","Reference {[]} {[]}
+","FHIR reference (e.g., CarePlan/1, Observation/2)","FHIR reference (e.g., CarePlan/1, Observation/2)","","","","","","","","","",,,,,"",,,,"BeModelDocument.entries.reference",1,1,"",""
+"BeModelChildReport.presentedForm","BeModelChildReport.presentedForm","","","",1,1,"","","","Attachment {[]} {[]}
+","Child report PDF file","A base64 encoded PDF file with the remaining child report information (biometric data, charts, etc.).","","","","","","","","","",,,,,"",,,,"BeModelDocument.presentedForm",0,*,"",""
+"BeModelChildReport.pregnancyDetails","BeModelChildReport.pregnancyDetails","","","",0,1,"","","","Base {[]} {[]}
+","Pregnancy details","Details about the pregnancy.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails",0,1,"",""
+"BeModelChildReport.pregnancyDetails.durationOfPregnancy","BeModelChildReport.pregnancyDetails.durationOfPregnancy","","","",0,1,"","","","Base {[]} {[]}
+","[BeClinicalObservation] The duration of pregnancy in weeks, as an observation.","[BeClinicalObservation] The duration of pregnancy in weeks, as an observation.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails.durationOfPregnancy",0,1,"",""
+"BeModelChildReport.pregnancyDetails.durationOfPregnancy.subject","BeModelChildReport.pregnancyDetails.durationOfPregnancy.subject","","","",1,1,"","","","Reference {[]} {[]}
+","Child","subject","","","","","","","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails.durationOfPregnancy.subject",1,1,"",""
+"BeModelChildReport.pregnancyDetails.durationOfPregnancy.code","BeModelChildReport.pregnancyDetails.durationOfPregnancy.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Length of gestation at birth","Length of gestation at birth","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""412726003""/>
+    <display value=""Length of gestation at birth""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails.durationOfPregnancy.code",1,1,"",""
+"BeModelChildReport.pregnancyDetails.durationOfPregnancy.valueInteger","BeModelChildReport.pregnancyDetails.durationOfPregnancy.valueInteger","","","",1,1,"","","","integer {[]} {[]}
+","The duration of pregnancy in weeks","The duration of pregnancy in weeks","","","","","","","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails.durationOfPregnancy.valueInteger",1,1,"",""
+"BeModelChildReport.pregnancyDetails.pregnancyCMVInfection","BeModelChildReport.pregnancyDetails.pregnancyCMVInfection","","","",0,1,"","","","Base {[]} {[]}
+","[BeClinicalObservation] Pregnancy CMV infection","Indicates whether CMV infection occurred during pregnancy.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails.pregnancyCMVInfection",0,1,"",""
+"BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.subject","BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.subject","","","",1,1,"","","","Reference {[]} {[]}
+","Child","subject","","","","","","","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.subject",1,1,"",""
+"BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.code","BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","CMV infection during pregnancy","CMV infection during pregnancy","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""28944009""/>
+    <display value=""Cytomegalovirus infection""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.code",1,1,"",""
+"BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.valueBoolean","BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.valueBoolean","","","",1,1,"","","","boolean {[]} {[]}
+","Indicates whether CMV infection occurred during pregnancy.","The value indicates whether the mother had a CMV infection during pregnancy.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.pregnancyDetails.pregnancyCMVInfection.valueBoolean",1,1,"",""
+"BeModelChildReport.bacterialMeningitis","BeModelChildReport.bacterialMeningitis","","","",0,1,"","","","Base {[]} {[]}
+","[BeClinicalObservation] Bacterial meningitis","Indicates whether bacterial meningitis occurred during pregnancy.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.bacterialMeningitis",0,1,"",""
+"BeModelChildReport.bacterialMeningitis.code","BeModelChildReport.bacterialMeningitis.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""95883001""/>
+    <display value=""Bacterial meningitis""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.bacterialMeningitis.code",1,1,"",""
+"BeModelChildReport.bacterialMeningitis.subject","BeModelChildReport.bacterialMeningitis.subject","","","",1,1,"","","","Reference {[]} {[]}
+","Child","subject","","","","","","","","","",,,,,"",,,,"BeModelChildReport.bacterialMeningitis.subject",1,1,"",""
+"BeModelChildReport.bacterialMeningitis.valueBoolean","BeModelChildReport.bacterialMeningitis.valueBoolean","","","",1,1,"","","","boolean {[]} {[]}
+","Indicates whether bacterial meningitis occurred during pregnancy.","The value indicates whether the mother had a bacterial meningitis during pregnancy.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.bacterialMeningitis.valueBoolean",1,1,"",""
+"BeModelChildReport.neonatalHearingScreeningLeft","BeModelChildReport.neonatalHearingScreeningLeft","","","",0,1,"","","","Base {[]} {[]}
+","[BeClinicalObservation] Left ear result","Result of neonatal hearing screening for the left ear.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.neonatalHearingScreeningLeft",0,1,"",""
+"BeModelChildReport.neonatalHearingScreeningLeft.date","BeModelChildReport.neonatalHearingScreeningLeft.date","","","",1,1,"","","","date {[]} {[]}
+","Date of neonatal hearing screening","The date of neonatal hearing screening.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.neonatalHearingScreeningLeft.date",1,1,"",""
+"BeModelChildReport.neonatalHearingScreeningLeft.subject","BeModelChildReport.neonatalHearingScreeningLeft.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.neonatalHearingScreeningLeft.subject",1,1,"",""
+"BeModelChildReport.neonatalHearingScreeningLeft.code","BeModelChildReport.neonatalHearingScreeningLeft.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Result of neonatal hearing screening - left","Result of neonatal hearing screening - left","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""102972004""/>
+    <display value=""Brain stem auditory evoked potential, function""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.neonatalHearingScreeningLeft.code",1,1,"",""
+"BeModelChildReport.neonatalHearingScreeningLeft.valueCode","BeModelChildReport.neonatalHearingScreeningLeft.valueCode","","","",1,1,"","","","code {[]} {[]}
+","Result of neonatal hearing screening (left ear)","Neonatal hearing screening result for the left ear.","","","","","","","","","",,"required","","https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results","",,,,"BeModelChildReport.neonatalHearingScreeningLeft.valueCode",1,1,"",""
+"BeModelChildReport.neonatalHearingScreeningRight","BeModelChildReport.neonatalHearingScreeningRight","","","",0,1,"","","","Base {[]} {[]}
+","[BeClinicalObservation] Right ear result","Result of neonatal hearing screening for the right ear.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.neonatalHearingScreeningRight",0,1,"",""
+"BeModelChildReport.neonatalHearingScreeningRight.date","BeModelChildReport.neonatalHearingScreeningRight.date","","","",1,1,"","","","date {[]} {[]}
+","Date of neonatal hearing screening","The date of neonatal hearing screening.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.neonatalHearingScreeningRight.date",1,1,"",""
+"BeModelChildReport.neonatalHearingScreeningRight.subject","BeModelChildReport.neonatalHearingScreeningRight.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.neonatalHearingScreeningRight.subject",1,1,"",""
+"BeModelChildReport.neonatalHearingScreeningRight.code","BeModelChildReport.neonatalHearingScreeningRight.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Result of neonatal hearing screening - right","Result of neonatal hearing screening - right","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""102972004""/>
+    <display value=""Brain stem auditory evoked potential, function""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.neonatalHearingScreeningRight.code",1,1,"",""
+"BeModelChildReport.neonatalHearingScreeningRight.valueCode","BeModelChildReport.neonatalHearingScreeningRight.valueCode","","","",1,1,"","","","code {[]} {[]}
+","Result of neonatal hearing screening (right ear)","Neonatal hearing screening result for the right ear.","","","","","","","","","",,"required","","https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results","",,,,"BeModelChildReport.neonatalHearingScreeningRight.valueCode",1,1,"",""
+"BeModelChildReport.severeHeadTrauma","BeModelChildReport.severeHeadTrauma","","","",0,1,"","","","Base {[]} {[]}
+","[BeProblem] Severe head trauma","Indicates whether severe head trauma was identified.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.severeHeadTrauma",0,1,"",""
+"BeModelChildReport.severeHeadTrauma.subject","BeModelChildReport.severeHeadTrauma.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.severeHeadTrauma.subject",1,1,"",""
+"BeModelChildReport.severeHeadTrauma.date","BeModelChildReport.severeHeadTrauma.date","","","",1,1,"","","","date {[]} {[]}
+","Date of reporting the trauma.","Date of reporting the trauma.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.severeHeadTrauma.date",1,1,"",""
+"BeModelChildReport.severeHeadTrauma.code","BeModelChildReport.severeHeadTrauma.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""127296001""/>
+    <display value=""Intracranial injury""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.severeHeadTrauma.code",1,1,"",""
+"BeModelChildReport.severeHeadTrauma.valueBoolean","BeModelChildReport.severeHeadTrauma.valueBoolean","","","",1,1,"","","","boolean {[]} {[]}
+","Indicates whether severe head trauma was identified.","The value indicates whether severe head trauma was identified in the child.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.severeHeadTrauma.valueBoolean",1,1,"",""
+"BeModelChildReport.eyeScreening","BeModelChildReport.eyeScreening","","","",0,*,"","","","BackboneElement {[]} {[]}
+","[BeClinicalObservation] Eye screening","Details about the eye screening.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeScreening",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeModelChildReport.eyeScreening.id","BeModelChildReport.eyeScreening.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"BeModelChildReport.eyeScreening.extension","BeModelChildReport.eyeScreening.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.eyeScreening.modifierExtension","BeModelChildReport.eyeScreening.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.eyeScreening.subject","BeModelChildReport.eyeScreening.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeScreening.subject",1,1,"",""
+"BeModelChildReport.eyeScreening.date","BeModelChildReport.eyeScreening.date","","","",1,1,"","","","date {[]} {[]}
+","Date of eye screening","The date of eye screening.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeScreening.date",1,1,"",""
+"BeModelChildReport.eyeScreening.code","BeModelChildReport.eyeScreening.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""363926002""/>
+    <display value=""Eye/vision observable""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.eyeScreening.code",1,1,"",""
+"BeModelChildReport.eyeScreening.valueCodeableConcept","BeModelChildReport.eyeScreening.valueCodeableConcept","","","",1,1,"","","","code {[]} {[]}
+","Result of eye screening","Result of eye screening.","","","","","","","","","",,"required","","https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results","",,,,"BeModelChildReport.eyeScreening.valueCodeableConcept",1,1,"",""
+"BeModelChildReport.eyeResults","BeModelChildReport.eyeResults","","","",0,*,"","","","Base {[]} {[]}
+","Eye","Details about the eyes.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults",0,*,"",""
+"BeModelChildReport.eyeResults.inspectionPupilAbnormal","BeModelChildReport.eyeResults.inspectionPupilAbnormal","","","",0,1,"","","","BackboneElement {[]} {[]}
+","[BeClinicalObservation] Inspection pupil abnormal","Details about the inspection of the pupil.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.inspectionPupilAbnormal",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeModelChildReport.eyeResults.inspectionPupilAbnormal.id","BeModelChildReport.eyeResults.inspectionPupilAbnormal.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"BeModelChildReport.eyeResults.inspectionPupilAbnormal.extension","BeModelChildReport.eyeResults.inspectionPupilAbnormal.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.eyeResults.inspectionPupilAbnormal.modifierExtension","BeModelChildReport.eyeResults.inspectionPupilAbnormal.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.eyeResults.inspectionPupilAbnormal.subject","BeModelChildReport.eyeResults.inspectionPupilAbnormal.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.inspectionPupilAbnormal.subject",1,1,"",""
+"BeModelChildReport.eyeResults.inspectionPupilAbnormal.date","BeModelChildReport.eyeResults.inspectionPupilAbnormal.date","","","",1,1,"","","","date {[]} {[]}
+","Date of abnormal pupil inspection finding","Date of abnormal pupil inspection finding.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.inspectionPupilAbnormal.date",1,1,"",""
+"BeModelChildReport.eyeResults.inspectionPupilAbnormal.code","BeModelChildReport.eyeResults.inspectionPupilAbnormal.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Inspection pupil abnormal","Inspection pupil abnormal","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""274093008""/>
+    <display value=""Abnormal pupil""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.eyeResults.inspectionPupilAbnormal.code",1,1,"",""
+"BeModelChildReport.eyeResults.inspectionPupilAbnormal.valueBoolean","BeModelChildReport.eyeResults.inspectionPupilAbnormal.valueBoolean","","","",1,1,"","","","boolean {[]} {[]}
+","Inspection pupil abnormal","Inspection pupil abnormal","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.inspectionPupilAbnormal.valueBoolean",1,1,"",""
+"BeModelChildReport.eyeResults.eyeMovementAndPosition","BeModelChildReport.eyeResults.eyeMovementAndPosition","","","",0,*,"","","","BackboneElement {[]} {[]}
+","[BeClinicalObservation] Findings about the eye movement and position","[BeClinicalObservation] Findings about the eye movement and position","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeMovementAndPosition",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeModelChildReport.eyeResults.eyeMovementAndPosition.id","BeModelChildReport.eyeResults.eyeMovementAndPosition.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"BeModelChildReport.eyeResults.eyeMovementAndPosition.extension","BeModelChildReport.eyeResults.eyeMovementAndPosition.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.eyeResults.eyeMovementAndPosition.modifierExtension","BeModelChildReport.eyeResults.eyeMovementAndPosition.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.eyeResults.eyeMovementAndPosition.subject","BeModelChildReport.eyeResults.eyeMovementAndPosition.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeMovementAndPosition.subject",1,1,"",""
+"BeModelChildReport.eyeResults.eyeMovementAndPosition.date","BeModelChildReport.eyeResults.eyeMovementAndPosition.date","","","",1,1,"","","","date {[]} {[]}
+","Date of eye movement and position results","The date of eye movement and position results.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeMovementAndPosition.date",1,1,"",""
+"BeModelChildReport.eyeResults.eyeMovementAndPosition.code","BeModelChildReport.eyeResults.eyeMovementAndPosition.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""31763002""/>
+    <display value=""Ocular motility observable""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeMovementAndPosition.code",1,1,"",""
+"BeModelChildReport.eyeResults.eyeMovementAndPosition.valueCode","BeModelChildReport.eyeResults.eyeMovementAndPosition.valueCode","","","",1,1,"","","","code {[]} {[]}
+","Result of testing eye movement and position","Result of testing eye movement and position.","","","","","","","","","",,"required","","https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-movement-and-position","",,,,"BeModelChildReport.eyeResults.eyeMovementAndPosition.valueCode",1,1,"",""
+"BeModelChildReport.eyeResults.eyeRemarks","BeModelChildReport.eyeResults.eyeRemarks","","","",0,1,"","","","BackboneElement {[]} {[]}
+","[BeClinicalObservation] Eye remarks","Free text remarks about the eyes.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeRemarks",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeModelChildReport.eyeResults.eyeRemarks.id","BeModelChildReport.eyeResults.eyeRemarks.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"BeModelChildReport.eyeResults.eyeRemarks.extension","BeModelChildReport.eyeResults.eyeRemarks.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.eyeResults.eyeRemarks.modifierExtension","BeModelChildReport.eyeResults.eyeRemarks.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.eyeResults.eyeRemarks.subject","BeModelChildReport.eyeResults.eyeRemarks.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0]]}
+","Child that the report is about","The child that the report is about.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeRemarks.subject",1,1,"",""
+"BeModelChildReport.eyeResults.eyeRemarks.date","BeModelChildReport.eyeResults.eyeRemarks.date","","","",1,1,"","","","date {[]} {[]}
+","Date of eye remarks","The date of eye remarks.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeRemarks.date",1,1,"",""
+"BeModelChildReport.eyeResults.eyeRemarks.code","BeModelChildReport.eyeResults.eyeRemarks.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Eye remark","Eye remark","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation""/>
+    <code value=""eye-remarks-observation""/>
+    <display value=""Eye remarks""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeRemarks.code",1,1,"",""
+"BeModelChildReport.eyeResults.eyeRemarks.valueString","BeModelChildReport.eyeResults.eyeRemarks.valueString","","","",1,1,"","","","string {[]} {[]}
+","Eye remarks","Eye remarks","","","","","","","","","",,,,,"",,,,"BeModelChildReport.eyeResults.eyeRemarks.valueString",1,1,"",""
+"BeModelChildReport.inTreatmentWithOphthalmologist","BeModelChildReport.inTreatmentWithOphthalmologist","","","",0,*,"","","","BackboneElement {[]} {[]}
+","[BeClinicalObservation] In treatment with ophthalmologist","Details about treatment with an ophthalmologist.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.inTreatmentWithOphthalmologist",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeModelChildReport.inTreatmentWithOphthalmologist.id","BeModelChildReport.inTreatmentWithOphthalmologist.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"BeModelChildReport.inTreatmentWithOphthalmologist.extension","BeModelChildReport.inTreatmentWithOphthalmologist.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.inTreatmentWithOphthalmologist.modifierExtension","BeModelChildReport.inTreatmentWithOphthalmologist.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"BeModelChildReport.inTreatmentWithOphthalmologist.date","BeModelChildReport.inTreatmentWithOphthalmologist.date","","","",1,1,"","","","date {[]} {[]}
+","Date of remarks about treatment with ophthalmologist.","Date of remarks about treatment with ophthalmologist.","","","","","","","","","",,,,,"",,,,"BeModelChildReport.inTreatmentWithOphthalmologist.date",1,1,"",""
+"BeModelChildReport.inTreatmentWithOphthalmologist.code","BeModelChildReport.inTreatmentWithOphthalmologist.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code","Code","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cs-child-report-documentation""/>
+    <code value=""ophthalmologist-treatment-observation""/>
+    <display value=""In treatment with ophthalmologist""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"",,,,"BeModelChildReport.inTreatmentWithOphthalmologist.code",1,1,"",""
+"BeModelChildReport.inTreatmentWithOphthalmologist.valueCode","BeModelChildReport.inTreatmentWithOphthalmologist.valueCode","","","",1,1,"","","","code {[]} {[]}
+","Treatment with ophthalmologist","Treatment with ophthalmologist.","","","","","","","","","",,"required","","https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-ophthalmologist-treatments","",,,,"BeModelChildReport.inTreatmentWithOphthalmologist.valueCode",1,1,"",""

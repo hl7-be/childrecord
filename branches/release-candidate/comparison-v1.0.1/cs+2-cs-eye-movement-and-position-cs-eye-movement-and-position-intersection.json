@@ -1,0 +1,24 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "8a148ada-d185-4f36-855d-7211bbfb20d6-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8a148ada-d185-4f36-855d-7211bbfb20d6-6",
+  "name" : "IntersectionCSEyeMovementAndPositionAndCSEyeMovementAndPosition",
+  "title" : "Intersection of Eye Movement and Position And Eye Movement and Position",
+  "status" : "active",
+  "date" : "2026-07-15T09:11:38+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "concept" : [{
+    "code" : "intermittent-strabismus",
+    "display" : "Intermittent strabismus"
+  },
+  {
+    "code" : "continuous-strabismus",
+    "display" : "Continuous strabismus"
+  }]
+}

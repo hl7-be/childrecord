@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-eye-screening-results",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-eye-screening-results</b></p><a name=\"vs-eye-screening-results\"> </a><a name=\"hcvs-eye-screening-results\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/280413001\">280413001</a></td><td>Normal result</td></tr><tr><td><a href=\"http://snomed.info/id/280415008\">280415008</a></td><td>Abnormal result</td></tr><tr><td><a href=\"http://snomed.info/id/455371000124106\">455371000124106</a></td><td>Invalid result</td></tr><tr><td><a href=\"http://snomed.info/id/373121007\">373121007</a></td><td>Test not done</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-eye-screening-results",
+  "version" : "1.0.1",
+  "name" : "VSEyeScreeningOutcome",
+  "title" : "Eye Screening Results",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-07T14:05:45+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message-Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A value set that includes codes for eye screening results.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "280413001",
+        "display" : "Normal result"
+      },
+      {
+        "code" : "280415008",
+        "display" : "Abnormal result"
+      },
+      {
+        "code" : "455371000124106",
+        "display" : "Invalid result"
+      },
+      {
+        "code" : "373121007",
+        "display" : "Test not done"
+      }]
+    }]
+  }
+}

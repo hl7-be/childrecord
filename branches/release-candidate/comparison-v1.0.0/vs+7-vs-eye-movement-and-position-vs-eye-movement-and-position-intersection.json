@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "1cfc7f83-0898-45b3-9041-ee09f021939b-15",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1cfc7f83-0898-45b3-9041-ee09f021939b-15",
+  "name" : "IntersectionVSEyeMovementAndPositionAndVSEyeMovementAndPosition",
+  "title" : "Intersection of Eye Movement and Position And Eye Movement and Position ValueSet",
+  "status" : "active",
+  "date" : "2026-04-29T13:12:54+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "intermittent-strabismus",
+        "display" : "Intermittent strabismus"
+      },
+      {
+        "code" : "continuous-strabismus",
+        "display" : "Continuous strabismus"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "307699005",
+        "display" : "Nystagmus present"
+      }]
+    }]
+  }
+}

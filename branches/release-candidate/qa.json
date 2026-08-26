@@ -1,0 +1,20 @@
+{
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/childreport/ImplementationGuide/hl7.fhir.be.childreport",
+  "name" : "ChildReport",
+  "title" : "Child Report",
+  "description" : "Child Report FHIR specifications",
+  "ig-date" : "2026-08-21",
+  "status" : "active",
+  "package-id" : "hl7.fhir.be.childreport",
+  "ig-ver" : "1.0.2",
+  "date" : "Mon, 24 Aug, 2026 07:59:58 +0000",
+  "dateISO8601" : "2026-08-24T07:59:58+00:00",
+  "errs" : 0,
+  "warnings" : 6,
+  "hints" : 127,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 2,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2358064160
+}

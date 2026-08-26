@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VSEyeScreeningAgeRange"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSEyeScreeningAgeRange</b></p><a name="VSEyeScreeningAgeRange"> </a><a name="hcVSEyeScreeningAgeRange"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CSEyeMovementAndPosition.html"><code>http://example.org/fhir/CodeSystem/eye-movement-and-position</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/ValueSet/neonatal-eye-screening-age-range"/>
+  <version value="0.1.0"/>
+  <name value="VSEyeScreeningAgeRange"/>
+  <status value="draft"/>
+  <date value="2025-08-11T07:08:33+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/eye-movement-and-position"/>
+    </include>
+  </compose>
+</ValueSet>

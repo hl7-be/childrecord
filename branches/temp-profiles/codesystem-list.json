@@ -1,0 +1,36 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeMovementAndPosition",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSEyeMovementAndPosition",
+      "title" : "Eye Movement and Position",
+      "description" : "A code system for various eye movement and position conditions."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSEyeScreeningResults",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSEyeScreeningResults",
+      "title" : "Eye Screening Results",
+      "description" : "Codes for recording the results of eye screening tests. These codes are used to indicate whether a screening test was passed, failed, not possible to perform, or not testable in children."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSNeonatalHearingScreeningResults",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSNeonatalHearingScreeningResults",
+      "title" : "Neonatal Hearing Screening Results",
+      "description" : "Codes for the results of neonatal hearing screening tests."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/childrecord/CodeSystem/CSOphthalmologistTreatments",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSOphthalmologistTreatments",
+      "title" : "Ophthalmologist Treatment statuses",
+      "description" : "Ophthalmologist Treatment statuses"
+    }
+  ]
+}

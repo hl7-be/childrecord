@@ -1,0 +1,26 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.childreport.json	7376	-	0	0	0	0	0	0	13	53	0	0	0	0	0	0	0	1	0	0	0	127	109	0	0	0	5	0	1
+fsh-generated/resources/CodeSystem-cs-child-report-documentation.json	2362	4	0	0	3	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	30	129	0	0	0	1	0	1
+fsh-generated/resources/CodeSystem-cs-eye-movement-and-position.json	683	1	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	16	91	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-BeChildReportComposition.json	13239	7	0	116	0	0	0	1	0	162	0	0	1	0	0	0	0	4	0	0	0	704	2231	0	0	0	30	0	2
+fsh-generated/resources/StructureDefinition-BeModelChildReport.json	27790	9	0	53	0	0	0	0	0	99	0	0	0	0	0	0	0	0	0	0	0	496	585	0	0	0	19	0	0
+fsh-generated/resources/StructureDefinition-be-childreport.json	39653	11	0	515	0	0	0	0	1	374	0	0	3	0	0	0	0	14	0	0	0	3843	6337	0	0	0	170	1	10
+fsh-generated/resources/ValueSet-vs-eye-movement-and-position.json	1338	1	0	0	0	0	0	0	0	2325	0	0	0	0	0	0	0	0	0	0	0	14	246	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-vs-eye-screening-results.json	1185	1	0	0	0	0	0	0	1	130	0	0	0	0	0	0	0	0	0	0	0	11	195	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-vs-neonatal-hearing-screening-results.json	1247	0	0	0	1	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	12	67	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-vs-ophthalmologist-treatments.json	1152	1	0	0	0	0	0	0	0	132	0	0	0	0	0	0	0	0	0	0	0	13	190	0	0	0	0	0	0
+/fsh-generated/includes/menu.xml	1206	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/fsh-generated/includes/fsh-link-references.md	648	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/data/features.yml	5	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/changes.xml	874	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	37	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-ChildReport-intro.md	109	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0
+/input/pagecontent/StructureDefinition-ChildReport-notes.md	55	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/index.md	8486	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/background.xml	271	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	33	0	0	0	0	0	0
+/input/pagecontent/CodeSystem-CSChildReportDocumentation-intro.md	101	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-BeChildReportComposition-intro.md	109	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	46	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/childrecordmodel.png	20907	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	8056	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1	0	0	0	0	0	0

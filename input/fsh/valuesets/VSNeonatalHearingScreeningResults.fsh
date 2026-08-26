@@ -6,6 +6,7 @@ Title: "Neonatal Hearing Screening Results"
 Description: "This value set includes codes for neonatal hearing screening results."
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/vs-neonatal-hearing-screening-results"
 * ^experimental = false
+* ^copyright = """This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."""
 * $sct#280413001 "Normal result"
 * $sct#280415008 "Abnormal result"
 * $sct#455371000124106 "Invalid result"

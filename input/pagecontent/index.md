@@ -22,7 +22,7 @@ The KindRapport is based on the **FHIR Document** paradigm: a bundled, versioned
 
 The scope will evolve and more content will be added.
 
-## Exchange Model
+### Exchange Model
 
 The unit of exchange defined by this IG is **one document at a time**. The Child Report Bundle is the atomic unit: it is created, exchanged, and consumed as a whole. Each document is a self-contained snapshot — all resources referenced by the Composition are included in the Bundle.
 
@@ -30,7 +30,7 @@ While the individual resources within the document (e.g., Observation, Patient, 
 
 ---
 
-## Design Principles
+### Design Principles
 
 This Implementation Guide follows a set of design constraints to promote reuse, alignment, and consistency across the Belgian FHIR ecosystem:
 
@@ -42,7 +42,7 @@ This Implementation Guide follows a set of design constraints to promote reuse, 
 
 ---
 
-## Structure
+### Structure
 
 The Implementation Guide defines:
 
@@ -76,7 +76,7 @@ Each section in the Composition corresponds to a chapter in the Child Report. La
 
 ---
 
-## Content Overview
+### Content Overview
 
 This publication includes:
 
@@ -88,7 +88,7 @@ Use the top menu to navigate, or consult the [Table of Contents](toc.html). *(So
 
 ---
 
-## Intellectual Property Considerations
+### Intellectual Property Considerations
 
 This IG is published under a public domain license; however, it references code systems with additional restrictions:
 
@@ -102,7 +102,7 @@ Implementers must ensure compliance with the licensing terms of all referenced t
 
 ---
 
-## Dependencies
+### Dependencies
 
 This IG builds upon:
 
@@ -117,29 +117,33 @@ Primary dependencies include:
 
 ---
 
-## Disclaimer
+### Cross Version Analysis
+
+{% capture cross-version-analysis %}{% include cross-version-analysis.xhtml %}{% endcapture %}{{ cross-version-analysis | remove: '<p>' | remove: '</p>'}}
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
+
+### Expansion Parameters
+
+{% include expansion-params.xhtml %}
+
+### Intellectual Property Considerations
+
+{% lang-fragment ip-statements.xhtml %}
+
+
+### Disclaimer
 
 This Implementation Guide is provided as a **draft** and is not approved for production use. It is shared without warranty and may contain inconsistencies or incomplete content.
 
 The final publication will supersede this version once officially approved and released.
 
-{% lang-fragment cross-version-analysis-inline.xhtml %}
- 
- 
-{% lang-fragment globals-table.xhtml %}
-
-
-{% lang-fragment expansion-params.xhtml %}
-
-
-{% lang-fragment dependency-table-short.xhtml %}
-
-
-{% lang-fragment ip-statements.xhtml %}
 
 ---
 
-## Feedback & Contribution
+### Feedback & Contribution
 
 We encourage participation from clinicians, public health officials, IT implementers, and academic stakeholders.
 
